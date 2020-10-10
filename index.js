@@ -54,7 +54,7 @@ module.exports = {
     'no-shadow': ['error', { hoist: 'functions' }],
     'no-undef-init': 'warn',
     // overwrite recommended
-    'no-unused-vars': ['error', { ignoreRestSiblings: true }],
+    'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
     'no-use-before-define': ['error', { functions: false }],
 
     /** Node.js and CommonJS */

@@ -4,6 +4,7 @@ module.exports = {
   rules: {
     /** Strongly Recommended */
     'vue/attribute-hyphenation': 'error',
+    'vue/component-definition-name-casing': ['warn', 'PascalCase'],
     'vue/html-closing-bracket-newline': 'warn',
     'vue/html-closing-bracket-spacing': ['error', { selfClosingTag: 'always' }],
     'vue/html-end-tags': 'error',
@@ -11,8 +12,6 @@ module.exports = {
     'vue/html-quotes': ['warn', 'double'],
     'vue/max-attributes-per-line': ['warn', { singleline: 5, multiline: { max: 1 } }],
     'vue/mustache-interpolation-spacing': ['warn', 'always'],
-    // Deprecated in eslint-plugin-vue@7
-    'vue/name-property-casing': ['warn', 'PascalCase'],
     'vue/no-multi-spaces': 'warn',
     'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
     'vue/no-template-shadow': 'error',
@@ -26,16 +25,26 @@ module.exports = {
     'vue/component-tags-order': ['warn', {
       order: ['template', 'script', 'style'],
     }],
+    'vue/no-lone-template': 'error',
+    'vue/no-multiple-slot-args': 'error',
     'vue/order-in-components': 'warn',
     'vue/this-in-template': 'error',
 
     /** Uncategorized */
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
-    'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
-    // New options supported in eslint-plugin-vue@7
-    'vue/no-reserved-component-names': 'error',
+    'vue/match-component-file-name': ['error', { extensions: ['vue'] }],
+    'vue/no-duplicate-attr-inheritance': 'error',
+    'vue/no-empty-component-block': 'error',
+    'vue/no-reserved-component-names': ['error', {
+      disallowVueBuiltInComponents: true,
+      disallowVue3BuiltInComponents: true,
+    }],
     'vue/no-static-inline-styles': 'error',
+    'vue/no-template-target-blank': 'error',
+    'vue/no-useless-mustaches': 'warn',
+    'vue/no-useless-v-bind': 'warn',
     'vue/padding-line-between-blocks': 'warn',
+    'vue/v-for-delimiter-style': 'warn',
 
     /** Extension Rules */
     'vue/array-bracket-spacing': config.rules['array-bracket-spacing'],
@@ -45,14 +54,22 @@ module.exports = {
     'vue/comma-dangle': config.rules['comma-dangle'],
     'vue/dot-location': config.rules['dot-location'],
     'vue/eqeqeq': config.rules['eqeqeq'],
+    'vue/func-call-spacing': config.rules['func-call-spacing'],
     'vue/key-spacing': config.rules['key-spacing'],
     'vue/keyword-spacing': config.rules['keyword-spacing'],
     // ESLint recommended
     'vue/no-empty-pattern': 'error',
     // ESLint recommended
     'vue/no-irregular-whitespace': 'error',
+    // ESLint recommended
+    'vue/no-sparse-arrays': 'error',
+    'vue/no-useless-concat': config.rules['no-useless-concat'],
+    'vue/object-curly-newline': config.rules['object-curly-newline'],
     'vue/object-curly-spacing': config.rules['object-curly-spacing'],
+    'vue/operator-linebreak': config.rules['operator-linebreak'],
+    'vue/space-in-parens': config.rules['space-in-parens'],
     'vue/space-infix-ops': config.rules['space-infix-ops'],
     'vue/space-unary-ops': config.rules['space-unary-ops'],
+    'vue/template-curly-spacing': config.rules['template-curly-spacing'],
   },
 }

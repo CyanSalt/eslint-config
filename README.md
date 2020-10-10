@@ -45,21 +45,6 @@ module.exports {
 
 and you also need not to declare `plugin:vue/essential` for the same reason.
 
-Since `eslint-plugin-vue@>=7` is not compatible with the versions before, you might need to use it with:
-
-```javascript
-// .eslintrc.js
-module.exports {
-  // ...
-  extends: [
-    '@cyansalt',
-    '@cyansalt/eslint-config/vue',
-    '@cyansalt/eslint-config/vue/plugin-v7',
-  ],
-  // ...
-}
-```
-
 ### Vue 3
 
 ```javascript
