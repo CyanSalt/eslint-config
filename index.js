@@ -50,7 +50,14 @@ module.exports = {
     'wrap-iife': ['warn', 'inside', { functionPrototypeMethods: true }],
 
     /** Variables */
-    'no-restricted-globals': ['error', 'event', 'find', 'length', 'name', 'top'],
+    'no-restricted-globals': [
+      'error',
+      // builtin
+      ...Object.getOwnPropertyNames(Object.prototype),
+      // dom
+      'blur', 'close', 'closed', 'event', 'external', 'find', 'focus', 'length',
+      'name', 'open', 'origin', 'parent', 'scroll', 'status', 'stop', 'top',
+    ],
     'no-shadow': ['error', { hoist: 'functions' }],
     'no-undef-init': 'warn',
     // overwrite recommended
