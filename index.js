@@ -9,11 +9,11 @@ if (hasInstalledPackage('@typescript-eslint/eslint-plugin')) {
   presets.push(path.resolve(__dirname, './typescript/index.js'))
 }
 
-if (hasInstalledPackage('react')) {
+if (hasInstalledPackage('eslint-plugin-react')) {
   presets.push(path.resolve(__dirname, './react/index.js'))
 }
 
-if (hasInstalledPackage('vue')) {
+if (hasInstalledPackage('eslint-plugin-vue')) {
   presets.push(path.resolve(__dirname, './vue/index.js'))
 }
 
