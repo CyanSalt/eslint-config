@@ -5,7 +5,7 @@ const presets = [
   path.resolve(__dirname, './base.js'),
 ]
 
-if (hasInstalledPackage('typescript')) {
+if (hasInstalledPackage('@typescript-eslint/eslint-plugin')) {
   presets.push(path.resolve(__dirname, './typescript/index.js'))
 }
 
