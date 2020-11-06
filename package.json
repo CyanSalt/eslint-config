@@ -1,6 +1,6 @@
 {
   "name": "@cyansalt/eslint-config",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "ESLint configuration for star team",
   "main": "index.js",
   "scripts": {
