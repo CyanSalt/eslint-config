@@ -13,7 +13,7 @@ if (hasInstalledPackage('eslint-plugin-vue-scoped-css')) {
   presets.push(path.resolve(__dirname, './scoped-css.js'))
 }
 
-if (hasInstalledPackage('typescript')) {
+if (hasInstalledPackage('@typescript-eslint/eslint-plugin')) {
   presets.push(path.resolve(__dirname, './typescript.js'))
 }
 
