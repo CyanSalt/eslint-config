@@ -10,7 +10,6 @@ module.exports = {
     'unicorn/filename-case': ['error', {
       cases: {
         kebabCase: true,
-        pascalCase: true,
       },
     }],
     'unicorn/no-abusive-eslint-disable': 'error',

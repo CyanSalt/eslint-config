@@ -4,7 +4,7 @@ module.exports = {
   rules: {
     /** Strongly Recommended */
     'vue/attribute-hyphenation': 'error',
-    'vue/component-definition-name-casing': ['warn', 'PascalCase'],
+    'vue/component-definition-name-casing': ['warn', 'kebab-case'],
     'vue/html-closing-bracket-newline': 'warn',
     'vue/html-closing-bracket-spacing': ['error', { selfClosingTag: 'always' }],
     'vue/html-end-tags': 'error',
@@ -31,7 +31,7 @@ module.exports = {
     'vue/this-in-template': 'error',
 
     /** Uncategorized */
-    'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
+    'vue/component-name-in-template-casing': ['warn', 'kebab-case', { registeredComponentsOnly: true }],
     'vue/match-component-file-name': ['error', { extensions: ['vue'] }],
     'vue/no-duplicate-attr-inheritance': 'error',
     'vue/no-empty-component-block': 'error',
