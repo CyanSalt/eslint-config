@@ -2,6 +2,9 @@ const config = require('../base.js')
 
 module.exports = {
   rules: {
+    /** Essential */
+    'vue/custom-event-name-casing': ['error', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
+
     /** Strongly Recommended */
     'vue/attribute-hyphenation': 'error',
     'vue/component-definition-name-casing': ['warn', 'kebab-case'],

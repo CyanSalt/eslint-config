@@ -55,20 +55,19 @@ module.exports = {
       {
         selector: 'variable',
         modifiers: ['const'],
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-        leadingUnderscore: 'forbid',
-      },
-      {
-        selector: 'variable',
-        modifiers: ['const'],
         types: ['boolean', 'string', 'number'],
         format: ['camelCase', 'UPPER_CASE'],
       },
       {
         selector: 'variable',
-        types: ['boolean'],
-        format: ['PascalCase'],
-        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+        modifiers: ['const'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        leadingUnderscore: 'forbid',
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'PascalCase'],
+        leadingUnderscore: 'forbid',
       },
       {
         selector: 'typeLike',
