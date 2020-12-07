@@ -17,12 +17,12 @@
   "author": "CyanSalt",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^7.1.0"
+    "eslint": "^7.15.0"
   },
   "devDependencies": {
-    "eslint": "^7.11.0"
+    "eslint": "^7.15.0"
   },
   "dependencies": {
-    "semver": "^7.3.2"
+    "semver": "^7.3.4"
   }
 }

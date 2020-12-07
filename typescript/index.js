@@ -12,6 +12,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'error',
     // overwrite recommended
     '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as', objectLiteralTypeAssertions: 'allow' }],
     '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
     '@typescript-eslint/explicit-member-accessibility': ['warn', {
@@ -78,6 +79,7 @@ module.exports = {
     '@typescript-eslint/no-base-to-string': 'error',
     // overwrite recommended
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-confusing-void-expression': 'warn',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-misused-promises': ['error', {
       checksVoidReturn: false,
@@ -87,6 +89,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
+    '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
     // overwrite recommended
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/prefer-enum-initializers': 'error',

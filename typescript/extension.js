@@ -4,6 +4,8 @@ module.exports = {
   rules: {
     'brace-style': 'off',
     '@typescript-eslint/brace-style': config.rules['brace-style'],
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': config.rules['comma-dangle'],
     // Declared by @typescript-eslint/naming-convention
     camelcase: 'off',
     'comma-spacing': 'off',
@@ -20,6 +22,8 @@ module.exports = {
     '@typescript-eslint/no-array-constructor': config.rules['no-array-constructor'],
     'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
+    'no-duplicate-imports': 'off',
+    '@typescript-eslint/no-duplicate-imports': config.rules['no-duplicate-imports'],
     // extends recommended
     'no-extra-semi': 'off',
     '@typescript-eslint/no-extra-semi': 'error',
@@ -38,5 +42,7 @@ module.exports = {
     '@typescript-eslint/semi': config.rules['semi'],
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': config.rules['space-before-function-paren'],
+    'space-infix-ops': 'off',
+    '@typescript-eslint/space-infix-ops': config.rules['space-infix-ops'],
   },
 }

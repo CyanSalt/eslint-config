@@ -2,10 +2,10 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2020: true,
+    es2021: true,
   },
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   extends: [
@@ -15,6 +15,7 @@ module.exports = {
     /** Possible Errors */
     'no-dupe-else-if': 'error',
     'no-import-assign': 'error',
+    'no-unsafe-optional-chaining': 'error',
 
     /** Best Practices */
     'array-callback-return': 'error',
@@ -37,6 +38,7 @@ module.exports = {
     'no-multi-spaces': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
+    'no-nonoctal-decimal-escape': 'error',
     'no-octal-escape': 'error',
     'no-proto': 'error',
     'no-restricted-properties': ['error', { property: '__defineGetter__' }, { property: '__defineSetter__' }],
