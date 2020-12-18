@@ -6,6 +6,7 @@ module.exports = {
     'unicorn',
   ],
   rules: {
+    'unicorn/empty-brace-spaces': 'warn',
     'unicorn/error-message': 'error',
     'unicorn/filename-case': ['error', {
       cases: {
@@ -20,6 +21,7 @@ module.exports = {
     'unicorn/prefer-add-event-listener': 'error',
     'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-dataset': 'warn',
+    'unicorn/prefer-date-now': 'warn',
     'unicorn/prefer-event-key': 'error',
     'unicorn/prefer-flat-map': 'error',
     'unicorn/prefer-includes': 'error',
