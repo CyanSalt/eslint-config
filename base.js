@@ -115,7 +115,7 @@ module.exports = {
     'space-in-parens': 'warn',
     'space-infix-ops': 'warn',
     'space-unary-ops': ['warn', { words: true, nonwords: false }],
-    'spaced-comment': 'warn',
+    'spaced-comment': ['warn', 'always', { markers: ['/'] }],
     'switch-colon-spacing': ['warn', { before: false }],
     'template-tag-spacing': 'warn',
     'unicode-bom': 'warn',
