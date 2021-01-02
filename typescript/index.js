@@ -15,6 +15,7 @@ module.exports = {
     '@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as', objectLiteralTypeAssertions: 'allow' }],
     '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
+    '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
     '@typescript-eslint/explicit-member-accessibility': ['warn', {
       accessibility: 'no-public',
     }],
