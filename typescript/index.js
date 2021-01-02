@@ -85,6 +85,8 @@ module.exports = {
     '@typescript-eslint/no-misused-promises': ['error', {
       checksVoidReturn: false,
     }],
+    // overwrite recommended
+    '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
