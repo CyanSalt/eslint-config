@@ -8,7 +8,7 @@ My ESLint configuration.
 npm install @cyansalt/eslint-config
 ```
 
-## Usage
+## Without Configuration
 
 ```javascript
 // .eslintrc.js
@@ -21,7 +21,22 @@ module.exports {
 }
 ```
 
-Note: `eslint:recommended` is not needed since `@cyansalt` has extended the rule set by default.
+The ruleset will check up your node modules and enable available configurations automatically.
+
+## Basic Usage
+
+```javascript
+// .eslintrc.js
+module.exports {
+  // ...
+  extends: [
+    '@cyansalt/eslint-config/base',
+  ],
+  // ...
+}
+```
+
+Note: `eslint:recommended` is not needed since `base` has extended the rule set by default.
 
 ## Framework Intergrations
 
@@ -36,8 +51,8 @@ The configurations support both Vue and React.
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
-    '@cyansalt/eslint-config/vue',
+    '@cyansalt/eslint-config/base',
+    '@cyansalt/eslint-config/vue/v2',
   ],
   // ...
 }
@@ -52,7 +67,7 @@ and you also need not to declare `plugin:vue/essential` for the same reason.
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
+    '@cyansalt/eslint-config/base',
     '@cyansalt/eslint-config/vue/v3',
   ],
   // ...
@@ -68,8 +83,8 @@ module.exports {
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
-    '@cyansalt/eslint-config/react',
+    '@cyansalt/eslint-config/base',
+    '@cyansalt/eslint-config/react/base',
   ],
   // ...
 }
@@ -84,7 +99,7 @@ module.exports {
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
+    '@cyansalt/eslint-config/base',
     '@cyansalt/eslint-config/typescript',
   ],
 }
@@ -97,8 +112,8 @@ module.exports {
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
-    '@cyansalt/eslint-config/vue',
+    '@cyansalt/eslint-config/base',
+    '@cyansalt/eslint-config/vue/v3',
     '@cyansalt/eslint-config/typescript',
     '@cyansalt/eslint-config/vue/typescript',
   ],
@@ -120,7 +135,7 @@ Support linting of import/export syntax.
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
+    '@cyansalt/eslint-config/base',
     '@cyansalt/eslint-config/import',
   ],
 }
@@ -137,7 +152,7 @@ Support linting for frequent fault.
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
+    '@cyansalt/eslint-config/base',
     '@cyansalt/eslint-config/unicorn',
   ],
 }
@@ -154,7 +169,7 @@ Support linting for Vue Scoped CSS (and other dialects).
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
+    '@cyansalt/eslint-config/base',
     '@cyansalt/eslint-config/vue/scoped-css',
   ],
 }
@@ -183,7 +198,7 @@ Support linting for React Hooks.
 module.exports {
   // ...
   extends: [
-    '@cyansalt',
+    '@cyansalt/eslint-config/base',
     '@cyansalt/eslint-config/react/hooks',
   ],
 }
