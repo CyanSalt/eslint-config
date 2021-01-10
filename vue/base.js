@@ -75,4 +75,12 @@ module.exports = {
     'vue/space-unary-ops': config.rules['space-unary-ops'],
     'vue/template-curly-spacing': config.rules['template-curly-spacing'],
   },
+  overrides: [
+    {
+      files: ['**/index.vue'],
+      rules: {
+        'vue/match-component-file-name': 'off',
+      },
+    },
+  ],
 }
