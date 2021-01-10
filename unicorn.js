@@ -23,7 +23,6 @@ module.exports = {
     'unicorn/prefer-array-some': 'error',
     'unicorn/prefer-dataset': 'warn',
     'unicorn/prefer-date-now': 'warn',
-    'unicorn/prefer-default-parameters': 'warn',
     'unicorn/prefer-event-key': 'error',
     'unicorn/prefer-flat-map': 'error',
     'unicorn/prefer-includes': 'error',
