@@ -36,6 +36,8 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': config.rules['no-use-before-define'],
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
+    'object-curly-spacing': 'off',
+    '@typescript-eslint/object-curly-spacing': config.rules['object-curly-spacing'],
     quotes: 'off',
     '@typescript-eslint/quotes': config.rules['quotes'],
     semi: 'off',
