@@ -48,6 +48,7 @@ module.exports = {
     'vue/no-useless-v-bind': 'warn',
     'vue/padding-line-between-blocks': 'warn',
     'vue/v-for-delimiter-style': 'warn',
+    'vue/valid-next-tick': 'warn',
 
     /** Extension Rules */
     'vue/array-bracket-spacing': config.rules['array-bracket-spacing'],
@@ -60,6 +61,8 @@ module.exports = {
     'vue/func-call-spacing': config.rules['func-call-spacing'],
     'vue/key-spacing': config.rules['key-spacing'],
     'vue/keyword-spacing': config.rules['keyword-spacing'],
+    // ESLint recommended
+    'vue/no-constant-condition': 'error',
     // ESLint recommended
     'vue/no-empty-pattern': 'error',
     // ESLint recommended
