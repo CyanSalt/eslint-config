@@ -1,3 +1,6 @@
+/**
+ * Supports eslint-plugin-react@^7.20.6
+ */
 module.exports = {
   extends: [
     'plugin:react/recommended',

@@ -1,3 +1,6 @@
+/**
+ * Supports eslint@^7.20.0
+ */
 module.exports = {
   env: {
     browser: true,

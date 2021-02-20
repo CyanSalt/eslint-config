@@ -25,6 +25,10 @@ if (hasInstalledPackage('eslint-plugin-unicorn')) {
   presets.push(path.resolve(__dirname, './unicorn.js'))
 }
 
+if (hasInstalledPackage('eslint-plugin-galaxy')) {
+  presets.push(path.resolve(__dirname, './galaxy/index.js'))
+}
+
 module.exports = {
   extends: presets,
 }

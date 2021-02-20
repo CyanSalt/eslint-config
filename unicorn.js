@@ -1,3 +1,6 @@
+/**
+ * Supports eslint-plugin-unicorn@^28.0.2
+ */
 module.exports = {
   // extends: [
   //   'plugin:unicorn/recommended',

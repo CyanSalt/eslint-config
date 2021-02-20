@@ -1,5 +1,8 @@
 const path = require('path')
 
+/**
+ * Supports @typescript-eslint/eslint-plugin@^4.15.1
+ */
 module.exports = {
   parserOptions: {
     project: './tsconfig.json',
