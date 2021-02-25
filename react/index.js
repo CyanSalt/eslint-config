@@ -5,7 +5,7 @@ const presets = [
   path.resolve(__dirname, './base.js'),
 ]
 
-if (hasInstalledPackage('eslint-plugin-react-hooks')) {
+if (hasInstalledPackage('eslint-plugin-react-hooks', '>=3.0.0')) {
   presets.push(path.resolve(__dirname, './hooks.js'))
 }
 
