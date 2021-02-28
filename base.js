@@ -98,7 +98,14 @@ module.exports = {
     'no-multi-assign': 'error',
     'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 0, maxBOF: 0 }],
     'no-new-object': 'error',
-    'no-restricted-syntax': ['error', 'ForInStatement'],
+    'no-restricted-syntax': [
+      'error',
+      'ForInStatement',
+      {
+        selector: '[test.callee.property.name="indexOf"]',
+        message: 'The return value of `.indexOf()` was used incorrectly',
+      },
+    ],
     'no-trailing-spaces': 'warn',
     'no-unneeded-ternary': 'warn',
     'no-whitespace-before-property': 'warn',
