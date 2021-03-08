@@ -1,7 +1,7 @@
 const config = require('../base.js')
 
 /**
- * Supports eslint-plugin-vue@^7.6.0
+ * Supports eslint-plugin-vue@^7.7.0
  */
 module.exports = {
   rules: {

@@ -1,7 +1,7 @@
 const path = require('path')
 
 /**
- * Supports @typescript-eslint/eslint-plugin@^4.15.1
+ * Supports @typescript-eslint/eslint-plugin@^4.16.1
  */
 module.exports = {
   parserOptions: {

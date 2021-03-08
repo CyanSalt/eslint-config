@@ -1,5 +1,5 @@
 /**
- * Supports eslint@^7.20.0
+ * Supports eslint@^7.21.0
  */
 module.exports = {
   env: {
