@@ -47,6 +47,10 @@ module.exports = {
     }],
     'vue/no-static-inline-styles': 'error',
     'vue/no-template-target-blank': 'error',
+    'vue/no-unused-properties': ['error', {
+      groups: ['data', 'computed', 'methods', 'setup'],
+      ignorePublicMembers: true,
+    }],
     'vue/no-useless-mustaches': 'warn',
     'vue/no-useless-v-bind': 'warn',
     'vue/padding-line-between-blocks': 'warn',

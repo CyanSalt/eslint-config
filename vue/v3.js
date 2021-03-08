@@ -8,8 +8,5 @@ module.exports = {
   rules: {
     /** Strongly Recommended */
     'vue/require-explicit-emits': 'error',
-
-    /** Uncategorized */
-    'vue/no-unused-properties': ['error', { ignorePublicMembers: true }],
   },
 }
