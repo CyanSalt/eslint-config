@@ -17,6 +17,5 @@ module.exports = {
       alphabetize: { order: 'asc' },
     }],
     'import/newline-after-import': 'warn',
-    'import/dynamic-import-chunkname': 'error',
   },
 }
