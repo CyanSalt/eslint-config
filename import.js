@@ -1,6 +1,3 @@
-/**
- * Supports eslint-plugin-import@^2.22.1
- */
 module.exports = {
   plugins: [
     'import',
