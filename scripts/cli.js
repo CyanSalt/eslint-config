@@ -15,19 +15,19 @@ function getOutdatedPackages(checkAll) {
       if (dependencies.every(([dependency, version]) => hasInstalledPackage(dependency, version))) {
         result.push({
           name,
-          from: installedVersion,
-          to: metadata.version,
+          current: installedVersion,
+          wanted: metadata.version,
         })
       }
     } else if (semver.lt(installedVersion, metadata.version)) {
       result.push({
         name,
-        from: installedVersion,
-        to: metadata.version,
+        current: installedVersion,
+        wanted: metadata.version,
       })
     }
   }
-  return checkAll ? result : result.filter(entry => entry.from)
+  return checkAll ? result : result.filter(entry => entry.current)
 }
 
 async function ask(question) {
@@ -55,14 +55,14 @@ async function update(args) {
   }
   console.log([
     `${packages.length} package${packages.length > 1 ? 's are' : ' is'} outdated:\n`,
-    ...packages.map(entry => `- ${entry.name}: ${entry.from ?? 'N/A'} => ${entry.to}`),
+    ...packages.map(entry => `- ${entry.name}: ${entry.current ?? 'N/A'} => ${entry.wanted}`),
     '',
   ].join('\n'))
   if (!args.y) {
     const result = await ask('Continue? (Y/n) ')
     if (!result) return
   }
-  childProcess.spawn('npm', ['install', '--save-dev', ...packages.map(entry => `${entry.name}@${entry.to}`)], { stdio: 'inherit' })
+  childProcess.spawn('npm', ['install', '--save-dev', ...packages.map(entry => `${entry.name}@${entry.wanted}`)], { stdio: 'inherit' })
 }
 
 module.exports = {
