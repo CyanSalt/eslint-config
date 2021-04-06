@@ -209,7 +209,7 @@ module.exports {
 You can update current ESLint packages with `npx`:
 
 ```shell
-npx @cyansalt/eslint-config --check
+npx @cyansalt/eslint-config --update
 ```
 
 - You can pass `-y` to skip the question and update packages immediately.
