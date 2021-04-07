@@ -44,6 +44,7 @@ module.exports = {
     'no-restricted-properties': ['error', { property: '__defineGetter__' }, { property: '__defineSetter__' }],
     'no-return-assign': 'error',
     'no-self-compare': 'error',
+    'no-sequences': ['error', { allowInParentheses: false }],
     'no-throw-literal': 'error',
     'no-useless-call': 'error',
     'no-useless-concat': 'error',

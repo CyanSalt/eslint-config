@@ -19,10 +19,10 @@
   "author": "CyanSalt",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^7.20.0"
+    "eslint": "^7.23.0"
   },
   "devDependencies": {
-    "eslint": "^7.20.0"
+    "eslint": "^7.23.0"
   },
   "dependencies": {
     "semver": "^7.3.4",
