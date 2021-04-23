@@ -38,6 +38,7 @@ module.exports = {
     'vue/match-component-file-name': ['error', { extensions: ['vue'] }],
     'vue/no-duplicate-attr-inheritance': 'error',
     'vue/no-empty-component-block': 'error',
+    'vue/no-invalid-model-keys': 'error',
     'vue/no-reserved-component-names': ['error', {
       disallowVueBuiltInComponents: true,
       disallowVue3BuiltInComponents: true,
