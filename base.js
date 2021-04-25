@@ -86,7 +86,7 @@ module.exports = {
     'func-call-spacing': 'warn',
     'function-call-argument-newline': ['warn', 'consistent'],
     'function-paren-newline': ['warn', 'multiline-arguments'],
-    indent: ['warn', 2, { SwitchCase: 1, MemberExpression: 'off' }],
+    indent: ['warn', 2, { SwitchCase: 1 }],
     'jsx-quotes': ['warn', 'prefer-single'],
     'key-spacing': ['warn', { beforeColon: false, afterColon: true, mode: 'strict' }],
     'keyword-spacing': ['warn', { before: true, after: true }],
