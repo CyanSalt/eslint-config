@@ -93,6 +93,7 @@ module.exports = {
     'linebreak-style': 'warn',
     'new-parens': 'warn',
     'no-array-constructor': 'error',
+    'no-bitwise': 'error',
     'no-multi-assign': 'error',
     'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 0, maxBOF: 0 }],
     'no-new-object': 'error',
