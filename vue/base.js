@@ -56,11 +56,14 @@ module.exports = {
     'vue/valid-next-tick': 'warn',
 
     /** Extension Rules */
+    'vue/array-bracket-newline': config.rules['array-bracket-newline'],
     'vue/array-bracket-spacing': config.rules['array-bracket-spacing'],
     'vue/arrow-spacing': config.rules['arrow-spacing'],
     'vue/brace-style': config.rules['brace-style'],
     'vue/camelcase': config.rules['camelcase'],
     'vue/comma-dangle': config.rules['comma-dangle'],
+    'vue/comma-spacing': config.rules['comma-spacing'],
+    'vue/comma-style': config.rules['comma-style'],
     'vue/dot-location': config.rules['dot-location'],
     'vue/eqeqeq': config.rules['eqeqeq'],
     'vue/func-call-spacing': config.rules['func-call-spacing'],
@@ -72,6 +75,7 @@ module.exports = {
     'vue/no-empty-pattern': 'error',
     // ESLint recommended
     'vue/no-irregular-whitespace': 'error',
+    'vue/no-restricted-syntax': config.rules['no-restricted-syntax'],
     // ESLint recommended
     'vue/no-sparse-arrays': 'error',
     'vue/no-useless-concat': config.rules['no-useless-concat'],
