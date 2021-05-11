@@ -23,6 +23,21 @@ module.exports {
 
 The ruleset will check up your node modules and enable available configurations automatically.
 
+To force the configurations of of certain packages, you can set the environment variable `NODE_MODULES`:
+
+```js
+// .eslintrc.js
+process.env.NODE_MODULES = `vue@2:${process.env.NODE_MODULES}`
+
+module.exports {
+  // ...
+  extends: [
+    '@cyansalt',
+  ],
+  // ...
+}
+```
+
 ## Basic Usage
 
 ```javascript

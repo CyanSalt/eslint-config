@@ -1,6 +1,16 @@
 const semver = require('semver')
 
+function getEnvironmentPackageVersion(moduleId) {
+  const packages = (process.env.NODE_MODULES ?? '').split(':')
+  const prefix = `${moduleId}@`
+  const declaration = packages.find(item => item.startsWith(prefix))
+  return declaration ? declaration.slice(prefix.length) : null
+}
+
 function getInstalledPackageVersion(moduleId) {
+  const envVersion = getEnvironmentPackageVersion(moduleId)
+  // Allow empty strings
+  if (envVersion !== null) return envVersion
   let packageJson
   try {
     packageJson = require(`${moduleId}/package.json`)
