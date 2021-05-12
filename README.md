@@ -23,7 +23,7 @@ module.exports {
 
 The ruleset will check up your node modules and enable available configurations automatically.
 
-To force the configurations of of certain packages, you can set the environment variable `NODE_MODULES`:
+To force the configurations of certain packages, you can set the environment variable `NODE_MODULES`:
 
 ```js
 // .eslintrc.js
