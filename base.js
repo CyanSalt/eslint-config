@@ -115,12 +115,7 @@ module.exports = {
     'no-unneeded-ternary': 'warn',
     'no-whitespace-before-property': 'warn',
     'nonblock-statement-body-position': ['warn', 'beside'],
-    'object-curly-newline': ['warn', {
-      ObjectExpression: { consistent: true },
-      ObjectPattern: { consistent: true },
-      ImportDeclaration: { multiline: true },
-      ExportDeclaration: { consistent: true },
-    }],
+    'object-curly-newline': ['warn', { consistent: true }],
     'object-curly-spacing': ['warn', 'always'],
     'one-var': ['error', { initialized: 'never' }],
     'operator-assignment': 'warn',
