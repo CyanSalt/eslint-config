@@ -55,7 +55,7 @@ async function update(args) {
   }
   console.log([
     `${packages.length} package${packages.length > 1 ? 's are' : ' is'} outdated:\n`,
-    ...packages.map(entry => `- ${entry.name}: ${entry.current ?? 'N/A'} => ${entry.wanted}`),
+    ...packages.map(entry => `- ${entry.name}: ${entry.current || 'N/A'} => ${entry.wanted}`),
     '',
   ].join('\n'))
   if (!args.y) {
