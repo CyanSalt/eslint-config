@@ -22,7 +22,7 @@
     "eslint": "^7.23.0"
   },
   "devDependencies": {
-    "eslint": "^7.23.0"
+    "eslint": "^7.26.0"
   },
   "dependencies": {
     "semver": "^7.3.4",
