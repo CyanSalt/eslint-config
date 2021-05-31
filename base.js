@@ -97,6 +97,7 @@ module.exports = {
     'key-spacing': ['warn', { beforeColon: false, afterColon: true, mode: 'strict' }],
     'keyword-spacing': ['warn', { before: true, after: true }],
     'linebreak-style': 'warn',
+    'max-statements-per-line': 'error',
     'new-parens': 'warn',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
