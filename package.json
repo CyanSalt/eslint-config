@@ -22,10 +22,10 @@
     "eslint": "^7.23.0"
   },
   "devDependencies": {
-    "eslint": "^7.26.0"
+    "eslint": "^7.28.0"
   },
   "dependencies": {
-    "semver": "^7.3.4",
+    "semver": "^7.3.5",
     "yargs-parser": "^20.2.7"
   }
 }

@@ -29,9 +29,11 @@ module.exports = {
     'unicorn/prefer-negative-index': 'warn',
     'unicorn/prefer-node-remove': 'warn',
     'unicorn/prefer-optional-catch-binding': 'warn',
-    'unicorn/prefer-text-content': 'warn',
     'unicorn/prefer-string-slice': 'warn',
+    'unicorn/prefer-text-content': 'warn',
     'unicorn/prefer-trim-start-end': 'warn',
+    'unicorn/require-array-join-separator': 'warn',
+    'unicorn/require-number-to-fixed-digits-argument': 'warn',
     'unicorn/throw-new-error': 'error',
   },
 }
