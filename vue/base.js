@@ -36,6 +36,7 @@ module.exports = {
     /** Uncategorized */
     'vue/component-name-in-template-casing': ['warn', 'kebab-case', { registeredComponentsOnly: true }],
     'vue/match-component-file-name': ['error', { extensions: ['vue'] }],
+    'vue/no-deprecated-v-is': 'warn',
     'vue/no-duplicate-attr-inheritance': 'error',
     'vue/no-empty-component-block': 'error',
     'vue/no-invalid-model-keys': 'error',
@@ -45,6 +46,7 @@ module.exports = {
     }],
     'vue/no-static-inline-styles': 'error',
     'vue/no-template-target-blank': 'error',
+    'vue/no-this-in-before-route-enter': 'error',
     'vue/no-unused-properties': ['error', {
       groups: ['data', 'computed', 'methods', 'setup'],
       ignorePublicMembers: true,
@@ -52,6 +54,7 @@ module.exports = {
     'vue/no-useless-mustaches': 'warn',
     'vue/no-useless-v-bind': 'warn',
     'vue/padding-line-between-blocks': 'warn',
+    'vue/require-emit-validator': 'error',
     'vue/v-for-delimiter-style': 'warn',
     'vue/valid-next-tick': 'warn',
 
