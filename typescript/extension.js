@@ -38,6 +38,7 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': 'error',
     'object-curly-spacing': 'off',
     '@typescript-eslint/object-curly-spacing': config.rules['object-curly-spacing'],
+    'prefer-const': 'off',
     quotes: 'off',
     '@typescript-eslint/quotes': config.rules['quotes'],
     semi: 'off',

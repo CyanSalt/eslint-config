@@ -1,18 +1,18 @@
 {
   "@typescript-eslint/eslint-plugin": {
-    "version": "4.27.0",
+    "version": "4.28.3",
     "requires": {
       "typescript": "*"
     }
   },
   "@typescript-eslint/parser": {
-    "version": "4.27.0",
+    "version": "4.28.3",
     "requires": {
       "typescript": "*"
     }
   },
   "eslint": {
-    "version": "7.29.0"
+    "version": "7.30.0"
   },
   "eslint-plugin-galaxy": {
     "version": "1.2.3"
@@ -33,16 +33,16 @@
     }
   },
   "eslint-plugin-unicorn": {
-    "version": "33.0.1"
+    "version": "34.0.1"
   },
   "eslint-plugin-vue": {
-    "version": "7.11.1",
+    "version": "7.13.0",
     "requires": {
       "vue": "*"
     }
   },
   "eslint-plugin-vue-scoped-css": {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "requires": {
       "vue": "*"
     }

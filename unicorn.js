@@ -34,6 +34,7 @@ module.exports = {
     'unicorn/prefer-trim-start-end': 'warn',
     'unicorn/require-array-join-separator': 'warn',
     'unicorn/require-number-to-fixed-digits-argument': 'warn',
+    'unicorn/require-post-message-target-origin': 'error',
     'unicorn/throw-new-error': 'error',
   },
 }
