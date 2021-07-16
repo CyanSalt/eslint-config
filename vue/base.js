@@ -25,9 +25,7 @@ module.exports = {
 
     /** Recommended */
     'vue/attributes-order': 'warn',
-    'vue/component-tags-order': ['warn', {
-      order: ['template', 'script', 'style'],
-    }],
+    'vue/component-tags-order': 'error',
     'vue/no-lone-template': 'error',
     'vue/no-multiple-slot-args': 'error',
     'vue/order-in-components': 'warn',
