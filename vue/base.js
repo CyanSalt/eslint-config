@@ -7,12 +7,12 @@ module.exports = {
 
     /** Strongly Recommended */
     'vue/attribute-hyphenation': 'error',
-    'vue/component-definition-name-casing': ['warn', 'kebab-case'],
     'vue/html-closing-bracket-newline': 'warn',
     'vue/html-closing-bracket-spacing': ['error', { selfClosingTag: 'always' }],
     'vue/html-end-tags': 'error',
     'vue/html-indent': ['warn', 2, { alignAttributesVertically: false }],
     'vue/html-quotes': ['warn', 'double'],
+    'vue/html-self-closing': ['warn', { html: { normal: 'never' } }],
     'vue/max-attributes-per-line': ['warn', { singleline: 5, multiline: { max: 1 } }],
     'vue/mustache-interpolation-spacing': ['warn', 'always'],
     'vue/no-multi-spaces': 'warn',
@@ -25,15 +25,17 @@ module.exports = {
 
     /** Recommended */
     'vue/attributes-order': 'warn',
-    'vue/component-tags-order': 'error',
+    'vue/component-tags-order': ['warn', {
+      order: ['template', 'script', 'style'],
+    }],
     'vue/no-lone-template': 'error',
     'vue/no-multiple-slot-args': 'error',
     'vue/order-in-components': 'warn',
     'vue/this-in-template': 'error',
 
     /** Uncategorized */
-    'vue/component-name-in-template-casing': ['warn', 'kebab-case', { registeredComponentsOnly: true }],
-    'vue/match-component-file-name': ['error', { extensions: ['vue'] }],
+    'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
+    'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
     'vue/no-deprecated-v-is': 'warn',
     'vue/no-duplicate-attr-inheritance': 'error',
     'vue/no-empty-component-block': 'error',
