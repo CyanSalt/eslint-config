@@ -1,20 +1,49 @@
+const { Legacy } = require('@eslint/eslintrc')
+const findUp = require('find-up')
 const semver = require('semver')
 
-function getEnvironmentPackageVersion(moduleId) {
-  const packages = (process.env.NODE_MODULES || '').split(':')
-  const prefix = `${moduleId}@`
-  const declaration = packages.find(item => item.startsWith(prefix))
-  return declaration ? declaration.slice(prefix.length) : null
+let cachedDeps
+
+function getAllDependencies() {
+  if (cachedDeps) {
+    return cachedDeps
+  }
+  const nearestConfigFile = Legacy.ConfigArrayFactory.getPathToConfigFileInDirectory(process.cwd())
+  if (!nearestConfigFile) {
+    cachedDeps = []
+    return cachedDeps
+  }
+  const nearestPackageJson = findUp.sync('package.json', { cwd: nearestConfigFile })
+  if (!nearestPackageJson) {
+    cachedDeps = []
+    return cachedDeps
+  }
+  try {
+    const pkg = require(nearestPackageJson)
+    let deps = []
+    if (pkg.dependencies) {
+      deps = deps.concat(Object.keys(pkg.dependencies))
+    }
+    if (pkg.devDependencies) {
+      deps = deps.concat(Object.keys(pkg.devDependencies))
+    }
+    cachedDeps = deps
+    return cachedDeps
+  } catch (err) {
+    cachedDeps = []
+    return cachedDeps
+  }
 }
 
 function getInstalledPackageVersion(moduleId) {
-  const envVersion = getEnvironmentPackageVersion(moduleId)
-  // Allow empty strings
-  if (envVersion !== null) return envVersion
+  const dependencies = getAllDependencies()
+  if (!dependencies.includes(moduleId)) {
+    return null
+  }
   let packageJson
   try {
     packageJson = require(`${moduleId}/package.json`)
-  } catch {
+  } catch (err) {
     return null
   }
   return packageJson.version
