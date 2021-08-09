@@ -101,6 +101,7 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+    '@typescript-eslint/prefer-return-this-type': 'warn',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/type-annotation-spacing': 'warn',
   },
