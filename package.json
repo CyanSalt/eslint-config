@@ -25,6 +25,7 @@
     "eslint": "^7.30.0"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^0.4.3",
     "find-up": "^5.0.0",
     "semver": "^7.3.5",
     "yargs-parser": "^20.2.9"
