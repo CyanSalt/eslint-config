@@ -54,7 +54,6 @@ module.exports = {
     'vue/no-useless-mustaches': 'warn',
     'vue/no-useless-v-bind': 'warn',
     'vue/padding-line-between-blocks': 'warn',
-    'vue/require-expose': 'error',
     'vue/require-emit-validator': 'error',
     'vue/v-for-delimiter-style': 'warn',
     'vue/valid-next-tick': 'warn',
