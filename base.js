@@ -24,8 +24,7 @@ module.exports = {
     // map等数组方法的回调函数必须有返回值
     'array-callback-return': 'error',
     // default case 必须放在最后
-    // TODO: ESLint 文档包含此规则，但目前并不支持
-    // 'default-case-last': 'error',
+    'default-case-last': 'error',
     // 默认参数必须放在最后
     'default-param-last': 'error',
     // 点号如果换行需要写在行首而非行尾
