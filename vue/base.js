@@ -131,8 +131,6 @@ module.exports = {
     'vue/no-empty-pattern': 'error',
     // 禁止使用非标准空白符（ESLint recommended）
     'vue/no-irregular-whitespace': 'error',
-    // 禁用某些非最佳实践的语法，例如 for-in 循环、对 .indexOf() 返回值的隐式 boolean 类型转换
-    'vue/no-restricted-syntax': config.rules['no-restricted-syntax'],
     // 禁止使用稀疏数组（ESLint recommended）
     'vue/no-sparse-arrays': 'error',
     // 禁止单行内的字符串字面量拼接
