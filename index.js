@@ -29,6 +29,10 @@ if (hasInstalledPackage('eslint-plugin-galaxy')) {
   presets.push(path.resolve(__dirname, './galaxy/index.js'))
 }
 
+if (hasInstalledPackage('@babel/eslint-plugin')) {
+  presets.push(path.resolve(__dirname, './babel.js'))
+}
+
 module.exports = {
   extends: presets,
 }
