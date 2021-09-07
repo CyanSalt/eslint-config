@@ -9,7 +9,7 @@ module.exports = {
     'galaxy/max-nested-destructuring': ['error', { max: 3 }],
     // 禁止使用 for-in 结构
     'galaxy/no-for-in': 'error',
-    // 自动为非 return 语句的 if 结构增加花括号
-    'galaxy/non-return-statement-curly': 'warn',
+    // 自动为非控制语句的 if 结构增加花括号
+    'galaxy/non-control-statement-curly': 'warn',
   },
 }
