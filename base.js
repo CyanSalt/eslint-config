@@ -192,15 +192,6 @@ module.exports = {
     'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 0, maxBOF: 0 }],
     // 禁止使用 Object 构造对象
     'no-new-object': 'error',
-    // 禁用某些非最佳实践的语法，例如 for-in 循环、对 .indexOf() 返回值的隐式 boolean 类型转换
-    'no-restricted-syntax': [
-      'error',
-      'ForInStatement',
-      {
-        selector: '[test.callee.property.name="indexOf"]',
-        message: 'The return value of `.indexOf()` was used incorrectly',
-      },
-    ],
     // 自动删除行尾空格
     'no-trailing-spaces': 'warn',
     // 自动优化三元表达式
