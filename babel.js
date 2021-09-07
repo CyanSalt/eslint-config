@@ -2,7 +2,7 @@ const config = require('./base.js')
 
 module.exports = {
   plugins: [
-    'babel',
+    '@babel',
   ],
   rules: {
     // 禁止使用某些表达式代替对应语句

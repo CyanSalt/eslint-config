@@ -213,6 +213,8 @@ module.exports = {
     'object-curly-newline': ['warn', { consistent: true }],
     // 自动为对象字面量、解构和导入的花括号内侧添加空格
     'object-curly-spacing': ['warn', 'always'],
+    // 自动优化对象属性换行（全部一行或全部换行）
+    'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
     // 禁止单个语句声明多个变量，除非没有指定初始值
     'one-var': ['error', { initialized: 'never' }],
     // 自动优化自涉的赋值操作
