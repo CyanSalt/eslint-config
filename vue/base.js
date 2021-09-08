@@ -20,7 +20,9 @@ module.exports = {
     // 自动替换 HTML 属性值的引号为双引号
     'vue/html-quotes': ['warn', 'double'],
     // 自动将普通 HTML 的自闭合标签替换为闭合标签
-    'vue/html-self-closing': ['warn', { html: { normal: 'never' } }],
+    'vue/html-self-closing': ['warn', {
+      html: { void: 'never', normal: 'never', component: 'any' },
+    }],
     // 自动为多行标签的所有属性都添加换行，且超过5个属性时自动换行
     'vue/max-attributes-per-line': ['warn', { singleline: 5, multiline: { max: 1 } }],
     // 自动修复插值的花括号内侧保留一个空格
