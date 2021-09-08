@@ -1,6 +1,6 @@
 {
   "name": "@cyansalt/eslint-config",
-  "version": "1.16.4",
+  "version": "1.16.5",
   "description": "My ESLint configuration",
   "bin": "scripts/cli.js",
   "main": "index.js",
