@@ -1,3 +1,10 @@
+### [1.17.1](https://github.com/CyanSalt/eslint-config/compare/v1.17.0...v1.17.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* release-it config ([9c5208e](https://github.com/CyanSalt/eslint-config/commit/9c5208e7cf273b9ebc7e7164df088869a2a82e62))
+
 ## [1.17.0](https://github.com/CyanSalt/eslint-config/compare/v1.16.5...v1.17.0) (2021-09-23)
 
 
