@@ -6,13 +6,13 @@
     }
   },
   "@typescript-eslint/eslint-plugin": {
-    "version": "4.31.0",
+    "version": "4.31.2",
     "requires": {
       "typescript": "*"
     }
   },
   "@typescript-eslint/parser": {
-    "version": "4.31.0",
+    "version": "4.31.2",
     "requires": {
       "typescript": "*"
     }
@@ -39,10 +39,10 @@
     }
   },
   "eslint-plugin-unicorn": {
-    "version": "35.0.0"
+    "version": "36.0.0"
   },
   "eslint-plugin-vue": {
-    "version": "7.17.0",
+    "version": "7.18.0",
     "requires": {
       "vue": "*"
     }

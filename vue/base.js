@@ -59,6 +59,8 @@ module.exports = {
     'vue/this-in-template': 'error',
 
     /** Uncategorized */
+    // 自动修复块标签的换行（单行块保持换行一致，多行块强制前后换行）
+    'vue/block-tag-newline': 'warn',
     // 自动修改组件内注册的组件名称为 PascalCase
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
     // 组件的 name 必须与文件名匹配

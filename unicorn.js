@@ -28,10 +28,14 @@ module.exports = {
     'unicorn/no-document-cookie': 'error',
     // 使用 Array.isArray 而非 instanceof（避免跨窗口时的错误返回）
     'unicorn/no-instanceof-array': 'error',
+    // 禁止无效的 removeEventListener
+    'unicorn/no-invalid-remove-event-listener': 'error',
     // 禁止多个空位的数组解构
     'unicorn/no-unreadable-array-destructuring': 'error',
     // 禁止指数级开销的正则表达式
     'unicorn/no-unsafe-regex': 'error',
+    // 自动去除对象解构中无用的数据防御
+    'unicorn/no-useless-fallback-in-spread': 'warn',
     // 自动去除无用的数组长度检查
     'unicorn/no-useless-length-check': 'warn',
     // 自动去除多余的展开操作符
