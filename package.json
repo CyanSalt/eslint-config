@@ -4,8 +4,12 @@
   "description": "My ESLint configuration",
   "bin": "scripts/cli.js",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "postinstall": "node -e \"try{require('./scripts/postinstall')}catch(e){}\"",
+    "release": "release-it",
     "lint": "eslint --ignore-path .gitignore --fix ."
   },
   "repository": {
@@ -22,7 +26,9 @@
     "eslint": "^7.30.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "@release-it/conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "release-it": "^14.11.6"
   },
   "dependencies": {
     "@eslint/eslintrc": "^0.4.3",
