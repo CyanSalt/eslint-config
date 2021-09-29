@@ -41,12 +41,24 @@ module.exports = {
     'react/jsx-indent': ['warn', 2, { checkAttributes: true, indentLogicalExpressions: true }],
     // 自动去除无用的 Fragment
     'react/jsx-no-useless-fragment': 'warn',
+    // 强制组件名使用 PascalCase
+    'react/jsx-pascal-case': 'error',
     // 自动修复标签内的空格
     'react/jsx-tag-spacing': ['warn', {
       closingSlash: 'never',
       beforeSelfClosing: 'always',
       afterOpening: 'never',
       beforeClosing: 'never',
+    }],
+    // 自动修复多行 JSX 的换行
+    'react/jsx-wrap-multilines': ['warn', {
+      declaration: 'parens-new-line',
+      assignment: 'parens-new-line',
+      return: 'parens-new-line',
+      arrow: 'parens-new-line',
+      condition: 'parens-new-line',
+      logical: 'parens-new-line',
+      prop: 'parens-new-line',
     }],
   },
   settings: {

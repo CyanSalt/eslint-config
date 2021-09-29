@@ -27,13 +27,13 @@
     "version": "2.24.2"
   },
   "eslint-plugin-react": {
-    "version": "7.20.6",
+    "version": "7.26.0",
     "requires": {
       "react": "*"
     }
   },
   "eslint-plugin-react-hooks": {
-    "version": "4.1.0",
+    "version": "4.2.0",
     "requires": {
       "react": "*"
     }

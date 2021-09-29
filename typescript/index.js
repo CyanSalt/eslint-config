@@ -61,6 +61,16 @@ module.exports = {
           match: true,
         },
       },
+      // for React components
+      {
+        selector: 'property',
+        format: ['camelCase'],
+        leadingUnderscore: 'allowDouble',
+        filter: {
+          regex: '^__html$',
+          match: true,
+        },
+      },
       {
         selector: 'property',
         format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
