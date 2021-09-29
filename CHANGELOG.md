@@ -1,3 +1,15 @@
+## [1.18.0](https://github.com/CyanSalt/eslint-config/compare/v1.17.1...v1.18.0) (2021-09-29)
+
+
+### Features
+
+* update React rules ([3273dad](https://github.com/CyanSalt/eslint-config/commit/3273dad6dda080d2259231582eb91b25d0365100))
+
+
+### Bug Fixes
+
+* release-it config ([58999ca](https://github.com/CyanSalt/eslint-config/commit/58999cac95a778f51aa03e99eea3c95699ca81c5))
+
 ### [1.17.1](https://github.com/CyanSalt/eslint-config/compare/v1.17.0...v1.17.1) (2021-09-23)
 
 
