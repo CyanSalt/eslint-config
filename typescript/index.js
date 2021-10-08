@@ -112,6 +112,8 @@ module.exports = {
     '@typescript-eslint/no-misused-promises': ['error', {
       checksVoidReturn: false,
     }],
+    // 禁止在非空断言后使用空值合并运算符
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
     // [覆盖 recommended] 允许使用非空断言
     '@typescript-eslint/no-non-null-assertion': 'off',
     // 禁止使用构造函数参数属性

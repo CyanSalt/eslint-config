@@ -91,6 +91,8 @@ module.exports = {
     }],
     // 自动去除不必要的 Mustache 插值
     'vue/no-useless-mustaches': 'warn',
+    // 禁止无用的 template 属性
+    'vue/no-useless-template-attributes': 'error',
     // 自动去除不必要的 v-bind 绑定
     'vue/no-useless-v-bind': 'warn',
     // 自动在单文件组件的根元素之间加入换行
