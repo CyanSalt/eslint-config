@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/CyanSalt/eslint-config/compare/v1.19.0...v2.0.0) (2021-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** drop supporting for ESLint <8
+
+### Features
+
+* **eslint-config:** upgrade to ESLint 8 ([cdf640e](https://github.com/CyanSalt/eslint-config/commit/cdf640e6b2093c4aa4581aa6556f4ab8dd1befb8))
+
 ## [1.19.0](https://github.com/CyanSalt/eslint-config/compare/v1.18.0...v1.19.0) (2021-10-08)
 
 
