@@ -23,7 +23,7 @@
   "author": "CyanSalt",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^7.30.0"
+    "eslint": "^8.0.0"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^3.3.0",
