@@ -17,8 +17,6 @@ module.exports = {
     'no-dupe-else-if': 'error',
     // 禁止为导入的变量赋值
     'no-import-assign': 'error',
-    // 禁止对可选链返回值进行运算
-    'no-unsafe-optional-chaining': 'error',
 
     /** Best Practices */
     // map等数组方法的回调函数必须有返回值
@@ -59,8 +57,6 @@ module.exports = {
     'no-new-func': 'error',
     // 禁止将字符串/数字等原始值构造为对象
     'no-new-wrappers': 'error',
-    // 禁止非八进制数字转义
-    'no-nonoctal-decimal-escape': 'error',
     // 禁止八进制转义（已弃用）
     'no-octal-escape': 'error',
     // 禁止使用 __proto__ 魔术属性（已弃用）

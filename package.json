@@ -27,11 +27,11 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^3.3.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "release-it": "^14.11.6"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^0.4.3",
+    "@eslint/eslintrc": "^1.0.2",
     "find-up": "^5.0.0",
     "semver": "^7.3.5",
     "yargs-parser": "^20.2.9"
