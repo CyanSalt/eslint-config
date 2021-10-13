@@ -1,3 +1,10 @@
+### [2.0.1](https://github.com/CyanSalt/eslint-config/compare/v2.0.0...v2.0.1) (2021-10-13)
+
+
+### Bug Fixes
+
+* update peer dependencies ([7a84c43](https://github.com/CyanSalt/eslint-config/commit/7a84c43ebf48c84b1b132dd0f0fddb18a44ce15e))
+
 ## [2.0.0](https://github.com/CyanSalt/eslint-config/compare/v1.19.0...v2.0.0) (2021-10-13)
 
 
