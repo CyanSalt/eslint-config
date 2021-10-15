@@ -1,3 +1,10 @@
+### [2.0.2](https://github.com/CyanSalt/eslint-config/compare/v2.0.1...v2.0.2) (2021-10-15)
+
+
+### Bug Fixes
+
+* bump eslint-plugin-galaxy ([5db8f5d](https://github.com/CyanSalt/eslint-config/commit/5db8f5d70708be41c14750fd40ff6d0c84cc9dcb))
+
 ### [2.0.1](https://github.com/CyanSalt/eslint-config/compare/v2.0.0...v2.0.1) (2021-10-13)
 
 
