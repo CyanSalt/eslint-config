@@ -1,3 +1,10 @@
+### [2.0.4](https://github.com/CyanSalt/eslint-config/compare/v2.0.3...v2.0.4) (2021-10-22)
+
+
+### Bug Fixes
+
+* bump plugins ([2a9ec4e](https://github.com/CyanSalt/eslint-config/commit/2a9ec4e8912cb7715116ee49a6798dcca592f3e3))
+
 ### [2.0.3](https://github.com/CyanSalt/eslint-config/compare/v2.0.2...v2.0.3) (2021-10-15)
 
 
