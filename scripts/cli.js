@@ -19,7 +19,7 @@ function getOutdatedPackages(checkAll) {
           wanted: metadata.version,
         })
       }
-    } else if (semver.lt(installedVersion, metadata.version)) {
+    } else if (semver.lt(installedVersion, semver.minVersion(metadata.version))) {
       result.push({
         name,
         current: installedVersion,
