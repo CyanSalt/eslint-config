@@ -65,8 +65,6 @@ module.exports = {
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
     // 组件的 name 必须与文件名匹配
     'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
-    // 自动修复已废弃的 v-is 指令
-    'vue/no-deprecated-v-is': 'warn',
     // 使用 v-bind="$attrs" 时必须指定 inheritAttrs: false
     'vue/no-duplicate-attr-inheritance': 'error',
     // 禁止单文件组件内的空标签
@@ -91,8 +89,6 @@ module.exports = {
     }],
     // 自动去除不必要的 Mustache 插值
     'vue/no-useless-mustaches': 'warn',
-    // 禁止无用的 template 属性
-    'vue/no-useless-template-attributes': 'error',
     // 自动去除不必要的 v-bind 绑定
     'vue/no-useless-v-bind': 'warn',
     // 自动在单文件组件的根元素之间加入换行
@@ -101,8 +97,6 @@ module.exports = {
     'vue/require-emit-validator': 'error',
     // 自动将 v-for 中的 of 替换为 in 以保持一致
     'vue/v-for-delimiter-style': 'warn',
-    // 自动修复错误的 nextTick 用例
-    'vue/valid-next-tick': 'warn',
 
     /** Extension Rules */
     // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
@@ -137,6 +131,8 @@ module.exports = {
     'vue/no-empty-pattern': 'error',
     // 禁止使用非标准空白符（ESLint recommended）
     'vue/no-irregular-whitespace': 'error',
+    // 禁止使用 JS 不支持的数字精度（ESLint recommended）
+    'vue/no-loss-of-precision': 'error',
     // 禁止使用稀疏数组（ESLint recommended）
     'vue/no-sparse-arrays': 'error',
     // 禁止单行内的字符串字面量拼接

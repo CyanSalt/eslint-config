@@ -23,6 +23,8 @@ module.exports = {
     }],
     // 自动替换 type 对象类型为 interface
     '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
+    // 自动将类型导出放置在 export type 语句中
+    '@typescript-eslint/consistent-type-exports': 'warn',
     // 自动将类型引用放置在 import type 语句中
     '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
     // 自动省略 public 成员修饰符

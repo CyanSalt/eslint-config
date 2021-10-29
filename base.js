@@ -114,6 +114,8 @@ module.exports = {
     'no-shadow': ['error', { hoist: 'functions' }],
     // 自动删除变量的 undefined 初始值
     'no-undef-init': 'warn',
+    // 禁止定义未使用的私有类成员
+    'no-unused-private-class-members': 'error',
     // [覆盖 recommended] 禁止定义未使用的变量，除了剩余参数和解构
     'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
     // 禁止定义前使用变量（ReferenceError）
