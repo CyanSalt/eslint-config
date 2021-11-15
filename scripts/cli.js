@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const childProcess = require('child_process')
+const path = require('path')
 const readline = require('readline')
 const semver = require('semver')
 const yargsParser = require('yargs-parser')
@@ -43,8 +44,15 @@ async function ask(question) {
   })
 }
 
+function getNPMClient(args) {
+  if (args.npmClient) return args.npmClient
+  const execPath = process.env.npm_execpath
+  return Boolean(execPath) && path.basename(execPath, path.extname(execPath)) === 'yarn'
+    ? 'yarn' : 'npm'
+}
+
 async function update(args) {
-  const packages = getOutdatedPackages(args.a)
+  const packages = getOutdatedPackages(args.all)
   if (args.json) {
     console.log(JSON.stringify(packages, null, 2))
     return
@@ -62,15 +70,23 @@ async function update(args) {
     const result = await ask('Continue? (Y/n) ')
     if (!result) return
   }
-  childProcess.spawn('npm', ['install', '--save-dev', ...packages.map(entry => `${entry.name}@${entry.wanted}`)], { stdio: 'inherit' })
+  const [command, ...installArgs] = getNPMClient(args) === 'yarn'
+    ? ['yarn', 'add', '--dev']
+    : ['npm', 'install', '--save-dev']
+  childProcess.spawn(command, [...installArgs, ...packages.map(entry => `${entry.name}@${entry.wanted}`)], { stdio: 'inherit' })
 }
 
 module.exports = {
   getOutdatedPackages,
+  getNPMClient,
 }
 
 if (require.main === module) {
-  const args = yargsParser(process.argv.slice(2))
+  const args = yargsParser(process.argv.slice(2), {
+    alias: {
+      all: ['a'],
+    },
+  })
   if (args.update) {
     update(args)
   }
