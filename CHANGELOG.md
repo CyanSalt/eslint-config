@@ -1,3 +1,10 @@
+## [2.2.0](https://github.com/CyanSalt/eslint-config/compare/v2.1.0...v2.2.0) (2021-11-15)
+
+
+### Features
+
+* support yarn ([80c57be](https://github.com/CyanSalt/eslint-config/commit/80c57bea56f2119647d0d23b193bd41de277310c))
+
 ## [2.1.0](https://github.com/CyanSalt/eslint-config/compare/v2.0.4...v2.1.0) (2021-10-29)
 
 
