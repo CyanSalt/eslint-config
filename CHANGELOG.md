@@ -1,3 +1,15 @@
+## [2.3.0](https://github.com/CyanSalt/eslint-config/compare/v2.2.0...v2.3.0) (2021-11-16)
+
+
+### Features
+
+* update plugins ([83192e5](https://github.com/CyanSalt/eslint-config/commit/83192e5d63a57b00cdc1d47ba430290941956b90))
+
+
+### Bug Fixes
+
+* add alias y to yes ([3180911](https://github.com/CyanSalt/eslint-config/commit/31809110de954edb105c1285c5e15a9a871a3dd7))
+
 ## [2.2.0](https://github.com/CyanSalt/eslint-config/compare/v2.1.0...v2.2.0) (2021-11-15)
 
 
