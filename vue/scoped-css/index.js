@@ -1,5 +1,5 @@
 const path = require('path')
-const { hasInstalledPackage } = require('../utils')
+const { hasInstalledPackage } = require('../../utils')
 
 const presets = []
 
