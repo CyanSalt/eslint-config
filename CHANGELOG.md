@@ -1,3 +1,10 @@
+### [2.3.1](https://github.com/CyanSalt/eslint-config/compare/v2.3.0...v2.3.1) (2021-11-16)
+
+
+### Bug Fixes
+
+* update eslint-plugin-vue-scoped-css ([28fe2ce](https://github.com/CyanSalt/eslint-config/commit/28fe2cee0422e176af8953f00f9d54fab2ec7497))
+
 ## [2.3.0](https://github.com/CyanSalt/eslint-config/compare/v2.2.0...v2.3.0) (2021-11-16)
 
 
