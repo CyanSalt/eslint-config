@@ -9,14 +9,6 @@ if (hasInstalledPackage('vue', '>=3.x')) {
   presets.push(path.resolve(__dirname, './v2.js'))
 }
 
-if (hasInstalledPackage('eslint-plugin-vue-scoped-css')) {
-  presets.push(path.resolve(__dirname, './scoped-css/index.js'))
-}
-
-if (hasInstalledPackage('@typescript-eslint/eslint-plugin')) {
-  presets.push(path.resolve(__dirname, './typescript.js'))
-}
-
 module.exports = {
   extends: presets,
 }
