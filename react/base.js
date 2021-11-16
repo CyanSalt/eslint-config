@@ -39,6 +39,8 @@ module.exports = {
     'react/jsx-first-prop-new-line': 'warn',
     // 自动修复缩进
     'react/jsx-indent': ['warn', 2, { checkAttributes: true, indentLogicalExpressions: true }],
+    // 自动为多行 JSX 的所有属性都添加换行，且超过5个属性时自动换行
+    'react/jsx-max-props-per-line': ['warn', { maximum: { single: 5, multi: 1 } }],
     // 自动去除无用的 Fragment
     'react/jsx-no-useless-fragment': 'warn',
     // 强制组件名使用 PascalCase
