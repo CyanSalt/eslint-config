@@ -66,7 +66,7 @@ async function update(args) {
     ...packages.map(entry => `- ${entry.name}: ${entry.current || 'N/A'} => ${entry.wanted}`),
     '',
   ].join('\n'))
-  if (!args.y) {
+  if (!args.yes) {
     const result = await ask('Continue? (Y/n) ')
     if (!result) return
   }
@@ -85,6 +85,7 @@ if (require.main === module) {
   const args = yargsParser(process.argv.slice(2), {
     alias: {
       all: ['a'],
+      yes: ['y'],
     },
   })
   if (args.update) {

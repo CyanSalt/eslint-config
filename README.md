@@ -231,5 +231,5 @@ You can update current ESLint packages with `npx`:
 npx @cyansalt/eslint-config --update
 ```
 
-- You can pass `-y` to skip the question and update packages immediately.
-- Or install/update all recommended packages with `-a` argument.
+- You can pass `--yes` or `-y` to skip the question and update packages immediately.
+- Or install/update all recommended packages with `--all` or `-a` argument.
