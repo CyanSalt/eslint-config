@@ -1,3 +1,10 @@
+### [2.3.2](https://github.com/CyanSalt/eslint-config/compare/v2.3.1...v2.3.2) (2021-11-16)
+
+
+### Bug Fixes
+
+* error path ([d0ea93c](https://github.com/CyanSalt/eslint-config/commit/d0ea93c9065464e9b54eac2fa25dc78ed47ea2df))
+
 ### [2.3.1](https://github.com/CyanSalt/eslint-config/compare/v2.3.0...v2.3.1) (2021-11-16)
 
 
