@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^3.3.0",
-    "eslint": "^8.2.0",
+    "eslint": "^8.3.0",
     "release-it": "^14.11.6"
   },
   "dependencies": {

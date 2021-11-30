@@ -65,10 +65,14 @@ module.exports = {
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
     // 组件的 name 必须与文件名匹配
     'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
+    // 禁止为将被替换内容的元素指定内容
+    'vue/no-child-content': ['error', { additionalDirectives: ['t'] }],
     // 使用 v-bind="$attrs" 时必须指定 inheritAttrs: false
     'vue/no-duplicate-attr-inheritance': 'error',
     // 禁止单文件组件内的空标签
     'vue/no-empty-component-block': 'error',
+    // 禁止异步调用 expose()
+    'vue/no-expose-after-await': 'error',
     // 禁止无效的 model 选项属性
     'vue/no-invalid-model-keys': 'error',
     // 禁止将组件名称指定为保留的组件名（例如 div）
