@@ -2,10 +2,6 @@ const config = require('../base.js')
 
 module.exports = {
   rules: {
-    /** Essential */
-    // 事件名必须使用 kebab-case，但允许以 : 分隔
-    'vue/custom-event-name-casing': ['error', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
-
     /** Strongly Recommended */
     // HTML 中的属性名必须使用 kebab-case
     'vue/attribute-hyphenation': 'error',
@@ -63,6 +59,10 @@ module.exports = {
     'vue/block-tag-newline': 'warn',
     // 自动修改组件内注册的组件名称为 PascalCase
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
+    // 事件名必须使用 kebab-case，但允许以 : 分隔
+    'vue/custom-event-name-casing': ['error', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
+    // 自动为 HTML 注释内侧插入空格
+    'vue/html-comment-content-spacing': 'warn',
     // 组件的 name 必须与文件名匹配
     'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
     // 禁止为将被替换内容的元素指定内容
