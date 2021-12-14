@@ -158,6 +158,14 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['**/*.vue'],
+      rules: {
+        // 禁止单行超过 120 个字符，但忽略样式块
+        'max-len': 'off',
+        'vue/max-len': config.rules['max-len'],
+      },
+    },
+    {
       files: ['**/index.vue'],
       rules: {
         // 当使用 index.vue 命名文件时，不检查组件的 name

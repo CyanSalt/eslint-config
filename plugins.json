@@ -1,27 +1,27 @@
 {
   "@babel/eslint-plugin": {
-    "version": "7.14.5",
+    "version": "7.16.5",
     "requires": {
       "@babel/eslint-parser": "*"
     }
   },
   "@typescript-eslint/eslint-plugin": {
-    "version": "5.5.0",
+    "version": "5.7.0",
     "requires": {
       "typescript": "*"
     }
   },
   "@typescript-eslint/parser": {
-    "version": "5.5.0",
+    "version": "5.7.0",
     "requires": {
       "typescript": "*"
     }
   },
   "eslint": {
-    "version": "8.3.0"
+    "version": "8.4.1"
   },
   "eslint-plugin-galaxy": {
-    "version": "1.8.0"
+    "version": "1.8.1"
   },
   "eslint-plugin-import": {
     "version": "2.25.3"
@@ -42,7 +42,7 @@
     "version": "39.0.0"
   },
   "eslint-plugin-vue": {
-    "version": "8.1.1",
+    "version": "8.2.0",
     "requires": {
       "vue": "*"
     }
