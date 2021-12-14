@@ -1,3 +1,11 @@
+## [2.5.0](https://github.com/CyanSalt/eslint-config/compare/v2.4.1...v2.5.0) (2021-12-14)
+
+
+### Features
+
+* add vue/html-comment-content-spacing ([76d220f](https://github.com/CyanSalt/eslint-config/commit/76d220f0bcc7c4e56a9589ae1c0d94323e6b4af5))
+* update galaxy ([519f983](https://github.com/CyanSalt/eslint-config/commit/519f983f1537556e7e25438308db447ffd2921a8))
+
 ### [2.4.1](https://github.com/CyanSalt/eslint-config/compare/v2.4.0...v2.4.1) (2021-12-14)
 
 
