@@ -91,6 +91,8 @@ module.exports = {
       groups: ['data', 'computed', 'methods', 'setup'],
       ignorePublicMembers: true,
     }],
+    // 禁止未使用的 ref
+    'vue/no-unused-refs': 'error',
     // 自动去除不必要的 Mustache 插值
     'vue/no-useless-mustaches': 'warn',
     // 自动去除不必要的 v-bind 绑定
