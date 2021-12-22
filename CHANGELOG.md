@@ -1,3 +1,10 @@
+### [2.6.1](https://github.com/CyanSalt/eslint-config/compare/v2.6.0...v2.6.1) (2021-12-22)
+
+
+### Bug Fixes
+
+* allow single word component name ([05f2d83](https://github.com/CyanSalt/eslint-config/commit/05f2d83757cada51597e1aa464beb003ca2337d3))
+
 ## [2.6.0](https://github.com/CyanSalt/eslint-config/compare/v2.5.0...v2.6.0) (2021-12-22)
 
 
