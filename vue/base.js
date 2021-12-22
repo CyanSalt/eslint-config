@@ -2,6 +2,10 @@ const config = require('../base.js')
 
 module.exports = {
   rules: {
+    /** Essential */
+    // 允许单个单词的组件名
+    'vue/multi-word-component-names': 'off',
+
     /** Strongly Recommended */
     // HTML 中的属性名必须使用 kebab-case
     'vue/attribute-hyphenation': 'error',
