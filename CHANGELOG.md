@@ -1,3 +1,10 @@
+## [2.6.0](https://github.com/CyanSalt/eslint-config/compare/v2.5.0...v2.6.0) (2021-12-22)
+
+
+### Features
+
+* disable unused vue refs ([80511b4](https://github.com/CyanSalt/eslint-config/commit/80511b40dc390ff4a1615bc79f8823ca886d90c9))
+
 ## [2.5.0](https://github.com/CyanSalt/eslint-config/compare/v2.4.1...v2.5.0) (2021-12-14)
 
 
