@@ -10,6 +10,10 @@ npm install --save-dev @cyansalt/eslint-config
 
 ## Usage
 
+### Without Configuration
+
+See [@cyansalt/eslint-config-preset](https://www.npmjs.com/package/@cyansalt/eslint-config-preset).
+
 ### Basic Ruleset
 
 ```javascript
