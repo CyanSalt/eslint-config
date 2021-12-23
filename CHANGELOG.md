@@ -1,3 +1,10 @@
+### [3.0.4](https://github.com/CyanSalt/eslint-config/compare/v3.0.3...v3.0.4) (2021-12-23)
+
+
+### Bug Fixes
+
+* allow unused vue selector ([ea605ee](https://github.com/CyanSalt/eslint-config/commit/ea605eed6470e951b4faf7b700679652374acbe8))
+
 ### [3.0.3](https://github.com/CyanSalt/eslint-config/compare/v3.0.2...v3.0.3) (2021-12-23)
 
 
