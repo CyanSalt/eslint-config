@@ -1,3 +1,10 @@
+### [3.0.5](https://github.com/CyanSalt/eslint-config/compare/v3.0.4...v3.0.5) (2021-12-23)
+
+
+### Bug Fixes
+
+* error file ([18dd7b0](https://github.com/CyanSalt/eslint-config/commit/18dd7b01b7d0980af5ec8762b650591246844268))
+
 ### [3.0.4](https://github.com/CyanSalt/eslint-config/compare/v3.0.3...v3.0.4) (2021-12-23)
 
 
