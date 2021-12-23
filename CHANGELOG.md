@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/CyanSalt/eslint-config/compare/v2.6.1...v3.0.0) (2021-12-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove auto ruleset
+
+### Features
+
+* normalize config presets ([481321a](https://github.com/CyanSalt/eslint-config/commit/481321a517c10188b0c0046ff33a38525a381551))
+
 ### [2.6.1](https://github.com/CyanSalt/eslint-config/compare/v2.6.0...v2.6.1) (2021-12-22)
 
 
