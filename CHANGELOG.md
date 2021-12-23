@@ -1,3 +1,10 @@
+### [3.0.1](https://github.com/CyanSalt/eslint-config/compare/v3.0.0...v3.0.1) (2021-12-23)
+
+
+### Bug Fixes
+
+* remove unused file ([747e0e6](https://github.com/CyanSalt/eslint-config/commit/747e0e6f6f8f136ee4e91d76f71f5a98d98294b3))
+
 ## [3.0.0](https://github.com/CyanSalt/eslint-config/compare/v2.6.1...v3.0.0) (2021-12-23)
 
 
