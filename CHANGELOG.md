@@ -1,3 +1,10 @@
+### [3.0.6](https://github.com/CyanSalt/eslint-config/compare/v3.0.5...v3.0.6) (2021-12-23)
+
+
+### Bug Fixes
+
+* allow plain style block in vue 2 ([6343172](https://github.com/CyanSalt/eslint-config/commit/634317254027bd8129359cc59ebb3aca8fce7693))
+
 ### [3.0.5](https://github.com/CyanSalt/eslint-config/compare/v3.0.4...v3.0.5) (2021-12-23)
 
 
