@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
   extends: [
-    __dirname,
+    require.resolve('./index.js'),
   ],
 }

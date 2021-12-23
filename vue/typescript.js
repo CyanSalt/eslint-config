@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -9,7 +7,7 @@ module.exports = {
     {
       files: ['**/*.vue'],
       extends: [
-        path.resolve(__dirname, '../typescript/extension.js'),
+        require.resolve('../typescript/extension.js'),
       ],
     },
   ],

@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   parserOptions: {
     project: './tsconfig.json',
@@ -155,7 +153,7 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: [
-        path.resolve(__dirname, './extension.js'),
+        require.resolve('./extension.js'),
       ],
     },
   ],

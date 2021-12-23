@@ -1,22 +1,17 @@
-const path = require('path')
-const { hasInstalledPackage } = require('../utils')
-
-const presets = []
-
-if (hasInstalledPackage('vue', '>=3.x')) {
-  presets.push(path.resolve(__dirname, './v3.js'))
-} else {
-  presets.push(path.resolve(__dirname, './v2.js'))
-}
-
-if (hasInstalledPackage('eslint-plugin-vue-scoped-css')) {
-  presets.push(path.resolve(__dirname, './scoped-css/index.js'))
-}
-
-if (hasInstalledPackage('@typescript-eslint/eslint-plugin')) {
-  presets.push(path.resolve(__dirname, './typescript.js'))
-}
-
 module.exports = {
-  extends: presets,
+  extends: [
+    'plugin:vue/vue3-essential',
+    require.resolve('./base.js'),
+  ],
+  rules: {
+    /** Strongly Recommended */
+    // 必须将事件声明在 emits 属性中
+    'vue/require-explicit-emits': 'error',
+
+    /** Uncategorized */
+    // 禁止未使用的属性，但不检查 props
+    'vue/no-unused-properties': ['error', {
+      groups: ['data', 'computed', 'methods', 'setup'],
+    }],
+  },
 }

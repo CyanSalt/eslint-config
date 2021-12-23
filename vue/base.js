@@ -1,4 +1,4 @@
-const config = require('../base.js')
+const config = require('../index.js')
 
 module.exports = {
   rules: {
