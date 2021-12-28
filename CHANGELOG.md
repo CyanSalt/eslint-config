@@ -1,3 +1,10 @@
+## [3.1.0](https://github.com/CyanSalt/eslint-config/compare/v3.0.6...v3.1.0) (2021-12-28)
+
+
+### Features
+
+* add partial typescript config ([85ba85b](https://github.com/CyanSalt/eslint-config/commit/85ba85ba80f9153323001a8b024c4bd3f853335e))
+
 ### [3.0.6](https://github.com/CyanSalt/eslint-config/compare/v3.0.5...v3.0.6) (2021-12-23)
 
 
