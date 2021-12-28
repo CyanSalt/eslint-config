@@ -1,11 +1,9 @@
 module.exports = {
-  extends: [
-    require.resolve('./base.js'),
-  ],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: [
+        require.resolve('./base.js'),
         require.resolve('./extension.js'),
       ],
     },

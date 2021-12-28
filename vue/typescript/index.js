@@ -7,7 +7,7 @@ module.exports = {
     {
       files: ['**/*.vue'],
       extends: [
-        require.resolve('../typescript/extension.js'),
+        require.resolve('../../typescript/extension.js'),
       ],
     },
   ],
