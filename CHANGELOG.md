@@ -1,3 +1,10 @@
+## [3.2.0](https://github.com/CyanSalt/eslint-config/compare/v3.1.1...v3.2.0) (2021-12-31)
+
+
+### Features
+
+* auto add line break ([c12940d](https://github.com/CyanSalt/eslint-config/commit/c12940de22a4372a11994ad803f0f3a5c35a0967))
+
 ### [3.1.1](https://github.com/CyanSalt/eslint-config/compare/v3.1.0...v3.1.1) (2021-12-28)
 
 
