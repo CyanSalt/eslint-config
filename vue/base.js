@@ -7,40 +7,44 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
 
     /** Strongly Recommended */
-    // HTML 中的属性名必须使用 kebab-case
-    'vue/attribute-hyphenation': 'error',
+    // 自动将 HTML 中的属性名修改为 kebab-case
+    'vue/attribute-hyphenation': 'warn',
+    // 自动为多行属性的首个属性换行
+    'vue/first-attribute-linebreak': 'warn',
     // 自动将多行标签的右尖括号换行
     'vue/html-closing-bracket-newline': 'warn',
     // 自动为自闭合标签的结尾加空格
-    'vue/html-closing-bracket-spacing': ['error', { selfClosingTag: 'always' }],
-    // 必须添加闭合标签，HTML 空标签（<br>、<img> 等）除外
-    'vue/html-end-tags': 'error',
+    'vue/html-closing-bracket-spacing': 'warn',
+    // 自动添加闭合标签，HTML 空标签（<br>、<img> 等）除外
+    'vue/html-end-tags': 'warn',
     // 自动修复 HTML 中的缩进
     'vue/html-indent': ['warn', 2, { alignAttributesVertically: false }],
     // 自动替换 HTML 属性值的引号为双引号
-    'vue/html-quotes': ['warn', 'double'],
+    'vue/html-quotes': 'warn',
     // 自动将普通 HTML 的自闭合标签替换为闭合标签
     'vue/html-self-closing': ['warn', {
       html: { void: 'never', normal: 'never', component: 'any' },
     }],
     // 自动为多行标签的所有属性都添加换行，且超过5个属性时自动换行
-    'vue/max-attributes-per-line': ['warn', { singleline: 5, multiline: { max: 1 } }],
+    'vue/max-attributes-per-line': ['warn', { singleline: 5, multiline: 1 }],
     // 自动修复插值的花括号内侧保留一个空格
-    'vue/mustache-interpolation-spacing': ['warn', 'always'],
+    'vue/mustache-interpolation-spacing': 'warn',
     // 自动删除连续的多个空格
     'vue/no-multi-spaces': 'warn',
     // 自动删除属性等号两侧的空格
     'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
     // 禁止模板指令（v-for、v-slot）产生的变量覆盖外部的变量
     'vue/no-template-shadow': 'error',
+    // 组件的属性必须使用 camelCase
+    'vue/prop-name-casing': 'error',
     // 组件的属性必须声明类型
     'vue/require-prop-types': 'error',
     // 自动优化单个属性的 v-bind 为简写
     'vue/v-bind-style': 'warn',
     // 自动优化单个属性的 v-on 为简写
     'vue/v-on-style': 'warn',
-    // 在组件上总是使用 v-slot，在 <template> 上总是使用 #name 缩写
-    'vue/v-slot-style': 'error',
+    // 在组件上自动替换为 v-slot，在 <template> 上自动替换为 #name 缩写
+    'vue/v-slot-style': 'warn',
 
     /** Recommended */
     // 自动优化 HTML 属性的顺序
