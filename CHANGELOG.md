@@ -1,3 +1,10 @@
+### [3.2.1](https://github.com/CyanSalt/eslint-config/compare/v3.2.0...v3.2.1) (2022-01-06)
+
+
+### Bug Fixes
+
+* autofix duplicate imports ([33604d5](https://github.com/CyanSalt/eslint-config/commit/33604d5dea5d10642d235f780ecb50b2795af601))
+
 ## [3.2.0](https://github.com/CyanSalt/eslint-config/compare/v3.1.1...v3.2.0) (2021-12-31)
 
 
