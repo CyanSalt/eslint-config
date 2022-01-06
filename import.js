@@ -7,8 +7,9 @@ module.exports = {
     'import/no-mutable-exports': 'error',
     // import 语句必须在最前
     'import/first': 'error',
-    // 使用 no-duplicate-imports。仅在需要批量修复时使用此规则
-    // 'import/no-duplicates': 'warn',
+    // 自动修复重复的 import
+    'no-duplicate-imports': 'off',
+    'import/no-duplicates': 'warn',
     // 必须按照 内置 > 外部模块 > aliases > '../' > './' 声明 import 顺序
     'import/order': ['warn', {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
