@@ -30,6 +30,8 @@ module.exports = {
     'unicorn/no-instanceof-array': 'error',
     // 禁止无效的 removeEventListener
     'unicorn/no-invalid-remove-event-listener': 'error',
+    // 禁止成员命名为 then 以避免对 await 操作的影响
+    'unicorn/no-thenable': 'error',
     // 禁止多个空位的数组解构
     'unicorn/no-unreadable-array-destructuring': 'error',
     // 禁止指数级开销的正则表达式
@@ -38,6 +40,8 @@ module.exports = {
     'unicorn/no-useless-fallback-in-spread': 'warn',
     // 自动去除无用的数组长度检查
     'unicorn/no-useless-length-check': 'warn',
+    // 自动去除无用的 Promise.resolve 和 Promise.reject
+    'unicorn/no-useless-promise-resolve-reject': 'warn',
     // 自动去除多余的展开操作符
     'unicorn/no-useless-spread': 'warn',
     // 禁止使用 .0 小数（避免转换字符串时出现非预期的结果）
@@ -52,8 +56,6 @@ module.exports = {
     'unicorn/prefer-array-some': 'error',
     // 使用 Date.now() 代替 getTime() 和隐式类型转换
     'unicorn/prefer-date-now': 'warn',
-    // 自动将 data-* 属性的 setAttribute 替换为 .dataset 操作
-    'unicorn/prefer-dom-node-dataset': 'warn',
     // 自动替换 .innerText 为 .textContent（标准和兼容性）
     'unicorn/prefer-dom-node-text-content': 'warn',
     // 必须使用键盘事件的 key 属性而不是 keyCode（已废弃）
