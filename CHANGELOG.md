@@ -1,3 +1,10 @@
+## [3.3.0](https://github.com/CyanSalt/eslint-config/compare/v3.2.1...v3.3.0) (2022-01-07)
+
+
+### Features
+
+* add import rules ([e55bf95](https://github.com/CyanSalt/eslint-config/commit/e55bf9551875515ef57dc9d61aaa71591295ae87))
+
 ### [3.2.1](https://github.com/CyanSalt/eslint-config/compare/v3.2.0...v3.2.1) (2022-01-06)
 
 
