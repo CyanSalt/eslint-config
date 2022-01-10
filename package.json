@@ -14,6 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/CyanSalt/eslint-config.git"
   },
+  "bugs": {
+    "url": "https://github.com/CyanSalt/eslint-config/issues"
+  },
+  "homepage": "https://github.com/CyanSalt/eslint-config#readme",
   "keywords": [
     "eslint",
     "eslintconfig"
