@@ -1,3 +1,10 @@
+### [3.3.1](https://github.com/CyanSalt/eslint-config/compare/v3.3.0...v3.3.1) (2022-01-12)
+
+
+### Bug Fixes
+
+* supports vue macros ([8671f58](https://github.com/CyanSalt/eslint-config/commit/8671f58eeae2c946614106b4ecb65b60a5b08db5))
+
 ## [3.3.0](https://github.com/CyanSalt/eslint-config/compare/v3.2.1...v3.3.0) (2022-01-07)
 
 
