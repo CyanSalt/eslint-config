@@ -168,9 +168,16 @@ module.exports = {
     {
       files: ['**/*.vue'],
       rules: {
-        // 禁止单行超过 120 个字符，但忽略样式块
+        // 禁止单行超过 120 个字符，但忽略样式块以及元素的 text content
         'max-len': 'off',
-        'vue/max-len': config.rules['max-len'],
+        'vue/max-len': ['error', {
+          code: 120,
+          ignoreComments: true,
+          ignoreStrings: true,
+          ignoreTemplateLiterals: true,
+          ignoreRegExpLiterals: true,
+          ignoreHTMLTextContents: true,
+        }],
       },
     },
     {
