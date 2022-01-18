@@ -1,3 +1,15 @@
+## [3.4.0](https://github.com/CyanSalt/eslint-config/compare/v3.3.1...v3.4.0) (2022-01-18)
+
+
+### Features
+
+* add compatibility rules ([1900843](https://github.com/CyanSalt/eslint-config/commit/1900843a4afce1f81473b6de2d12535860a86bc1))
+
+
+### Bug Fixes
+
+* max-len in vue ([0c0a0b8](https://github.com/CyanSalt/eslint-config/commit/0c0a0b8c6bc9a53382523f2ab47b186d4eed359d))
+
 ### [3.3.1](https://github.com/CyanSalt/eslint-config/compare/v3.3.0...v3.3.1) (2022-01-12)
 
 
