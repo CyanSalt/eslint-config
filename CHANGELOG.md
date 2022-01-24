@@ -1,3 +1,10 @@
+### [3.4.1](https://github.com/CyanSalt/eslint-config/compare/v3.4.0...v3.4.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* add composition api rules ([0004a3a](https://github.com/CyanSalt/eslint-config/commit/0004a3a938193dc2bd91c196a022d4ae98739c2d))
+
 ## [3.4.0](https://github.com/CyanSalt/eslint-config/compare/v3.3.1...v3.4.0) (2022-01-18)
 
 
