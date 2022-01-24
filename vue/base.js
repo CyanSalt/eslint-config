@@ -92,10 +92,9 @@ module.exports = {
     'vue/no-template-target-blank': 'error',
     // 禁止在 beforeRouteEnter 中使用 this
     'vue/no-this-in-before-route-enter': 'error',
-    // 未使用的属性必须使用 /** @public */ 标记，但不检查 props
+    // 禁止未使用的属性，但不检查 props
     'vue/no-unused-properties': ['error', {
       groups: ['data', 'computed', 'methods', 'setup'],
-      ignorePublicMembers: true,
     }],
     // 禁止未使用的 ref
     'vue/no-unused-refs': 'error',
