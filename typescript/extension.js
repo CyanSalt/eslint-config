@@ -8,8 +8,6 @@ module.exports = {
     // 自动添加尾随逗号
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': config.rules['comma-dangle'],
-    // 由 @typescript-eslint/naming-convention 声明
-    camelcase: 'off',
     // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）
     'comma-spacing': 'off',
     '@typescript-eslint/comma-spacing': config.rules['comma-spacing'],

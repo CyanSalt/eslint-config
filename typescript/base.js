@@ -43,7 +43,7 @@ module.exports = {
       },
     }],
     // 必须使用命名规则
-    // 常规变量使用 camelCase，常量使用 UPPER_CASE，布尔类型的变量使用系动词前缀，类型声明使用 PascalCase
+    // 常规变量使用 camelCase，常量使用 UPPER_CASE，布尔类型的变量使用系动词前缀，类型声明使用 PascalCase，解构允许 snake_case
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -72,6 +72,13 @@ module.exports = {
         },
       },
       {
+        selector: 'parameter',
+        modifiers: ['destructured'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
         selector: 'property',
         format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
         leadingUnderscore: 'allow',
@@ -88,6 +95,13 @@ module.exports = {
         modifiers: ['const'],
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
         leadingUnderscore: 'forbid',
+      },
+      {
+        selector: 'variable',
+        modifiers: ['destructured'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
       },
       {
         selector: 'variable',

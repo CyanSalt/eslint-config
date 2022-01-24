@@ -138,8 +138,6 @@ module.exports = {
     'array-element-newline': ['warn', 'consistent'],
     // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
     'brace-style': 'warn',
-    // 除了解构之外，变量名必须使用 camelCase
-    camelcase: ['error', { properties: 'never', ignoreDestructuring: true }],
     // 自动添加尾随逗号
     'comma-dangle': ['warn', 'always-multiline'],
     // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）

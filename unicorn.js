@@ -34,8 +34,6 @@ module.exports = {
     'unicorn/no-thenable': 'error',
     // 禁止多个空位的数组解构
     'unicorn/no-unreadable-array-destructuring': 'error',
-    // 禁止指数级开销的正则表达式
-    'unicorn/no-unsafe-regex': 'error',
     // 自动去除对象解构中无用的数据防御
     'unicorn/no-useless-fallback-in-spread': 'warn',
     // 自动去除无用的数组长度检查
