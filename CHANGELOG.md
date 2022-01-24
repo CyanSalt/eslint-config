@@ -1,3 +1,10 @@
+## [3.5.0](https://github.com/CyanSalt/eslint-config/compare/v3.4.1...v3.5.0) (2022-01-24)
+
+
+### Features
+
+* update config ([2fa7518](https://github.com/CyanSalt/eslint-config/commit/2fa7518e94b54c6f373eec175b2ffa3814abb913))
+
 ### [3.4.1](https://github.com/CyanSalt/eslint-config/compare/v3.4.0...v3.4.1) (2022-01-24)
 
 
