@@ -1,3 +1,10 @@
+### [3.5.1](https://github.com/CyanSalt/eslint-config/compare/v3.5.0...v3.5.1) (2022-01-25)
+
+
+### Bug Fixes
+
+* ignore urls ([a12f7e3](https://github.com/CyanSalt/eslint-config/commit/a12f7e39252f68ea6bfefc2a239072951fc55969))
+
 ## [3.5.0](https://github.com/CyanSalt/eslint-config/compare/v3.4.1...v3.5.0) (2022-01-24)
 
 
