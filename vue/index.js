@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     require.resolve('./base.js'),
-    require.resolve('./macro.js'),
+    require.resolve('./script-setup.js'),
   ],
   rules: {
     /** Strongly Recommended */
