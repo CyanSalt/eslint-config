@@ -169,6 +169,7 @@ module.exports = {
         'max-len': 'off',
         'vue/max-len': ['error', {
           code: 120,
+          ignorePattern: '\\sd="[^"]+"',
           ignoreComments: true,
           ignoreUrls: true,
           ignoreStrings: true,
