@@ -1,3 +1,10 @@
+### [3.5.2](https://github.com/CyanSalt/eslint-config/compare/v3.5.1...v3.5.2) (2022-01-26)
+
+
+### Bug Fixes
+
+* ignore svg path ([cd705c2](https://github.com/CyanSalt/eslint-config/commit/cd705c231cd27a68512e52e01b759a8b15510a14))
+
 ### [3.5.1](https://github.com/CyanSalt/eslint-config/compare/v3.5.0...v3.5.1) (2022-01-25)
 
 
