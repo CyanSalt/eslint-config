@@ -1,3 +1,10 @@
+### [3.5.3](https://github.com/CyanSalt/eslint-config/compare/v3.5.2...v3.5.3) (2022-01-26)
+
+
+### Bug Fixes
+
+* tag order with macro ([514f8a1](https://github.com/CyanSalt/eslint-config/commit/514f8a11a45deb7e79c70aa8e13970d1f6db0db3))
+
 ### [3.5.2](https://github.com/CyanSalt/eslint-config/compare/v3.5.1...v3.5.2) (2022-01-26)
 
 
