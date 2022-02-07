@@ -102,6 +102,8 @@ module.exports = {
     'vue/no-useless-mustaches': 'warn',
     // 自动去除不必要的 v-bind 绑定
     'vue/no-useless-v-bind': 'warn',
+    // 禁止在组件上声明 v-text 和 v-html
+    'vue/no-v-text-v-html-on-component': 'error',
     // 自动在单文件组件的根元素之间加入换行
     'vue/padding-line-between-blocks': 'warn',
     // 必须为 emits 声明校验函数
@@ -150,8 +152,12 @@ module.exports = {
     'vue/object-curly-newline': config.rules['object-curly-newline'],
     // 自动为对象字面量、解构和导入的花括号内侧添加空格
     'vue/object-curly-spacing': config.rules['object-curly-spacing'],
+    // 自动优化对象字面量的值为简写
+    'vue/object-shorthand': config.rules['object-shorthand'],
     // 自动优化行尾操作符至下一行行首
     'vue/operator-linebreak': config.rules['operator-linebreak'],
+    // 自动删除不必要的对象字面量键的引号
+    'vue/quote-props': config.rules['quote-props'],
     // 自动删除括号内侧的空格
     'vue/space-in-parens': config.rules['space-in-parens'],
     // 自动在多元操作符前后添加空格
