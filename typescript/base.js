@@ -132,6 +132,8 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     // 禁止使用构造函数参数属性
     '@typescript-eslint/no-parameter-properties': 'error',
+    // 禁止无效的类型运算
+    '@typescript-eslint/no-redundant-type-constituents': 'error',
     // 禁止将字面量作为异常抛出
     '@typescript-eslint/no-throw-literal': 'error',
     // 禁止不必要的布尔值比较
@@ -142,6 +144,8 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     // 自动去除不必要的类型限制
     '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+    // 自动去除多余的空 export
+    '@typescript-eslint/no-useless-empty-export': 'warn',
     // [覆盖 recommended] 允许 require 引入
     '@typescript-eslint/no-var-requires': 'off',
     // 使用 enum 必须指定初始值

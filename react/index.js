@@ -27,8 +27,12 @@ module.exports = {
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
     // 自动修复闭合标签的位置
     'react/jsx-closing-tag-location': 'warn',
-    // 自动去除不必要的花括号传值
-    'react/jsx-curly-brace-presence': ['warn', 'never'],
+    // 自动去除不必要的花括号传值，但强制为 JSX 属性添加花括号
+    'react/jsx-curly-brace-presence': ['warn', {
+      props: 'never',
+      children: 'never',
+      propElementValues: 'always',
+    }],
     // 自动保持花括号传值换行一致
     'react/jsx-curly-newline': 'warn',
     // 自动去除属性花括号内侧空格

@@ -15,6 +15,8 @@ module.exports = {
     'vue/no-deprecated-props-default-this': 'error',
     // 自动将 scope 转化为 v-slot
     'vue/no-deprecated-scope-attribute': 'warn',
+    // 自动将 slot 转化为 v-slot
+    'vue/no-deprecated-slot-attribute': 'warn',
     // 自动将 slot-scope 转化为 v-slot
     'vue/no-deprecated-slot-scope-attribute': 'warn',
     // 自动将 keyCode 事件修饰符转化为 key

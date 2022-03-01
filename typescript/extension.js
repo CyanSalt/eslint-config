@@ -59,6 +59,9 @@ module.exports = {
     // 自动在语句结尾添加分号
     semi: 'off',
     '@typescript-eslint/semi': config.rules['semi'],
+    // 自动在if等结构的声明块和代码块之间添加空格
+    'space-before-blocks': 'off',
+    '@typescript-eslint/space-before-blocks': config.rules['space-before-blocks'],
     // 自动删除函数名和括号之间的空格，匿名函数除外
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': config.rules['space-before-function-paren'],
