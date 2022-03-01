@@ -38,7 +38,7 @@ module.exports = {
     '@typescript-eslint/no-extra-semi': 'error',
     // 禁止覆盖声明外部作用域的变量（歧义）
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': config.rules['no-shadow'],
+    '@typescript-eslint/no-shadow': ['error', { hoist: 'functions' }],
     // [覆盖 recommended] 禁止定义未使用的变量，除了剩余参数和解构
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': config.rules['no-unused-vars'],
