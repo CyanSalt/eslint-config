@@ -1,3 +1,10 @@
+### [3.7.1](https://github.com/CyanSalt/eslint-config/compare/v3.7.0...v3.7.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* no-shadow error ([54310f4](https://github.com/CyanSalt/eslint-config/commit/54310f4b5715de59cc2e2f0db255b34b8d9834a7))
+
 ## [3.7.0](https://github.com/CyanSalt/eslint-config/compare/v3.6.0...v3.7.0) (2022-03-01)
 
 
