@@ -49,10 +49,8 @@ module.exports = {
       {
         selector: 'default',
         format: ['camelCase'],
-        leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid',
       },
-      // for Vue plugins
+      // for legacy Vue plugins
       {
         selector: 'parameter',
         format: ['PascalCase'],
@@ -61,28 +59,14 @@ module.exports = {
           match: true,
         },
       },
-      // for React components
-      {
-        selector: 'property',
-        format: ['camelCase'],
-        leadingUnderscore: 'allowDouble',
-        filter: {
-          regex: '^__html$',
-          match: true,
-        },
-      },
       {
         selector: 'parameter',
         modifiers: ['destructured'],
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
-        leadingUnderscore: 'allow',
-        trailingUnderscore: 'allow',
+        format: null,
       },
       {
-        selector: 'property',
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
-        leadingUnderscore: 'allow',
-        trailingUnderscore: 'allow',
+        selector: 'memberLike',
+        format: null,
       },
       {
         selector: 'variable',
@@ -94,24 +78,19 @@ module.exports = {
         selector: 'variable',
         modifiers: ['const'],
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-        leadingUnderscore: 'forbid',
       },
       {
         selector: 'variable',
         modifiers: ['destructured'],
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE', 'snake_case'],
-        leadingUnderscore: 'allow',
-        trailingUnderscore: 'allow',
+        format: null,
       },
       {
         selector: 'variable',
         format: ['camelCase', 'PascalCase'],
-        leadingUnderscore: 'forbid',
       },
       {
         selector: 'typeLike',
         format: ['PascalCase'],
-        leadingUnderscore: 'forbid',
       },
     ],
     // 禁止隐式的字符串类型转换
