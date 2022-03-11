@@ -1,3 +1,10 @@
+### [3.7.2](https://github.com/CyanSalt/eslint-config/compare/v3.7.1...v3.7.2) (2022-03-11)
+
+
+### Bug Fixes
+
+* loose naming convention ([2bc98bb](https://github.com/CyanSalt/eslint-config/commit/2bc98bb8760ae0863cb7a036e06c4adc8e06cc5c))
+
 ### [3.7.1](https://github.com/CyanSalt/eslint-config/compare/v3.7.0...v3.7.1) (2022-03-01)
 
 
