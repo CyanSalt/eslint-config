@@ -1,3 +1,10 @@
+### [3.7.3](https://github.com/CyanSalt/eslint-config/compare/v3.7.2...v3.7.3) (2022-03-11)
+
+
+### Bug Fixes
+
+* allow pure underscore ([3e60442](https://github.com/CyanSalt/eslint-config/commit/3e604421033367450cc974c61c1f80b8a2860c18))
+
 ### [3.7.2](https://github.com/CyanSalt/eslint-config/compare/v3.7.1...v3.7.2) (2022-03-11)
 
 
