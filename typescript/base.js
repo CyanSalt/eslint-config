@@ -50,6 +50,14 @@ module.exports = {
         selector: 'default',
         format: ['camelCase'],
       },
+      {
+        selector: 'default',
+        format: null,
+        filter: {
+          regex: '^_+$',
+          match: true,
+        },
+      },
       // for legacy Vue plugins
       {
         selector: 'parameter',
