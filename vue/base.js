@@ -86,6 +86,8 @@ module.exports = {
       disallowVueBuiltInComponents: true,
       disallowVue3BuiltInComponents: true,
     }],
+    // 禁止绑定 v- 开头的属性
+    'vue/no-restricted-v-bind': 'error',
     // 禁止传递不变的内联样式
     'vue/no-static-inline-styles': 'error',
     // 必须为 target="_blank" 的连接声明 rel="noopener noreferrer"
@@ -106,6 +108,8 @@ module.exports = {
     'vue/no-v-text-v-html-on-component': 'error',
     // 自动在单文件组件的根元素之间加入换行
     'vue/padding-line-between-blocks': 'warn',
+    // 自动将 prop 类型中的 Boolean 排列在第一个
+    'vue/prefer-prop-type-boolean-first': 'warn',
     // 必须为 emits 声明校验函数
     'vue/require-emit-validator': 'error',
     // 自动将 v-for 中的 of 替换为 in 以保持一致
