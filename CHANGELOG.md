@@ -1,3 +1,12 @@
+
+
+## [3.9.0](https://github.com/CyanSalt/eslint-config/compare/v3.8.0...v3.9.0) (2022-05-07)
+
+
+### Features
+
+* update plugins ([f600402](https://github.com/CyanSalt/eslint-config/commit/f600402bad23e3e202684b64301b8e2eef409323))
+
 ## [3.8.0](https://github.com/CyanSalt/eslint-config/compare/v3.7.3...v3.8.0) (2022-04-08)
 
 
@@ -766,4 +775,3 @@
 
 * initialize ([1c7e5a0](https://github.com/CyanSalt/eslint-config/commit/1c7e5a06f4cb5c01e945f16636a5e0eb22e5f416))
 * merge versiosn for eslint-plugin-vue ([3cde46e](https://github.com/CyanSalt/eslint-config/commit/3cde46ec4cb0b05a76af9702113bd2791f332794))
-
