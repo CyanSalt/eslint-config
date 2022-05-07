@@ -13,6 +13,8 @@ module.exports = {
   ],
   rules: {
     /** Possible Errors */
+    // 禁止无效的二元操作
+    'no-constant-binary-expression': 'error',
     // 禁止条件重复的 else if
     'no-dupe-else-if': 'error',
     // 禁止为导入的变量赋值

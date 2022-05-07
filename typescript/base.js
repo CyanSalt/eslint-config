@@ -107,6 +107,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     // 禁止使用 void 类型的返回值
     '@typescript-eslint/no-confusing-void-expression': 'warn',
+    // 禁止 enum 的值重复
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
     // 禁止将类用作普通对象
     '@typescript-eslint/no-extraneous-class': 'error',
     // 禁止错误使用 Promise（包含异步函数的返回值）

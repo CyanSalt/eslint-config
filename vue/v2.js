@@ -34,12 +34,6 @@ module.exports = {
     // 禁止对静态条件包裹 <transition> 组件
     'vue/require-toggle-inside-transition': 'error',
 
-    /** Recommended */
-    // 自动优化单文件组件的标签顺序
-    'vue/component-tags-order': ['warn', {
-      order: ['template', 'script', 'style'],
-    }],
-
     /** Uncategorized */
     // 未使用的属性必须使用 /** @public */ 标记，但不检查 props
     'vue/no-unused-properties': ['error', {

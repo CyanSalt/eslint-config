@@ -50,7 +50,9 @@ module.exports = {
     // 自动优化 HTML 属性的顺序
     'vue/attributes-order': 'warn',
     // 自动优化单文件组件的标签顺序
-    'vue/component-tags-order': 'warn',
+    'vue/component-tags-order': ['warn', {
+      order: [['script[setup]', 'template'], 'script', 'style'],
+    }],
     // 禁止无意义的 template 元素
     'vue/no-lone-template': 'error',
     // 禁止为 slots/scopedSlot 传递多个参数
