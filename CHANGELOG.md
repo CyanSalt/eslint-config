@@ -1,5 +1,12 @@
 
 
+### [3.9.2](https://github.com/CyanSalt/eslint-config/compare/v3.9.1...v3.9.2) (2022-05-09)
+
+
+### Bug Fixes
+
+* remove `prefer-function-type` ([936f82c](https://github.com/CyanSalt/eslint-config/commit/936f82ca74aefac328254a2cb444ee6ab4498773))
+
 ### [3.9.1](https://github.com/CyanSalt/eslint-config/compare/v3.9.0...v3.9.1) (2022-05-09)
 
 
