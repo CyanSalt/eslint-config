@@ -139,8 +139,6 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     // 使用 enum 必须指定初始值
     '@typescript-eslint/prefer-enum-initializers': 'error',
-    // 禁止使用 interface 声明单独的函数类型
-    '@typescript-eslint/prefer-function-type': 'error',
     // 必须使用 includes 而不是 indexOf 判断数组包含元素
     '@typescript-eslint/prefer-includes': 'error',
     // 必须使用空值合并运算符，而不是逻辑判断
