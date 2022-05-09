@@ -1,5 +1,12 @@
 
 
+### [3.9.1](https://github.com/CyanSalt/eslint-config/compare/v3.9.0...v3.9.1) (2022-05-09)
+
+
+### Bug Fixes
+
+* forward compatibility ([78a0318](https://github.com/CyanSalt/eslint-config/commit/78a03187ade4d95f738ec4e8b496c03e9ae45043))
+
 ## [3.9.0](https://github.com/CyanSalt/eslint-config/compare/v3.8.0...v3.9.0) (2022-05-07)
 
 
