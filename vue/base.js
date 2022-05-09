@@ -68,7 +68,7 @@ module.exports = {
     // 自动修改组件内注册的组件名称为 PascalCase
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
     // 事件名必须使用 kebab-case，但允许以 : 分隔
-    'vue/custom-event-name-casing': ['error', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
+    'vue/custom-event-name-casing': ['error', 'kebab-case', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
     // 自动为 HTML 注释内侧插入空格
     'vue/html-comment-content-spacing': 'warn',
     // 组件的 name 必须与文件名匹配
