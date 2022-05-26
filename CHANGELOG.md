@@ -1,5 +1,12 @@
 
 
+## [3.10.0](https://github.com/CyanSalt/eslint-config/compare/v3.9.2...v3.10.0) (2022-05-26)
+
+
+### Features
+
+* add vue order rules ([b135d52](https://github.com/CyanSalt/eslint-config/commit/b135d522e16ce8ec44e7f3362f2fccf9eacd05f7))
+
 ### [3.9.2](https://github.com/CyanSalt/eslint-config/compare/v3.9.1...v3.9.2) (2022-05-09)
 
 
