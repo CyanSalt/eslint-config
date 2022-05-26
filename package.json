@@ -29,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": ">=5.22.0",
     "@typescript-eslint/parser": ">=5.22.0",
     "eslint": ">=8.14.0",
-    "eslint-plugin-galaxy": ">=1.10.1",
+    "eslint-plugin-galaxy": ">=1.15.0",
     "eslint-plugin-import": ">=2.22.1",
     "eslint-plugin-react": ">=7.29.0",
     "eslint-plugin-react-hooks": ">=3.0.0",

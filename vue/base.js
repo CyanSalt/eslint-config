@@ -1,4 +1,5 @@
 const config = require('../index.js')
+const groups = require('./order-groups')
 
 module.exports = {
   rules: {
@@ -51,14 +52,29 @@ module.exports = {
     'vue/attributes-order': 'warn',
     // 自动优化单文件组件的标签顺序
     'vue/component-tags-order': ['warn', {
-      order: [['script[setup]', 'template'], 'script', 'style'],
+      order: [['script[setup]', 'template'], 'script', 'style:not([scoped])', 'style[scoped]'],
     }],
     // 禁止无意义的 template 元素
     'vue/no-lone-template': 'error',
     // 禁止为 slots/scopedSlot 传递多个参数
     'vue/no-multiple-slot-args': 'error',
     // 自动优化 Vue 组件内声明的顺序
-    'vue/order-in-components': 'warn',
+    'vue/order-in-components': ['warn', {
+      order: [
+        ...groups.sideEffects,
+        ...groups.globalAwareness,
+        ...groups.componentType,
+        ...groups.templateModifiers,
+        ...groups.templateDependencies,
+        ...groups.composition,
+        ...groups.pageOptions,
+        ...groups.interfaces,
+        ...groups.localState,
+        ...groups.events,
+        ...groups.nonReactiveProperties,
+        ...groups.rendering,
+      ],
+    }],
     // 禁止在模板中使用 this
     'vue/this-in-template': 'error',
 
