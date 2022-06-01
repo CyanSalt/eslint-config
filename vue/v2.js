@@ -25,10 +25,6 @@ module.exports = {
     'vue/no-deprecated-vue-config-keycodes': 'error',
     // [Composition API] 禁止在 setup 的 await 后使用生命周期钩子
     'vue/no-lifecycle-after-await': 'error',
-    // [Composition API] 自动为错误使用的 ref 添加 .value
-    'vue/no-ref-as-operand': 'warn',
-    // [Composition API] 禁止在 setup 函数中对 props 解构
-    'vue/no-setup-props-destructure': 'error',
     // [Composition API] 禁止在 setup 的 await 后使用 watch
     'vue/no-watch-after-await': 'error',
     // 禁止对静态条件包裹 <transition> 组件

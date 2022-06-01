@@ -29,10 +29,6 @@ module.exports = {
     // [扩展 recommended] 禁止类成员重复
     'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
-    // 禁止重复的 import
-    // 默认交由 import/no-duplicates 处理
-    // 'no-duplicate-imports': 'off',
-    // '@typescript-eslint/no-duplicate-imports': config.rules['no-duplicate-imports'],
     // [扩展 recommended] 禁止多余的分号
     'no-extra-semi': 'off',
     '@typescript-eslint/no-extra-semi': 'error',

@@ -2,9 +2,6 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.vue'],
-      env: {
-        'vue/setup-compiler-macros': true,
-      },
       globals: {
         // Vue macros
         $: 'readonly',

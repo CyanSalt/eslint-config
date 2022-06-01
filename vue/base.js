@@ -6,6 +6,13 @@ module.exports = {
     /** Essential */
     // 允许单个单词的组件名
     'vue/multi-word-component-names': 'off',
+    // 禁止为将被替换内容的元素指定内容
+    'vue/no-child-content': ['error', { additionalDirectives: ['t'] }],
+    // 禁止将组件名称指定为保留的组件名（例如 div）
+    'vue/no-reserved-component-names': ['error', {
+      disallowVueBuiltInComponents: true,
+      disallowVue3BuiltInComponents: true,
+    }],
 
     /** Strongly Recommended */
     // 自动将 HTML 中的属性名修改为 kebab-case
@@ -89,21 +96,10 @@ module.exports = {
     'vue/html-comment-content-spacing': 'warn',
     // 组件的 name 必须与文件名匹配
     'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
-    // 禁止为将被替换内容的元素指定内容
-    'vue/no-child-content': ['error', { additionalDirectives: ['t'] }],
     // 使用 v-bind="$attrs" 时必须指定 inheritAttrs: false
     'vue/no-duplicate-attr-inheritance': 'error',
     // 禁止单文件组件内的空标签
     'vue/no-empty-component-block': 'error',
-    // 禁止异步调用 expose()
-    'vue/no-expose-after-await': 'error',
-    // 禁止无效的 model 选项属性
-    'vue/no-invalid-model-keys': 'error',
-    // 禁止将组件名称指定为保留的组件名（例如 div）
-    'vue/no-reserved-component-names': ['error', {
-      disallowVueBuiltInComponents: true,
-      disallowVue3BuiltInComponents: true,
-    }],
     // 禁止绑定 v- 开头的属性
     'vue/no-restricted-v-bind': 'error',
     // 禁止传递不变的内联样式
@@ -122,8 +118,6 @@ module.exports = {
     'vue/no-useless-mustaches': 'warn',
     // 自动去除不必要的 v-bind 绑定
     'vue/no-useless-v-bind': 'warn',
-    // 禁止在组件上声明 v-text 和 v-html
-    'vue/no-v-text-v-html-on-component': 'error',
     // 自动在单文件组件的根元素之间加入换行
     'vue/padding-line-between-blocks': 'warn',
     // 自动将 prop 类型中的 Boolean 排列在第一个
