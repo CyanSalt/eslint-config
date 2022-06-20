@@ -63,8 +63,6 @@ module.exports = {
     'no-implicit-coercion': 'error',
     // 禁止使用 setTimeout 等函数的字符串参数（安全性）
     'no-implied-eval': 'error',
-    // 禁止使用 __iterator__ 魔术属性（已弃用）
-    'no-iterator': 'error',
     // 禁止使用标签语句
     'no-labels': 'error',
     // 禁止无意义的代码块
@@ -104,8 +102,6 @@ module.exports = {
       'stop',
       'top',
     ],
-    // 禁止使用某些对象属性（已弃用）
-    'no-restricted-properties': ['error', { property: '__defineGetter__' }, { property: '__defineSetter__' }],
     // 禁止返回赋值语句
     'no-return-assign': 'error',
     // 禁止 for 循环之外的地方使用逗号表达式
