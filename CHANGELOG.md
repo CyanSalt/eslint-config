@@ -1,5 +1,14 @@
 
 
+### [3.11.1](https://github.com/CyanSalt/eslint-config/compare/v3.11.0...v3.11.1) (2022-06-23)
+
+
+### Bug Fixes
+
+* add babel config for vue ([cab956f](https://github.com/CyanSalt/eslint-config/commit/cab956f91f1581708a06de255f18bb78398c3a4e))
+* add loop rules ([29988be](https://github.com/CyanSalt/eslint-config/commit/29988be665490da95b1acddd9d400a016f7a021a))
+* remove deprecated properties ([1137407](https://github.com/CyanSalt/eslint-config/commit/11374070b7e79b20d2bd4484b83ec834ee31e0f0))
+
 ## [3.11.0](https://github.com/CyanSalt/eslint-config/compare/v3.10.0...v3.11.0) (2022-06-01)
 
 
