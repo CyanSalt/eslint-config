@@ -1,5 +1,12 @@
 
 
+## [3.12.0](https://github.com/CyanSalt/eslint-config/compare/v3.11.1...v3.12.0) (2022-07-14)
+
+
+### Features
+
+* zero config ts integration ([1408ac4](https://github.com/CyanSalt/eslint-config/commit/1408ac47476241df9fdbd7a44fba142884e2a8a6))
+
 ### [3.11.1](https://github.com/CyanSalt/eslint-config/compare/v3.11.0...v3.11.1) (2022-06-23)
 
 
