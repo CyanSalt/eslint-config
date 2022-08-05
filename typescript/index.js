@@ -12,6 +12,8 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'error',
     // [覆盖 recommended] 允许使用空对象/函数类型
     '@typescript-eslint/ban-types': 'off',
+    // 自动将变量类型合并至构造函数类型参数
+    '@typescript-eslint/consistent-generic-constructors': 'warn',
     // 自动将单一索引签名替换为 Record
     '@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
     // 禁止使用尖括号类型断言

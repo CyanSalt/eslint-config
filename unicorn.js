@@ -60,6 +60,8 @@ module.exports = {
     'unicorn/prefer-keyboard-event-key': 'error',
     // 使用 .includes 而非 .indexOf 判断数组/字符串的包含
     'unicorn/prefer-includes': 'error',
+    // 如果可能，使用逻辑操作符代替三元操作符
+    'unicorn/prefer-logical-operator-over-ternary': 'error',
     // 自动替换 .slice/.splice 方法中的 .length - index 参数为负数
     'unicorn/prefer-negative-index': 'warn',
     // 自动去除没有使用的 catch 参数
