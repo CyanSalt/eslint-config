@@ -1,5 +1,12 @@
 
 
+### [3.13.1](https://github.com/CyanSalt/eslint-config/compare/v3.13.0...v3.13.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* compat for react@17 ([e075e2b](https://github.com/CyanSalt/eslint-config/commit/e075e2b73ee759f968da72af2a3f3e2d744d77e0))
+
 ## [3.13.0](https://github.com/CyanSalt/eslint-config/compare/v3.12.0...v3.13.0) (2022-08-05)
 
 
