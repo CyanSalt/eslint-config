@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
   ],
   rules: {
     // 禁止使用导入组件的 propsTypes 属性，以便生产环境安全移除 propTypes
@@ -15,6 +16,8 @@ module.exports = {
     'react/no-typos': 'error',
     // 禁止使用不安全的生命周期
     'react/no-unsafe': 'error',
+    // [覆盖 recommended] 不强制声明 propTypes（可能从某些类型参数中自动推导）
+    'react/prop-types': 'off',
     // 必须按顺序声明组件选项
     'react/sort-comp': 'warn',
     // style 属性必须传递对象
