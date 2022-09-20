@@ -92,6 +92,10 @@ module.exports = {
     'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
     // 事件名必须使用 kebab-case，但允许以 : 分隔
     'vue/custom-event-name-casing': ['error', 'kebab-case', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
+    // 在 <script lang="ts" setup> 下必须使用类型声明 defineEmits
+    'vue/define-emits-declaration': 'error',
+    // 在 <script lang="ts" setup> 下必须使用类型声明 defineProps
+    'vue/define-props-declaration': 'error',
     // 自动为 HTML 注释内侧插入空格
     'vue/html-comment-content-spacing': 'warn',
     // 组件的 name 必须与文件名匹配
@@ -100,6 +104,8 @@ module.exports = {
     'vue/no-duplicate-attr-inheritance': 'error',
     // 禁止单文件组件内的空标签
     'vue/no-empty-component-block': 'error',
+    // 禁止无标记的 ref 副作用
+    'vue/no-ref-object-destructure': 'error',
     // 禁止绑定 v- 开头的属性
     'vue/no-restricted-v-bind': 'error',
     // 禁止传递不变的内联样式
