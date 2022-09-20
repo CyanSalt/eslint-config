@@ -1,5 +1,12 @@
 
 
+## [3.14.0](https://github.com/CyanSalt/eslint-config/compare/v3.13.1...v3.14.0) (2022-09-20)
+
+
+### Features
+
+* vue ref usage ([63d50c5](https://github.com/CyanSalt/eslint-config/commit/63d50c5c426567461d56540c319d8a452cd42d1e))
+
 ### [3.13.1](https://github.com/CyanSalt/eslint-config/compare/v3.13.0...v3.13.1) (2022-08-29)
 
 
