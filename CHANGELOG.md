@@ -1,5 +1,12 @@
 
 
+## [3.15.0](https://github.com/CyanSalt/eslint-config/compare/v3.14.0...v3.15.0) (2022-09-22)
+
+
+### Features
+
+* add ts compatible subset ([4465559](https://github.com/CyanSalt/eslint-config/commit/446555975bf3ceaf122d5578fe26f3e50981b3e3))
+
 ## [3.14.0](https://github.com/CyanSalt/eslint-config/compare/v3.13.1...v3.14.0) (2022-09-20)
 
 
