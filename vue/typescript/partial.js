@@ -5,4 +5,12 @@ module.exports = {
     },
     extraFileExtensions: ['.vue'],
   },
+  overrides: [
+    {
+      files: ['**/*.vue'],
+      extends: [
+        require.resolve('../../typescript/compatible.js'),
+      ],
+    },
+  ],
 }

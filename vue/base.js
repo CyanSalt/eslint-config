@@ -158,15 +158,15 @@ module.exports = {
     'vue/key-spacing': config.rules['key-spacing'],
     // 自动在关键字前后添加空格
     'vue/keyword-spacing': config.rules['keyword-spacing'],
-    // 禁止使用不可变的 if 条件（ESLint recommended）
+    // [扩展 recommended] 禁止使用不可变的 if 条件
     'vue/no-constant-condition': 'error',
-    // 禁止使用空的解构（ESLint recommended）
+    // [扩展 recommended] 禁止使用空的解构
     'vue/no-empty-pattern': 'error',
-    // 禁止使用非标准空白符（ESLint recommended）
+    // [扩展 recommended] 禁止使用非标准空白符
     'vue/no-irregular-whitespace': 'error',
-    // 禁止使用 JS 不支持的数字精度（ESLint recommended）
+    // [扩展 recommended] 禁止使用 JS 不支持的数字精度
     'vue/no-loss-of-precision': 'error',
-    // 禁止使用稀疏数组（ESLint recommended）
+    // [扩展 recommended] 禁止使用稀疏数组
     'vue/no-sparse-arrays': 'error',
     // 禁止单行内的字符串字面量拼接
     'vue/no-useless-concat': config.rules['no-useless-concat'],

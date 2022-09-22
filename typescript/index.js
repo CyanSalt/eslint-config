@@ -4,46 +4,15 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     require.resolve('./base.js'),
+    require.resolve('./compatible.js'),
   ],
   rules: {
-    // 必须使用 type[] 定义数组类型
-    '@typescript-eslint/array-type': ['error', { default: 'array' }],
-    // 必须为 ts-* 注释指定描述
-    '@typescript-eslint/ban-ts-comment': 'error',
     // [覆盖 recommended] 允许使用空对象/函数类型
     '@typescript-eslint/ban-types': 'off',
-    // 自动将变量类型合并至构造函数类型参数
-    '@typescript-eslint/consistent-generic-constructors': 'warn',
-    // 自动将单一索引签名替换为 Record
-    '@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
-    // 禁止使用尖括号类型断言
-    '@typescript-eslint/consistent-type-assertions': ['error', {
-      assertionStyle: 'as',
-      objectLiteralTypeAssertions: 'allow',
-    }],
-    // 自动替换 type 对象类型为 interface
-    '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
     // 自动将类型导出放置在 export type 语句中
     '@typescript-eslint/consistent-type-exports': 'warn',
-    // 自动将类型引用放置在 import type 语句中
-    '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
-    // 自动省略 public 成员修饰符
-    '@typescript-eslint/explicit-member-accessibility': ['warn', {
-      accessibility: 'no-public',
-    }],
     // [覆盖 recommended] 允许导出成员使用推导类型
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    // 类型定义多行必须用逗号分隔
-    '@typescript-eslint/member-delimiter-style': ['error', {
-      multiline: {
-        delimiter: 'comma',
-        requireLast: true,
-      },
-      singleline: {
-        delimiter: 'comma',
-        requireLast: false,
-      },
-    }],
     // 必须使用命名规则
     // 常规变量使用 camelCase，常量使用 UPPER_CASE，布尔类型的变量使用系动词前缀，类型声明使用 PascalCase，解构允许 snake_case
     '@typescript-eslint/naming-convention': [
@@ -111,22 +80,16 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     // 禁止使用 void 类型的返回值
     '@typescript-eslint/no-confusing-void-expression': 'warn',
-    // 禁止 enum 的值重复
-    '@typescript-eslint/no-duplicate-enum-values': 'error',
-    // 禁止将类用作普通对象
-    '@typescript-eslint/no-extraneous-class': 'error',
     // 禁止错误使用 Promise（包含异步函数的返回值）
     '@typescript-eslint/no-misused-promises': ['error', {
       checksVoidReturn: false,
     }],
-    // 禁止在非空断言后使用空值合并运算符
-    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
     // [覆盖 recommended] 允许使用非空断言
     '@typescript-eslint/no-non-null-assertion': 'off',
-    // 禁止使用构造函数参数属性
-    '@typescript-eslint/no-parameter-properties': 'error',
     // 禁止无效的类型运算
     '@typescript-eslint/no-redundant-type-constituents': 'error',
+    // [覆盖 recommended] 允许 this 别名
+    '@typescript-eslint/no-this-alias': 'off',
     // 禁止将字面量作为异常抛出
     '@typescript-eslint/no-throw-literal': 'error',
     // 禁止不必要的布尔值比较
@@ -135,14 +98,10 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-condition': 'error',
     // 禁止无用的命名空间调用
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
-    // 自动去除不必要的类型限制
-    '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
     // 自动去除多余的空 export
     '@typescript-eslint/no-useless-empty-export': 'warn',
     // [覆盖 recommended] 允许 require 引入
     '@typescript-eslint/no-var-requires': 'off',
-    // 使用 enum 必须指定初始值
-    '@typescript-eslint/prefer-enum-initializers': 'error',
     // 必须使用 includes 而不是 indexOf 判断数组包含元素
     '@typescript-eslint/prefer-includes': 'error',
     // 必须使用空值合并运算符，而不是逻辑判断
@@ -155,8 +114,6 @@ module.exports = {
     '@typescript-eslint/prefer-return-this-type': 'warn',
     // 必须为联合类型的 switch 判断指定完整的分支逻辑
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
-    // 自动修复类型标注的空格（冒号后空格，箭头前后空格）
-    '@typescript-eslint/type-annotation-spacing': 'warn',
 
     /** Extension Rules */
     // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
@@ -180,7 +137,7 @@ module.exports = {
     // 自动在关键字前后添加空格
     'keyword-spacing': 'off',
     '@typescript-eslint/keyword-spacing': config.rules['keyword-spacing'],
-    // 禁止使用 Array 构造函数创建非空数组（歧义）
+    // [继承 recommended] 禁止使用 Array 构造函数创建非空数组（歧义）
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': config.rules['no-array-constructor'],
     // [扩展 recommended] 禁止类成员重复
@@ -189,6 +146,9 @@ module.exports = {
     // [扩展 recommended] 禁止多余的分号
     'no-extra-semi': 'off',
     '@typescript-eslint/no-extra-semi': 'error',
+    // [扩展 recommended] 禁止使用 JS 不支持的数字精度
+    'no-loss-of-precision': 'off',
+    '@typescript-eslint/no-loss-of-precision': 'error',
     // 禁止覆盖声明外部作用域的变量（歧义）
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error', { hoist: 'functions' }],
@@ -206,6 +166,10 @@ module.exports = {
     '@typescript-eslint/object-curly-spacing': config.rules['object-curly-spacing'],
     // [覆盖 recommended] 允许使用 let
     'prefer-const': 'off',
+    // [覆盖 recommended] 允许使用 arguments
+    'prefer-rest-params': 'off',
+    // [覆盖 recommended] 允许使用 apply
+    'prefer-spread': 'off',
     // 自动替换字符串字面量的双引号
     quotes: 'off',
     '@typescript-eslint/quotes': config.rules['quotes'],
