@@ -1,5 +1,12 @@
 
 
+### [3.15.1](https://github.com/CyanSalt/eslint-config/compare/v3.15.0...v3.15.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* auto remove .ts ([ac86a75](https://github.com/CyanSalt/eslint-config/commit/ac86a751da4b47df0999ded1fe6244f933ff36e0))
+
 ## [3.15.0](https://github.com/CyanSalt/eslint-config/compare/v3.14.0...v3.15.0) (2022-09-22)
 
 
