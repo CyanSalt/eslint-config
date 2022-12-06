@@ -19,6 +19,8 @@ module.exports = {
     'no-constant-binary-expression': 'error',
     // 禁止重复的 import
     'no-duplicate-imports': 'error',
+    // 禁止使用 new 构造 Symbol 和 BigInt
+    'no-new-native-nonconstructor': 'error',
     // 禁止变量与自身比较
     'no-self-compare': 'error',
     // 禁止不受循环影响的循环变量
@@ -51,6 +53,8 @@ module.exports = {
     'no-caller': 'error',
     // 箭头函数返回三元表达式时需要加括号（歧义）
     'no-confusing-arrow': ['error', { allowParens: true }],
+    // 禁止空的静态块
+    'no-empty-static-block': 'error',
     // 禁止使用 eval（安全性）
     'no-eval': 'error',
     // 禁止扩展原生对象

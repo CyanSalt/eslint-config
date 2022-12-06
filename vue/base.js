@@ -106,6 +106,8 @@ module.exports = {
     'vue/no-empty-component-block': 'error',
     // 禁止无标记的 ref 副作用
     'vue/no-ref-object-destructure': 'error',
+    // 自动去除具有默认值的 props 的 required 标识
+    'vue/no-required-prop-with-default': ['warn', { autofix: true }],
     // 禁止绑定 v- 开头的属性
     'vue/no-restricted-v-bind': 'error',
     // 禁止传递不变的内联样式
