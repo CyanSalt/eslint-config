@@ -98,6 +98,8 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-condition': 'error',
     // 禁止无用的命名空间调用
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
+    // 禁止接口与类的类型合并
+    '@typescript-eslint/no-unsafe-declaration-merging': 'error',
     // 自动去除多余的空 export
     '@typescript-eslint/no-useless-empty-export': 'warn',
     // [覆盖 recommended] 允许 require 引入
