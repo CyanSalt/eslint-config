@@ -2,6 +2,9 @@ const config = require('../index.js')
 const groups = require('./order-groups')
 
 module.exports = {
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
   rules: {
     /** Essential */
     // 允许单个单词的组件名
