@@ -1,5 +1,12 @@
 
 
+### [3.16.2](https://github.com/CyanSalt/eslint-config/compare/v3.16.1...v3.16.2) (2022-12-30)
+
+
+### Bug Fixes
+
+* vue eslint parser options ([c8f3343](https://github.com/CyanSalt/eslint-config/commit/c8f33431465837ca3f5dc5713b948259737de99c))
+
 ### [3.16.1](https://github.com/CyanSalt/eslint-config/compare/v3.16.0...v3.16.1) (2022-12-06)
 
 
