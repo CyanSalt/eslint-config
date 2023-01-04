@@ -3,7 +3,7 @@ const groups = require('./order-groups')
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: config.parserOptions.ecmaVersion,
   },
   rules: {
     /** Essential */
