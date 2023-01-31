@@ -1,5 +1,12 @@
 
 
+### [3.17.1](https://github.com/CyanSalt/eslint-config/compare/v3.17.0...v3.17.1) (2023-01-31)
+
+
+### Bug Fixes
+
+* import type order ([1ce8792](https://github.com/CyanSalt/eslint-config/commit/1ce87922e14721bb055158f8eacbc7ff55bdc871))
+
 ## [3.17.0](https://github.com/CyanSalt/eslint-config/compare/v3.16.2...v3.17.0) (2023-01-31)
 
 
