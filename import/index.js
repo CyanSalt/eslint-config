@@ -21,7 +21,7 @@ module.exports = {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
       pathGroups: [{ pattern: '@/**', group: 'internal' }],
       pathGroupsExcludedImportTypes: ['builtin'],
-      alphabetize: { order: 'asc' },
+      alphabetize: { order: 'asc', orderImportKind: 'asc' },
     }],
   },
 }
