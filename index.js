@@ -11,6 +11,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
   ],
+  reportUnusedDisableDirectives: true,
   rules: {
     /** Possible Problems */
     // map等数组方法的回调函数必须有返回值
@@ -83,29 +84,6 @@ module.exports = {
     'no-octal-escape': 'error',
     // 禁止使用 __proto__ 魔术属性（已弃用）
     'no-proto': 'error',
-    // 禁止使用可能是错误的全局变量，例如 event
-    'no-restricted-globals': [
-      'error',
-      // builtin
-      ...Object.getOwnPropertyNames(Object.prototype),
-      // dom
-      'blur',
-      'close',
-      'closed',
-      'event',
-      'external',
-      'find',
-      'focus',
-      'length',
-      'name',
-      'open',
-      'origin',
-      'parent',
-      'scroll',
-      'status',
-      'stop',
-      'top',
-    ],
     // 禁止返回赋值语句
     'no-return-assign': 'error',
     // 禁止 for 循环之外的地方使用逗号表达式

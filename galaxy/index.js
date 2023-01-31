@@ -11,6 +11,8 @@ module.exports = {
     'galaxy/max-nested-destructuring': ['error', { max: 3 }],
     // 禁止使用 for-in 结构
     'galaxy/no-for-in': 'error',
+    // 禁止可能是误用的全局变量
+    'galaxy/no-misused-globals': 'error',
     // 自动为非控制语句的 if 结构增加花括号
     'galaxy/non-control-statement-curly': 'warn',
   },

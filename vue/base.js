@@ -143,6 +143,8 @@ module.exports = {
     'vue/array-bracket-newline': config.rules['array-bracket-newline'],
     // 自动删除数组的括号内侧的空格
     'vue/array-bracket-spacing': config.rules['array-bracket-spacing'],
+    // 自动优化数组的元素换行（所有元素保持一致）
+    'vue/array-element-newline': config.rules['array-element-newline'],
     // 自动在箭头函数的箭头前后添加空格
     'vue/arrow-spacing': config.rules['arrow-spacing'],
     // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
