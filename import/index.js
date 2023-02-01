@@ -2,6 +2,9 @@ module.exports = {
   plugins: [
     'import',
   ],
+  settings: {
+    'import/internal-regex': '^@/',
+  },
   rules: {
     // 自动将类型导入修改为 import type 语句
     'import/consistent-type-specifier-style': ['warn', 'prefer-top-level'],
@@ -19,7 +22,6 @@ module.exports = {
     // 必须按照 内置 > 外部模块 > aliases > '../' > './' 声明 import 顺序
     'import/order': ['warn', {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
-      pathGroups: [{ pattern: '@/**', group: 'internal' }],
       pathGroupsExcludedImportTypes: ['builtin'],
       alphabetize: { order: 'asc', orderImportKind: 'asc' },
     }],
