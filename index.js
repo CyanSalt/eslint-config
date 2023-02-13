@@ -167,7 +167,10 @@ module.exports = {
     // 自动优化函数声明的参数列表换行（所有元素保持一致）
     'function-paren-newline': ['warn', 'multiline-arguments'],
     // 自动优化缩进为两个空格
-    indent: ['warn', 2, { SwitchCase: 1 }],
+    indent: ['warn', 2, {
+      SwitchCase: 1,
+      ignoredNodes: ['TSTypeParameterInstantiation'],
+    }],
     // 自动替换 JSX 的属性引号为单引号
     'jsx-quotes': ['warn', 'prefer-single'],
     // 自动优化对象字面量冒号的空格使用（冒号前禁止使用空格，冒号后必须使用空格）
