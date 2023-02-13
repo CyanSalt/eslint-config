@@ -1,5 +1,13 @@
 
 
+### [3.17.2](https://github.com/CyanSalt/eslint-config/compare/v3.17.1...v3.17.2) (2023-02-13)
+
+
+### Bug Fixes
+
+* partial ts ([d27f101](https://github.com/CyanSalt/eslint-config/commit/d27f101f6e45d89099dd4434408e1b56efd5ed47))
+* use internal-regex settings ([dbb1e29](https://github.com/CyanSalt/eslint-config/commit/dbb1e296e76cfec0bacda424bfc6f5b094293400))
+
 ### [3.17.1](https://github.com/CyanSalt/eslint-config/compare/v3.17.0...v3.17.1) (2023-01-31)
 
 
