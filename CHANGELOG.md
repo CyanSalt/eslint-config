@@ -1,5 +1,17 @@
 
 
+## [3.18.0](https://github.com/CyanSalt/eslint-config/compare/v3.17.2...v3.18.0) (2023-02-22)
+
+
+### Features
+
+* remove vue macros by default ([2ea9537](https://github.com/CyanSalt/eslint-config/commit/2ea95377a4aa71b28cc544f8cfeafa3f2ccd8b63))
+
+
+### Bug Fixes
+
+* ignore type params indent ([ee236e6](https://github.com/CyanSalt/eslint-config/commit/ee236e632d4611f90675884ba69f6f97b9b0118f))
+
 ### [3.17.2](https://github.com/CyanSalt/eslint-config/compare/v3.17.1...v3.17.2) (2023-02-13)
 
 
