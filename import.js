@@ -4,6 +4,23 @@ module.exports = {
   ],
   settings: {
     'import/internal-regex': '^@/',
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+        extensions: [
+          '.mjs',
+          '.js',
+          '.mts',
+          '.ts',
+          '.jsx',
+          '.tsx',
+          '.vue',
+          '.json',
+        ],
+      },
+    },
   },
   rules: {
     // 自动将类型导入修改为 import type 语句
