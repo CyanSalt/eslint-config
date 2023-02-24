@@ -1,5 +1,12 @@
 
 
+## [3.19.0](https://github.com/CyanSalt/eslint-config/compare/v3.18.0...v3.19.0) (2023-02-24)
+
+
+### Features
+
+* update eslint-plugin-galaxy rules ([9cd8a78](https://github.com/CyanSalt/eslint-config/commit/9cd8a78201f556e82027e27b967eec4ce6341e6d))
+
 ## [3.18.0](https://github.com/CyanSalt/eslint-config/compare/v3.17.2...v3.18.0) (2023-02-22)
 
 
