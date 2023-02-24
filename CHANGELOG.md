@@ -1,5 +1,13 @@
 
 
+### [3.19.1](https://github.com/CyanSalt/eslint-config/compare/v3.19.0...v3.19.1) (2023-02-24)
+
+
+### Bug Fixes
+
+* allow destructure ([818733b](https://github.com/CyanSalt/eslint-config/commit/818733b60243bf699fb5d4688caf3705f3269922))
+* remove vue-cli config ([56886ca](https://github.com/CyanSalt/eslint-config/commit/56886ca5d5fe7dbccfc4c3e0b66368c4344703d6))
+
 ## [3.19.0](https://github.com/CyanSalt/eslint-config/compare/v3.18.0...v3.19.0) (2023-02-24)
 
 
