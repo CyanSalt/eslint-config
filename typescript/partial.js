@@ -5,7 +5,12 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: [
+        '**/*.cts',
+        '**/*.mts',
+        '**/*.ts',
+        '**/*.tsx',
+      ],
       extends: [
         require.resolve('./index.js'),
       ],

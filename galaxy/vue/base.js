@@ -20,7 +20,13 @@ module.exports = {
       ],
     }],
     // 自动为 .vue 导入添加后缀
-    'galaxy/import-extensions': ['warn', { '.ts': 'never', '.vue': 'always' }],
+    'galaxy/import-extensions': ['warn', {
+      '.cts': 'never',
+      '.mts': 'never',
+      '.ts': 'never',
+      '.tsx': 'never',
+      '.vue': 'always',
+    }],
     // 禁止使用歧义的 props 默认值
     'galaxy/no-ambiguous-vue-default-props': 'error',
     // 自动移除模板引号内侧的空格

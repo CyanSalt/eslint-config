@@ -4,7 +4,12 @@ module.exports = {
   ],
   rules: {
     // 自动移除 .ts 文件的导入后缀
-    'galaxy/import-extensions': ['warn', { '.ts': 'never' }],
+    'galaxy/import-extensions': ['warn', {
+      '.cts': 'never',
+      '.mts': 'never',
+      '.ts': 'never',
+      '.tsx': 'never',
+    }],
     // 自动为 if-else 结构增加花括号
     'galaxy/multi-branch-curly': 'warn',
     // 禁止 3 层及以上的解构赋值
