@@ -2,6 +2,7 @@ module.exports = {
   parserOptions: {
     parser: {
       ts: '@typescript-eslint/parser',
+      tsx: '@typescript-eslint/parser',
     },
     extraFileExtensions: ['.vue'],
   },
