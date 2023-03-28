@@ -1,5 +1,14 @@
 
 
+### [3.19.2](https://github.com/CyanSalt/eslint-config/compare/v3.19.1...v3.19.2) (2023-03-28)
+
+
+### Bug Fixes
+
+* add partial babel rules ([4632398](https://github.com/CyanSalt/eslint-config/commit/4632398533f6c9eda27b5e2e4d1cad240e56e0f7))
+* lint all js/ts files ([a96cb67](https://github.com/CyanSalt/eslint-config/commit/a96cb67444187cf8bf46ec5d0c466c41fe7bb256))
+* support .cts and .mts ([6af2975](https://github.com/CyanSalt/eslint-config/commit/6af297550f760bf20fd931aaa1a2da55ee5645ad))
+
 ### [3.19.1](https://github.com/CyanSalt/eslint-config/compare/v3.19.0...v3.19.1) (2023-02-24)
 
 
