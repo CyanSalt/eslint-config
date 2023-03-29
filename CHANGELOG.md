@@ -1,5 +1,12 @@
 
 
+### [3.19.3](https://github.com/CyanSalt/eslint-config/compare/v3.19.2...v3.19.3) (2023-03-29)
+
+
+### Bug Fixes
+
+* file reference ([ae1bbcb](https://github.com/CyanSalt/eslint-config/commit/ae1bbcbb6a9fc9806c759f34116fbc86b990d7d0))
+
 ### [3.19.2](https://github.com/CyanSalt/eslint-config/compare/v3.19.1...v3.19.2) (2023-03-28)
 
 
