@@ -30,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": ">=5.43.0",
     "@typescript-eslint/parser": ">=5.43.0",
     "eslint": ">=8.27.0",
+    "eslint-import-resolver-typescript": ">=3.5.4",
     "eslint-plugin-galaxy": ">=1.20.0",
     "eslint-plugin-import": ">=2.27.0",
     "eslint-plugin-react": ">=7.29.0",
@@ -49,6 +50,9 @@
       "optional": true
     },
     "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-import-resolver-typescript": {
       "optional": true
     },
     "eslint-plugin-galaxy": {

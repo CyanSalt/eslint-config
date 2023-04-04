@@ -22,6 +22,15 @@ module.exports = {
           '.vue',
         ],
       },
+      typescript: {
+        extensions: [
+          '.cts',
+          '.mts',
+          '.ts',
+          '.tsx',
+          '.vue',
+        ],
+      },
     },
   },
   rules: {
