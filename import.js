@@ -5,6 +5,16 @@ module.exports = {
   settings: {
     'import/internal-regex': '^@/',
     'import/resolver': {
+      // Must go before any other resolvers for typescript files
+      typescript: {
+        extensions: [
+          '.cts',
+          '.mts',
+          '.ts',
+          '.tsx',
+          '.vue',
+        ],
+      },
       alias: {
         map: [
           ['@', './src'],
@@ -16,15 +26,6 @@ module.exports = {
           '.json',
           '.jsx',
           '.mjs',
-          '.mts',
-          '.ts',
-          '.tsx',
-          '.vue',
-        ],
-      },
-      typescript: {
-        extensions: [
-          '.cts',
           '.mts',
           '.ts',
           '.tsx',
