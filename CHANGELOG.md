@@ -1,5 +1,12 @@
 
 
+### [3.19.4](https://github.com/CyanSalt/eslint-config/compare/v3.19.3...v3.19.4) (2023-04-04)
+
+
+### Bug Fixes
+
+* resolve type exports ([7163765](https://github.com/CyanSalt/eslint-config/commit/7163765c4324cc0feca88a6db3e73eaf64f8ca37))
+
 ### [3.19.3](https://github.com/CyanSalt/eslint-config/compare/v3.19.2...v3.19.3) (2023-03-29)
 
 
