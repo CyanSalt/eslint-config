@@ -1,5 +1,13 @@
 
 
+### [3.19.5](https://github.com/CyanSalt/eslint-config/compare/v3.19.4...v3.19.5) (2023-04-06)
+
+
+### Bug Fixes
+
+* import priority ([a1da3fa](https://github.com/CyanSalt/eslint-config/commit/a1da3fa2be6376589b5442795e06900e1d2b9367))
+* typescript resolver ([2e505b1](https://github.com/CyanSalt/eslint-config/commit/2e505b13f9c0e0f9164cb7b47a8cc5179f0f6f2b))
+
 ### [3.19.4](https://github.com/CyanSalt/eslint-config/compare/v3.19.3...v3.19.4) (2023-04-04)
 
 
