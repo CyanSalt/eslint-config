@@ -1,6 +1,8 @@
 module.exports = {
   parserOptions: {
     parser: {
+      cts: '@typescript-eslint/parser',
+      mts: '@typescript-eslint/parser',
       ts: '@typescript-eslint/parser',
       tsx: '@typescript-eslint/parser',
     },
