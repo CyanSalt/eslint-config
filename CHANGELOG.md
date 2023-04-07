@@ -1,5 +1,12 @@
 
 
+### [3.19.6](https://github.com/CyanSalt/eslint-config/compare/v3.19.5...v3.19.6) (2023-04-07)
+
+
+### Bug Fixes
+
+* add jsx config for vue ([8842713](https://github.com/CyanSalt/eslint-config/commit/884271385ba739b8f42a92897d0bca2d527c7583))
+
 ### [3.19.5](https://github.com/CyanSalt/eslint-config/compare/v3.19.4...v3.19.5) (2023-04-06)
 
 
