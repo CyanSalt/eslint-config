@@ -96,6 +96,9 @@ module.exports = {
     // 自动优化缩进为两个空格
     indent: 'off',
     '@typescript-eslint/indent': config.rules['indent'],
+    // 自动优化对象字面量冒号的空格使用（冒号前禁止使用空格，冒号后必须使用空格）
+    'key-spacing': 'off',
+    '@typescript-eslint/key-spacing': config.rules['key-spacing'],
     // 自动在关键字前后添加空格
     'keyword-spacing': 'off',
     '@typescript-eslint/keyword-spacing': config.rules['keyword-spacing'],

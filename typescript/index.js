@@ -78,6 +78,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     // 禁止使用 void 类型的返回值
     '@typescript-eslint/no-confusing-void-expression': 'warn',
+    // 禁止重复的类型交并操作
+    '@typescript-eslint/no-duplicate-type-constituents': 'error',
     // 禁止错误使用 Promise（包含异步函数的返回值）
     '@typescript-eslint/no-misused-promises': ['error', {
       checksVoidReturn: false,
