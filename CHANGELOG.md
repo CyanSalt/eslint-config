@@ -1,5 +1,17 @@
 
 
+## [3.20.0](https://github.com/CyanSalt/eslint-config/compare/v3.19.6...v3.20.0) (2023-04-12)
+
+
+### Features
+
+* update typescript config ([a4ecd3a](https://github.com/CyanSalt/eslint-config/commit/a4ecd3a169b44be5661f94cccc1c89535de5d80f))
+
+
+### Bug Fixes
+
+* cts and mts files ([84aebbd](https://github.com/CyanSalt/eslint-config/commit/84aebbd9a551b92292dff3bea28b48d1ec6875da))
+
 ### [3.19.6](https://github.com/CyanSalt/eslint-config/compare/v3.19.5...v3.19.6) (2023-04-07)
 
 
