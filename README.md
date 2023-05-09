@@ -1,5 +1,7 @@
 # @cyansalt/eslint-config
 
+[![npm](https://img.shields.io/npm/v/@cyansalt/eslint-config.svg)](https://www.npmjs.com/package/@cyansalt/eslint-config)
+
 My ESLint base configuration.
 
 ## Installation
