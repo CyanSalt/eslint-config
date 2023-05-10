@@ -11,6 +11,9 @@ module.exports = {
   extends: [
     'eslint:recommended',
   ],
+  ignorePatterns: [
+    '!.*',
+  ],
   reportUnusedDisableDirectives: true,
   rules: {
     /** Possible Problems */
