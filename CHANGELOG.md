@@ -1,5 +1,12 @@
 
 
+## [3.21.0](https://github.com/CyanSalt/eslint-config/compare/v3.20.0...v3.21.0) (2023-05-10)
+
+
+### Features
+
+* check dot files ([e423b69](https://github.com/CyanSalt/eslint-config/commit/e423b69cc6857768483eeff4fb422b2fabcdff3b))
+
 ## [3.20.0](https://github.com/CyanSalt/eslint-config/compare/v3.19.6...v3.20.0) (2023-04-12)
 
 
