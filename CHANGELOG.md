@@ -1,5 +1,12 @@
 
 
+## [3.22.0](https://github.com/CyanSalt/eslint-config/compare/v3.21.0...v3.22.0) (2023-05-11)
+
+
+### Features
+
+* add `unicorn/prefer-node-protocol` ([ae89b78](https://github.com/CyanSalt/eslint-config/commit/ae89b789ad8ef3bc9cba3cafa4dc2c1bf60e9127))
+
 ## [3.21.0](https://github.com/CyanSalt/eslint-config/compare/v3.20.0...v3.21.0) (2023-05-10)
 
 
