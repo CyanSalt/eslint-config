@@ -64,6 +64,8 @@ module.exports = {
     'unicorn/prefer-logical-operator-over-ternary': 'error',
     // 自动替换 .slice/.splice 方法中的 .length - index 参数为负数
     'unicorn/prefer-negative-index': 'warn',
+    // 自动为 Node 内置模块添加 node: 协议
+    'unicorn/prefer-node-protocol': 'warn',
     // 自动去除没有使用的 catch 参数
     'unicorn/prefer-optional-catch-binding': 'warn',
     // 自动替换 .substr 和 .substring 为 .slice（与数组一致）
