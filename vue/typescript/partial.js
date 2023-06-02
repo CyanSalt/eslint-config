@@ -14,9 +14,6 @@ module.exports = {
       extends: [
         require.resolve('../../typescript/compatible.js'),
       ],
-      parserOptions: {
-        project: null,
-      },
     },
   ],
 }
