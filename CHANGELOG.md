@@ -1,5 +1,12 @@
 
 
+## [3.23.0](https://github.com/CyanSalt/eslint-config/compare/v3.22.0...v3.23.0) (2023-06-02)
+
+
+### Features
+
+* support flat config ([3fd7f7e](https://github.com/CyanSalt/eslint-config/commit/3fd7f7e97ddba8da7e1fd04d09e62f5101a2d1b7))
+
 ## [3.22.0](https://github.com/CyanSalt/eslint-config/compare/v3.21.0...v3.22.0) (2023-05-11)
 
 
