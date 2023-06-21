@@ -135,6 +135,8 @@ module.exports = {
     radix: 'error',
     // [覆盖 recommended] 允许生成器函数不使用 yield 关键字
     'require-yield': 'off',
+    // 自动将 import 导入的名称按照字母顺序排列
+    'sort-imports': ['warn', { ignoreCase: true, ignoreDeclarationSort: true }],
     // 自动在注释内容前添加空格
     'spaced-comment': ['warn', 'always', { markers: ['/'] }],
     // 使用 Symbol 必须传递描述参数
