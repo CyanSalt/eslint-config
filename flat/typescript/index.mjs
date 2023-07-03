@@ -67,6 +67,13 @@ export default [
           modifiers: ['destructured'],
           format: null,
         },
+        // Override above
+        {
+          selector: 'variable',
+          modifiers: ['destructured'],
+          types: ['boolean', 'string', 'number'],
+          format: null,
+        },
         {
           selector: 'variable',
           format: ['camelCase', 'PascalCase'],
