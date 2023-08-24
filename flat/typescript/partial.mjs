@@ -1,4 +1,7 @@
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
+import { PATTERN_ALL } from '../pattern.mjs'
 import baseConfig from './base.mjs'
+import compatibleConfig from './compatible.mjs'
 import typescriptConfig from './index.mjs'
 
 export default [
@@ -7,10 +10,15 @@ export default [
     files: ['**/*.{cts,mts,ts,tsx}'],
   },
   baseConfig[1],
+  ...typescriptEslintPlugin.configs['eslint-recommended'].overrides,
   {
-    ...typescriptConfig[typescriptConfig.length - 2],
-    files: ['**/*.{cts,mts,ts,tsx}'],
+    files: [PATTERN_ALL],
+    rules: {
+      ...typescriptEslintPlugin.configs['recommended'].rules,
+      ...typescriptEslintPlugin.configs['stylistic'].rules,
+    },
   },
+  ...compatibleConfig,
   {
     ...typescriptConfig[typescriptConfig.length - 1],
     files: ['**/*.{cts,mts,ts,tsx}'],

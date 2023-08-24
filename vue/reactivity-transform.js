@@ -10,6 +10,6 @@ module.exports = {
   },
   rules: {
     // [覆盖 essential] 允许 defineProps 解构
-    'vue/no-setup-props-destructure': 'off',
+    'vue/no-setup-props-reactivity-loss': 'off',
   },
 }

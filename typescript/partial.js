@@ -1,7 +1,9 @@
 module.exports = {
   extends: [
-    'plugin:@typescript-eslint/base',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
     require.resolve('./base.js'),
+    require.resolve('./compatible.js'),
   ],
   overrides: [
     {

@@ -10,7 +10,7 @@ export default [
       // 允许单个单词的组件名
       'vue/multi-word-component-names': 'off',
       // 禁止为将被替换内容的元素指定内容
-      'vue/no-child-content': ['error', { additionalDirectives: ['t'] }],
+      'vue/no-child-content': ['error', { additionalDirectives: ['t', 'safe-html'] }],
       // 禁止将组件名称指定为保留的组件名（例如 div）
       'vue/no-reserved-component-names': ['error', {
         disallowVueBuiltInComponents: true,
@@ -108,7 +108,7 @@ export default [
       // 禁止单文件组件内的空标签
       'vue/no-empty-component-block': 'error',
       // 禁止无标记的 ref 副作用
-      'vue/no-ref-object-destructure': 'error',
+      'vue/no-ref-object-reactivity-loss': 'error',
       // 自动去除具有默认值的 props 的 required 标识
       'vue/no-required-prop-with-default': ['warn', { autofix: true }],
       // 禁止绑定 v- 开头的属性
@@ -137,6 +137,8 @@ export default [
       'vue/require-emit-validator': 'error',
       // 自动将 v-for 中的 of 替换为 in 以保持一致
       'vue/v-for-delimiter-style': 'warn',
+      // 必须使用合法的 defintOptions
+      'vue/valid-define-options': 'error',
 
       /** Extension Rules */
       // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
