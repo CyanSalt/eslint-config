@@ -1,5 +1,12 @@
 
 
+### [3.24.1](https://github.com/CyanSalt/eslint-config/compare/v3.24.0...v3.24.1) (2023-08-24)
+
+
+### Bug Fixes
+
+* ignore conditions ([b493393](https://github.com/CyanSalt/eslint-config/commit/b4933931b3bbe8fe5b07c1421104be44e0649832))
+
 ## [3.24.0](https://github.com/CyanSalt/eslint-config/compare/v3.23.0...v3.24.0) (2023-08-24)
 
 
