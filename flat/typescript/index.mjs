@@ -107,7 +107,10 @@ export default [
       // 必须使用 includes 而不是 indexOf 判断数组包含元素
       '@typescript-eslint/prefer-includes': 'error',
       // 必须使用空值合并运算符，而不是逻辑判断
-      '@typescript-eslint/prefer-nullish-coalescing': ['error', { ignorePrimitives: true }],
+      '@typescript-eslint/prefer-nullish-coalescing': ['error', {
+        ignoreConditionalTests: true,
+        ignorePrimitives: true,
+      }],
       // 必须使用可选链运算符，而不是逻辑判断
       '@typescript-eslint/prefer-optional-chain': 'error',
       // 必须使用类型参数指定 Array#reduce 的类型，而不是对第二个参数强制类型声明
