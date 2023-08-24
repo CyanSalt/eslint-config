@@ -1,5 +1,18 @@
 
 
+## [3.24.0](https://github.com/CyanSalt/eslint-config/compare/v3.23.0...v3.24.0) (2023-08-24)
+
+
+### Features
+
+* add sort-imports rule ([256fc5d](https://github.com/CyanSalt/eslint-config/commit/256fc5de152831d0e3240e7742ca5cd5776654ea))
+* update typescript-eslint and vue rules ([18fa8af](https://github.com/CyanSalt/eslint-config/commit/18fa8afd231915045e6a9fa87bfa78555b885de4))
+
+
+### Bug Fixes
+
+* destructured naming case ([5c97ccb](https://github.com/CyanSalt/eslint-config/commit/5c97ccb57eea3517f1099618e981c38e9fa7d210))
+
 ## [3.23.0](https://github.com/CyanSalt/eslint-config/compare/v3.22.0...v3.23.0) (2023-06-02)
 
 
