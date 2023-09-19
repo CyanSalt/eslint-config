@@ -29,10 +29,11 @@ export default [
           extensions: [
             '.ts',
             '.tsx',
-            '.d.ts',
             '.js',
             '.jsx',
             '.json',
+            // `eslint-import-resolver-alias` will break node module resolving if `.d.ts` goes before `.js`
+            '.d.ts',
             '.vue',
           ],
         },
