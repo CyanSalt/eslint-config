@@ -5,6 +5,8 @@ module.exports = {
     require.resolve('./compatible.js'),
   ],
   rules: {
+    // [继承 stylistic-type-checked][覆盖 compatible]
+    '@typescript-eslint/consistent-type-assertions': 'error',
     // 自动将类型导出放置在 export type 语句中
     '@typescript-eslint/consistent-type-exports': 'warn',
     // [覆盖 stylistic-type-checked] 允许使用方括号获取属性

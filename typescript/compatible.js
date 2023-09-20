@@ -4,6 +4,8 @@ module.exports = {
   rules: {
     // [覆盖 recommended] 允许使用空对象/函数类型
     '@typescript-eslint/ban-types': 'off',
+    // [覆盖 stylistic][需要 @typescript-eslint/parser]
+    '@typescript-eslint/consistent-type-assertions': 'off',
     // 自动将类型引用放置在 import type 语句中
     '@typescript-eslint/consistent-type-imports': ['warn', {
       prefer: 'type-imports',
