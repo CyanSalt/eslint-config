@@ -1,5 +1,13 @@
 
 
+### [3.24.2](https://github.com/CyanSalt/eslint-config/compare/v3.24.1...v3.24.2) (2023-10-08)
+
+
+### Bug Fixes
+
+* compatible rules ([c22097b](https://github.com/CyanSalt/eslint-config/commit/c22097b6107aa515a5859d9383648d22b8b797fa))
+* import alias error ([4ee18e8](https://github.com/CyanSalt/eslint-config/commit/4ee18e844049829ca54602acef50377697844664))
+
 ### [3.24.1](https://github.com/CyanSalt/eslint-config/compare/v3.24.0...v3.24.1) (2023-08-24)
 
 
