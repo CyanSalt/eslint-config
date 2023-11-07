@@ -1,5 +1,12 @@
 
 
+### [3.25.1](https://github.com/CyanSalt/eslint-config/compare/v3.25.0...v3.25.1) (2023-11-07)
+
+
+### Bug Fixes
+
+* missing rule ([7545a01](https://github.com/CyanSalt/eslint-config/commit/7545a01c1d027c83150fedb74a77cb95f0ac7fc7))
+
 ## [3.25.0](https://github.com/CyanSalt/eslint-config/compare/v3.24.2...v3.25.0) (2023-11-07)
 
 
