@@ -44,6 +44,9 @@ export default [
       // 自动删除函数名和括号之间的空格，匿名函数除外
       '@stylistic/js/space-before-function-paren': 'off',
       '@stylistic/ts/space-before-function-paren': jsConfig[0].rules['@stylistic/js/space-before-function-paren'],
+      // 自动在多元操作符前后添加空格
+      '@stylistic/js/space-infix-ops': 'off',
+      '@stylistic/ts/space-infix-ops': jsConfig[0].rules['@stylistic/js/space-infix-ops'],
     },
   },
 ]

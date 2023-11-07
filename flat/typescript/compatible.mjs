@@ -1,6 +1,6 @@
 import jsConfig from '../index.mjs'
 import { PATTERN_ALL } from '../pattern.mjs'
-import stylisticConfig from './stylistic.mjs';
+import stylisticConfig from './stylistic.mjs'
 
 export default [
   ...stylisticConfig,
@@ -80,9 +80,6 @@ export default [
       'prefer-rest-params': 'off',
       // [继承 eslint-recommended] 允许使用 apply
       'prefer-spread': 'off',
-      // 自动在多元操作符前后添加空格
-      'space-infix-ops': 'off',
-      '@typescript-eslint/space-infix-ops': jsConfig[jsConfig.length - 1].rules['space-infix-ops'],
     },
   },
 ]

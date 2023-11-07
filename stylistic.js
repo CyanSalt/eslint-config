@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    '@stylistic/js'
+    '@stylistic/js',
   ],
   rules: {
     // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
@@ -116,4 +116,4 @@ module.exports = {
     // 自动优化立即执行函数写法
     '@stylistic/js/wrap-iife': ['warn', 'inside', { functionPrototypeMethods: true }],
   },
-};
+}
