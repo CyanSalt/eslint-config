@@ -1,4 +1,5 @@
 const config = require('../index.js')
+const stylisticJsConfig = require('../stylistic.js')
 
 module.exports = {
   parser: '@babel/eslint-parser',
@@ -10,10 +11,10 @@ module.exports = {
     'no-unused-expressions': 'off',
     '@babel/no-unused-expressions': config.rules['no-unused-expressions'],
     // 自动为对象字面量、解构和导入的花括号内侧添加空格
-    'object-curly-spacing': 'off',
-    '@babel/object-curly-spacing': config.rules['object-curly-spacing'],
-    // 自动在语句结尾添加分号
-    semi: 'off',
-    '@babel/semi': config.rules['semi'],
+    '@stylistic/js/object-curly-spacing': 'off',
+    '@babel/object-curly-spacing': stylisticJsConfig.rules['@stylistic/js/object-curly-spacing'],
+    // 自动移除语句结尾的分号
+    '@stylistic/js/semi': 'off',
+    '@babel/semi': stylisticJsConfig.rules['@stylistic/js/semi'],
   },
 }

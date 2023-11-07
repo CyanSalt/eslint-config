@@ -1,6 +1,7 @@
 import babelParser from '@babel/eslint-parser'
 import babelPlugin from '@babel/eslint-plugin'
 import jsConfig from '../index.mjs'
+import stylisticJsConfig from '../stylistic.mjs'
 
 export default [
   {
@@ -13,13 +14,13 @@ export default [
     rules: {
       // 禁止使用某些表达式代替对应语句
       'no-unused-expressions': 'off',
-      '@babel/no-unused-expressions': jsConfig[1].rules['no-unused-expressions'],
+      '@babel/no-unused-expressions': jsConfig[jsConfig.length - 1].rules['no-unused-expressions'],
       // 自动为对象字面量、解构和导入的花括号内侧添加空格
-      'object-curly-spacing': 'off',
-      '@babel/object-curly-spacing': jsConfig[1].rules['object-curly-spacing'],
-      // 自动在语句结尾添加分号
-      semi: 'off',
-      '@babel/semi': jsConfig[1].rules['semi'],
+      '@stylistic/js/object-curly-spacing': 'off',
+      '@babel/object-curly-spacing': stylisticJsConfig[0].rules['@stylistic/js/object-curly-spacing'],
+      // 自动移除语句结尾的分号
+      '@stylistic/js/semi': 'off',
+      '@babel/semi': stylisticJsConfig[0].rules['@stylistic/js/semi'],
     },
   },
 ]

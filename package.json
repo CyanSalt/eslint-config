@@ -27,9 +27,11 @@
   "peerDependencies": {
     "@babel/eslint-parser": ">=7.15.7",
     "@babel/eslint-plugin": ">=7.14.5",
+    "@stylistic/eslint-plugin-js": ">=1.0.0",
+    "@stylistic/eslint-plugin-ts": ">=1.0.0",
     "@typescript-eslint/eslint-plugin": ">=6.3.0",
     "@typescript-eslint/parser": ">=6.3.0",
-    "eslint": ">=8.27.0",
+    "eslint": ">=8.40.0",
     "eslint-import-resolver-alias": ">=1.1.2",
     "eslint-import-resolver-typescript": ">=3.5.4",
     "eslint-plugin-galaxy": ">=1.20.0",
@@ -45,6 +47,9 @@
       "optional": true
     },
     "@babel/eslint-plugin": {
+      "optional": true
+    },
+    "@stylistic/eslint-plugin-ts": {
       "optional": true
     },
     "@typescript-eslint/eslint-plugin": {
@@ -83,7 +88,8 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.1.1",
-    "eslint": "^8.29.0",
+    "@stylistic/eslint-plugin-js": "^1.0.0",
+    "eslint": "^8.40.0",
     "release-it": "^15.5.1"
   }
 }

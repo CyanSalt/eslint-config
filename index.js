@@ -10,6 +10,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    require.resolve('./stylistic.js'),
   ],
   ignorePatterns: [
     '!.*',
@@ -55,8 +56,6 @@ module.exports = {
     'no-bitwise': 'error',
     // 禁止使用 arguments.caller 和 arguments.callee（已弃用）
     'no-caller': 'error',
-    // 箭头函数返回三元表达式时需要加括号（歧义）
-    'no-confusing-arrow': ['error', { allowParens: true }],
     // 禁止空的静态块
     'no-empty-static-block': 'error',
     // 禁止使用 eval（安全性）
@@ -65,8 +64,6 @@ module.exports = {
     'no-extend-native': 'error',
     // 自动删除无用的函数绑定
     'no-extra-bind': 'warn',
-    // 禁止使用浮点小数
-    'no-floating-decimal': 'error',
     // 禁止使用隐式的类型转换（!!、~等）
     'no-implicit-coercion': 'error',
     // 禁止使用 setTimeout 等函数的字符串参数（安全性）
@@ -129,123 +126,17 @@ module.exports = {
     'prefer-rest-params': 'error',
     // 禁止无意义的 apply，而是使用扩展运算符代替
     'prefer-spread': 'error',
-    // 自动删除不必要的对象字面量键的引号
-    'quote-props': ['warn', 'as-needed'],
     // 使用 parseInt 时必须传递进制参数
     radix: 'error',
     // [覆盖 recommended] 允许生成器函数不使用 yield 关键字
     'require-yield': 'off',
     // 自动将 import 导入的名称按照字母顺序排列
     'sort-imports': ['warn', { ignoreCase: true, ignoreDeclarationSort: true }],
-    // 自动在注释内容前添加空格
-    'spaced-comment': ['warn', 'always', { markers: ['/'] }],
     // 使用 Symbol 必须传递描述参数
     'symbol-description': 'error',
 
     /** Layout & Formatting */
-    // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
-    'array-bracket-newline': ['warn', 'consistent'],
-    // 自动删除数组的括号内侧的空格
-    'array-bracket-spacing': 'warn',
-    // 自动优化数组的元素换行（所有元素保持一致）
-    'array-element-newline': ['warn', 'consistent'],
-    // 自动在箭头函数的箭头前后添加空格
-    'arrow-spacing': 'warn',
-    // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
-    'brace-style': 'warn',
-    // 自动添加尾随逗号
-    'comma-dangle': ['warn', 'always-multiline'],
-    // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）
-    'comma-spacing': 'warn',
-    // 自动移动行首的逗号至行尾
-    'comma-style': 'warn',
-    // 自动删除对象使用方括号取值时方括号内的空格
-    'computed-property-spacing': 'warn',
-    // 点号如果换行需要写在行首而非行尾
-    'dot-location': ['error', 'property'],
-    // 自动为文件末尾保留一行空行
-    'eol-last': ['warn', 'always'],
-    // 自动删除函数调用的括号前的空格
-    'func-call-spacing': 'warn',
-    // 自动优化函数调用的参数列表换行（所有元素保持一致）
-    'function-call-argument-newline': ['warn', 'consistent'],
-    // 自动优化函数声明的参数列表换行（所有元素保持一致）
-    'function-paren-newline': ['warn', 'multiline-arguments'],
-    // 自动优化缩进为两个空格
-    indent: ['warn', 2, {
-      SwitchCase: 1,
-      ignoredNodes: ['TSTypeParameterInstantiation'],
-    }],
-    // 自动替换 JSX 的属性引号为单引号
-    'jsx-quotes': ['warn', 'prefer-single'],
-    // 自动优化对象字面量冒号的空格使用（冒号前禁止使用空格，冒号后必须使用空格）
-    'key-spacing': ['warn', { beforeColon: false, afterColon: true, mode: 'strict' }],
-    // 自动在关键字前后添加空格
-    'keyword-spacing': ['warn', { before: true, after: true }],
-    // 自动将 CRLF 换行符替换为 LF
-    'linebreak-style': 'warn',
-    // 禁止单行超过 120 个字符
-    'max-len': ['error', {
-      code: 120,
-      ignoreComments: true,
-      ignoreUrls: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-      ignoreRegExpLiterals: true,
-    }],
-    // 禁止单行内出现多个语句
-    'max-statements-per-line': 'error',
-    // 自动为 new 调用的构造函数补全括号
-    'new-parens': 'warn',
-    // 自动删除连续的多个空格
-    'no-multi-spaces': 'error',
-    // 自动删除连续两个以上的空行
-    'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 0, maxBOF: 0 }],
-    // 禁止使用 tab 字符
-    'no-tabs': 'error',
-    // 自动删除行尾空格
-    'no-trailing-spaces': 'warn',
-    // 自动删除单行内的点号前后空格
-    'no-whitespace-before-property': 'warn',
-    // 自动在if等结构换行时添加花括号
-    'nonblock-statement-body-position': ['warn', 'beside'],
-    // 自动优化对象字面量、解构和导入的花括号换行（前括号和后括号保持一致）
-    'object-curly-newline': ['warn', { consistent: true }],
-    // 自动为对象字面量、解构和导入的花括号内侧添加空格
-    'object-curly-spacing': ['warn', 'always'],
-    // 自动优化对象属性换行（全部一行或全部换行）
-    'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
-    // 自动优化行尾操作符至下一行行首
-    'operator-linebreak': ['warn', 'before'],
-    // 自动替换字符串字面量的双引号
-    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
-    // 自动删除剩余和扩展运算符后的空格
-    'rest-spread-spacing': 'warn',
-    // 自动在语句结尾添加分号
-    semi: ['warn', 'never'],
-    // 自动优化分号的空格使用（分号前禁止使用空格，分号后必须使用空格）
-    'semi-spacing': ['warn', { before: false, after: true }],
-    // 自动优化行首的分号至行尾
-    'semi-style': ['warn', 'last'],
-    // 自动在if等结构的声明块和代码块之间添加空格
-    'space-before-blocks': 'warn',
-    // 自动删除函数名和括号之间的空格，匿名函数除外
-    'space-before-function-paren': ['warn', { named: 'never' }],
-    // 自动删除括号内侧的空格
-    'space-in-parens': 'warn',
-    // 自动在多元操作符前后添加空格
-    'space-infix-ops': 'warn',
-    // 自动删除一元操作符的空格，自动为一元关键字添加空格
-    'space-unary-ops': ['warn', { words: true, nonwords: false }],
-    // 自动优化 case 语句冒号的空格使用（冒号前禁止使用空格，冒号后必须使用空格）
-    'switch-colon-spacing': ['warn', { before: false }],
-    // 自动删除模板字符串的插值花括号内侧空格
-    'template-curly-spacing': 'warn',
-    // 自动删除模板字符串标签后的空格
-    'template-tag-spacing': 'warn',
     // 自动去除文件的 Unicode BOM 头
     'unicode-bom': 'warn',
-    // 自动优化立即执行函数写法
-    'wrap-iife': ['warn', 'inside', { functionPrototypeMethods: true }],
   },
 }

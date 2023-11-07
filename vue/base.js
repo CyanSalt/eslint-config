@@ -1,4 +1,5 @@
 const config = require('../index.js')
+const stylisticJsConfig = require('../stylistic.js')
 const groups = require('./order-groups')
 
 module.exports = {
@@ -142,31 +143,31 @@ module.exports = {
 
     /** Extension Rules */
     // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
-    'vue/array-bracket-newline': config.rules['array-bracket-newline'],
+    'vue/array-bracket-newline': stylisticJsConfig.rules['@stylistic/js/array-bracket-newline'],
     // 自动删除数组的括号内侧的空格
-    'vue/array-bracket-spacing': config.rules['array-bracket-spacing'],
+    'vue/array-bracket-spacing': stylisticJsConfig.rules['@stylistic/js/array-bracket-spacing'],
     // 自动优化数组的元素换行（所有元素保持一致）
-    'vue/array-element-newline': config.rules['array-element-newline'],
+    'vue/array-element-newline': stylisticJsConfig.rules['@stylistic/js/array-element-newline'],
     // 自动在箭头函数的箭头前后添加空格
-    'vue/arrow-spacing': config.rules['arrow-spacing'],
+    'vue/arrow-spacing': stylisticJsConfig.rules['@stylistic/js/arrow-spacing'],
     // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
-    'vue/brace-style': config.rules['brace-style'],
+    'vue/brace-style': stylisticJsConfig.rules['@stylistic/js/brace-style'],
     // 自动添加尾随逗号
-    'vue/comma-dangle': config.rules['comma-dangle'],
+    'vue/comma-dangle': stylisticJsConfig.rules['@stylistic/js/comma-dangle'],
     // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）
-    'vue/comma-spacing': config.rules['comma-spacing'],
+    'vue/comma-spacing': stylisticJsConfig.rules['@stylistic/js/comma-spacing'],
     // 自动移动行首的逗号至行尾
-    'vue/comma-style': config.rules['comma-style'],
+    'vue/comma-style': stylisticJsConfig.rules['@stylistic/js/comma-style'],
     // 点号如果换行需要写在行首而非行尾
-    'vue/dot-location': config.rules['dot-location'],
+    'vue/dot-location': stylisticJsConfig.rules['@stylistic/js/dot-location'],
     // 禁止使用 == 隐式类型转换
     'vue/eqeqeq': config.rules['eqeqeq'],
     // 自动删除函数调用的括号前的空格
-    'vue/func-call-spacing': config.rules['func-call-spacing'],
+    'vue/func-call-spacing': stylisticJsConfig.rules['@stylistic/js/func-call-spacing'],
     // 自动优化对象字面量冒号的空格使用（冒号前禁止使用空格，冒号后必须使用空格）
-    'vue/key-spacing': config.rules['key-spacing'],
+    'vue/key-spacing': stylisticJsConfig.rules['@stylistic/js/key-spacing'],
     // 自动在关键字前后添加空格
-    'vue/keyword-spacing': config.rules['keyword-spacing'],
+    'vue/keyword-spacing': stylisticJsConfig.rules['@stylistic/js/keyword-spacing'],
     // [扩展 recommended] 禁止使用不可变的 if 条件
     'vue/no-constant-condition': 'error',
     // [扩展 recommended] 禁止使用空的解构
@@ -180,30 +181,30 @@ module.exports = {
     // 禁止单行内的字符串字面量拼接
     'vue/no-useless-concat': config.rules['no-useless-concat'],
     // 自动优化对象字面量、解构和导入的花括号换行（前括号和后括号保持一致）
-    'vue/object-curly-newline': config.rules['object-curly-newline'],
+    'vue/object-curly-newline': stylisticJsConfig.rules['@stylistic/js/object-curly-newline'],
     // 自动为对象字面量、解构和导入的花括号内侧添加空格
-    'vue/object-curly-spacing': config.rules['object-curly-spacing'],
+    'vue/object-curly-spacing': stylisticJsConfig.rules['@stylistic/js/object-curly-spacing'],
     // 自动优化对象字面量的值为简写
     'vue/object-shorthand': config.rules['object-shorthand'],
     // 自动优化行尾操作符至下一行行首
-    'vue/operator-linebreak': config.rules['operator-linebreak'],
+    'vue/operator-linebreak': stylisticJsConfig.rules['@stylistic/js/operator-linebreak'],
     // 自动删除不必要的对象字面量键的引号
-    'vue/quote-props': config.rules['quote-props'],
+    'vue/quote-props': stylisticJsConfig.rules['@stylistic/js/quote-props'],
     // 自动删除括号内侧的空格
-    'vue/space-in-parens': config.rules['space-in-parens'],
+    'vue/space-in-parens': stylisticJsConfig.rules['@stylistic/js/space-in-parens'],
     // 自动在多元操作符前后添加空格
-    'vue/space-infix-ops': config.rules['space-infix-ops'],
+    'vue/space-infix-ops': stylisticJsConfig.rules['@stylistic/js/space-infix-ops'],
     // 自动删除一元操作符的空格，自动为一元关键字添加空格
-    'vue/space-unary-ops': config.rules['space-unary-ops'],
+    'vue/space-unary-ops': stylisticJsConfig.rules['@stylistic/js/space-unary-ops'],
     // 自动删除模板字符串的插值花括号内侧空格
-    'vue/template-curly-spacing': config.rules['template-curly-spacing'],
+    'vue/template-curly-spacing': stylisticJsConfig.rules['@stylistic/js/template-curly-spacing'],
   },
   overrides: [
     {
       files: ['**/*.vue'],
       rules: {
         // 禁止单行超过 120 个字符，但忽略样式块以及元素的 text content
-        'max-len': 'off',
+        '@stylistic/js/max-len': 'off',
         'vue/max-len': ['error', {
           code: 120,
           ignorePattern: '\\sd="[^"]+"',

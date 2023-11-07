@@ -13,7 +13,7 @@ export default [
     rules: {
       // 禁止使用某些表达式代替对应语句
       'no-unused-expressions': 'off',
-      '@babel/no-unused-expressions': jsConfig[1].rules['no-unused-expressions'],
+      '@babel/no-unused-expressions': jsConfig[jsConfig.length - 1].rules['no-unused-expressions'],
     },
   },
 ]
