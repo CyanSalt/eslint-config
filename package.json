@@ -31,7 +31,7 @@
     "@stylistic/eslint-plugin-ts": ">=1.0.0",
     "@typescript-eslint/eslint-plugin": ">=6.3.0",
     "@typescript-eslint/parser": ">=6.3.0",
-    "eslint": ">=8.40.0",
+    "eslint": ">=8.50.0",
     "eslint-import-resolver-alias": ">=1.1.2",
     "eslint-import-resolver-typescript": ">=3.5.4",
     "eslint-plugin-galaxy": ">=1.20.0",
@@ -89,7 +89,7 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.1.1",
     "@stylistic/eslint-plugin-js": "^1.0.0",
-    "eslint": "^8.40.0",
+    "eslint": "^8.50.0",
     "release-it": "^15.5.1"
   }
 }

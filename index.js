@@ -76,10 +76,10 @@ module.exports = {
     'no-multi-assign': 'error',
     // 禁止使用 Function 构造函数（安全性）
     'no-new-func': 'error',
-    // 禁止使用 Object 构造对象
-    'no-new-object': 'error',
     // 禁止将字符串/数字等原始值构造为对象
     'no-new-wrappers': 'error',
+    // 禁止使用 Object 构造对象
+    'no-object-constructor': 'error',
     // 禁止八进制转义（已弃用）
     'no-octal-escape': 'error',
     // 禁止使用 __proto__ 魔术属性（已弃用）
