@@ -1,5 +1,12 @@
 
 
+### [3.26.1](https://github.com/CyanSalt/eslint-config/compare/v3.26.0...v3.26.1) (2023-11-08)
+
+
+### Bug Fixes
+
+* import naming convention ([f15b873](https://github.com/CyanSalt/eslint-config/commit/f15b873e06d4f9ebe7d79425dda17a5005b4bff0))
+
 ## [3.26.0](https://github.com/CyanSalt/eslint-config/compare/v3.25.1...v3.26.0) (2023-11-08)
 
 
