@@ -1,5 +1,12 @@
 
 
+## [3.27.0](https://github.com/CyanSalt/eslint-config/compare/v3.26.1...v3.27.0) (2023-11-14)
+
+
+### Features
+
+* add type assertion rule ([7e1e788](https://github.com/CyanSalt/eslint-config/commit/7e1e788a0c15fc42e3b8ff2abe86a376d43585bf))
+
 ### [3.26.1](https://github.com/CyanSalt/eslint-config/compare/v3.26.0...v3.26.1) (2023-11-08)
 
 
