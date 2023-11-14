@@ -101,6 +101,8 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-condition': 'error',
     // 禁止无用的命名空间调用
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
+    // 自动移除多余的类型转换
+    '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
     // 必须使用 includes 而不是 indexOf 判断数组包含元素
     '@typescript-eslint/prefer-includes': 'error',
     // 必须使用空值合并运算符，而不是逻辑判断
