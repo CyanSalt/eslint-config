@@ -35,11 +35,11 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 // eslint.config.js
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   // ...
-}
+]
 ```
 
 Note: `eslint:recommended` is not needed since it has been extended by default. However, if you need to use a configuration that is not supported by ESLint by default, such as [`@babel/eslint-parser`](https://www.npmjs.com/package/@babel/eslint-parser), you need to configure it manually.
@@ -72,14 +72,14 @@ import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import vueConfig from '@cyansalt/eslint-config/flat/vue/index.mjs'
 import vueTypescriptConfig from '@cyansalt/eslint-config/flat/vue/typescript/index.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...vueConfig,
   // for TypeScript
   ...vueTypescriptConfig,
   // ...
-}
+]
 ```
 
 and you also need not to declare `plugin:vue/essential` or `plugin:vue/vue3-essential` for the same reason.
@@ -105,12 +105,12 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import vueV2Config from '@cyansalt/eslint-config/flat/vue/v2.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...vueV2Config,
   // ...
-}
+]
 ```
 
 #### React
@@ -134,12 +134,12 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import reactConfig from '@cyansalt/eslint-config/flat/react/index.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...reactConfig,
   // ...
-}
+]
 ```
 
 ### TypeScript
@@ -163,12 +163,12 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import typescriptConfig from '@cyansalt/eslint-config/flat/typescript/index.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...typescriptConfig,
   // ...
-}
+]
 ```
 
 ### Babel
@@ -192,12 +192,12 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import babelConfig from '@cyansalt/eslint-config/flat/babel/index.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...babelConfig,
   // ...
-}
+]
 ```
 
 ### Plugins
@@ -233,7 +233,7 @@ import galaxyConfig from '@cyansalt/eslint-config/flat/galaxy/index.mjs'
 import galaxyVueConfig from '@cyansalt/eslint-config/flat/galaxy/vue/index.mjs'
 import galaxyTypescriptConfig from '@cyansalt/eslint-config/flat/galaxy/typescript.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...galaxyConfig,
@@ -242,7 +242,7 @@ export default {
   // for TypeScript
   ...galaxyTypescriptConfig,
   // ...
-}
+]
 ```
 
 #### Import
@@ -268,12 +268,12 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import importConfig from '@cyansalt/eslint-config/flat/import.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...importConfig,
   // ...
-}
+]
 ```
 
 #### 🦄 Unicorn
@@ -299,12 +299,12 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import unicornConfig from '@cyansalt/eslint-config/flat/unicorn.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...unicornConfig,
   // ...
-}
+]
 ```
 
 #### Vue Scoped CSS
@@ -333,14 +333,14 @@ import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import vueScopedCssConfig from '@cyansalt/eslint-config/flat/vue/scoped-css/index.mjs'
 import vueScopedCssV2Config from '@cyansalt/eslint-config/flat/vue/scoped-css/v2.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...vueScopedCssConfig,
   // for Vue 2
   ...vueScopedCssV2Config,
   // ...
-}
+]
 ```
 
 #### React Hooks
@@ -365,10 +365,10 @@ Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
 import jsConfig from '@cyansalt/eslint-config/flat/index.mjs'
 import reactHooksConfig from '@cyansalt/eslint-config/flat/react/hooks.mjs'
 
-export default {
+export default [
   // ...
   ...jsConfig,
   ...reactHooksConfig,
   // ...
-}
+]
 ```
