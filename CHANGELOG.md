@@ -1,5 +1,12 @@
 
 
+### [3.27.1](https://github.com/CyanSalt/eslint-config/compare/v3.27.0...v3.27.1) (2023-11-23)
+
+
+### Bug Fixes
+
+* import parsers ([913717a](https://github.com/CyanSalt/eslint-config/commit/913717af161af330cac50f5e0fd63709b702cc92))
+
 ## [3.27.0](https://github.com/CyanSalt/eslint-config/compare/v3.26.1...v3.27.0) (2023-11-14)
 
 
