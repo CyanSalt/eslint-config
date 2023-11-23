@@ -33,6 +33,10 @@ module.exports = {
         ],
       },
     },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx'],
+      'vue-eslint-parser': ['.vue'],
+    },
   },
   rules: {
     // 自动将类型导入修改为 import type 语句
