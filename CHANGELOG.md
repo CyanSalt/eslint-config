@@ -1,5 +1,17 @@
 
 
+## [3.28.0](https://github.com/CyanSalt/eslint-config/compare/v3.27.1...v3.28.0) (2024-01-12)
+
+
+### Features
+
+* add stylelistic rules ([2763565](https://github.com/CyanSalt/eslint-config/commit/276356509334a257f2c0e6d3a19b0125f1196c04))
+
+
+### Bug Fixes
+
+* missing flat import parsers ([6603e78](https://github.com/CyanSalt/eslint-config/commit/6603e7809f2f9d767801d8ace7fb781335c6d74d))
+
 ### [3.27.1](https://github.com/CyanSalt/eslint-config/compare/v3.27.0...v3.27.1) (2023-11-23)
 
 
