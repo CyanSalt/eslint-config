@@ -1,9 +1,15 @@
+import stylisticPlusPlugin from '@stylistic/eslint-plugin-plus'
+import stylisticTsPlugin from '@stylistic/eslint-plugin-ts'
 import { PATTERN_ALL } from '../pattern.mjs'
 import jsConfig from '../stylistic.mjs'
 
 export default [
   {
     files: [PATTERN_ALL],
+    plugins: {
+      '@stylistic/plus': stylisticPlusPlugin,
+      '@stylistic/ts': stylisticTsPlugin,
+    },
     rules: {
       // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
       '@stylistic/js/brace-style': 'off',
@@ -15,8 +21,8 @@ export default [
       '@stylistic/js/comma-spacing': 'off',
       '@stylistic/ts/comma-spacing': jsConfig[0].rules['@stylistic/js/comma-spacing'],
       // 自动删除函数调用的括号前的空格
-      '@stylistic/js/func-call-spacing': 'off',
-      '@stylistic/ts/func-call-spacing': jsConfig[0].rules['@stylistic/js/func-call-spacing'],
+      '@stylistic/js/function-call-spacing': 'off',
+      '@stylistic/ts/function-call-spacing': jsConfig[0].rules['@stylistic/js/function-call-spacing'],
       // 自动优化缩进为两个空格
       '@stylistic/js/indent': 'off',
       '@stylistic/ts/indent': jsConfig[0].rules['@stylistic/js/indent'],
@@ -47,6 +53,11 @@ export default [
       // 自动在多元操作符前后添加空格
       '@stylistic/js/space-infix-ops': 'off',
       '@stylistic/ts/space-infix-ops': jsConfig[0].rules['@stylistic/js/space-infix-ops'],
+
+      // 自动优化类型参数间的空格
+      '@stylistic/plus/type-generic-spacing': 'warn',
+      // 自动优化命名类型元组间的空格
+      '@stylistic/plus/type-named-tuple-spacing': 'warn',
     },
   },
 ]

@@ -26,9 +26,10 @@
   "license": "ISC",
   "peerDependencies": {
     "@babel/eslint-parser": ">=7.15.7",
-    "@babel/eslint-plugin": ">=7.14.5",
-    "@stylistic/eslint-plugin-js": ">=1.0.0",
-    "@stylistic/eslint-plugin-ts": ">=1.0.0",
+    "@babel/eslint-plugin": ">=7.13.5",
+    "@stylistic/eslint-plugin-js": ">=1.2.0",
+    "@stylistic/eslint-plugin-plus": ">=1.5.0",
+    "@stylistic/eslint-plugin-ts": ">=1.2.0",
     "@typescript-eslint/eslint-plugin": ">=6.9.1",
     "@typescript-eslint/parser": ">=6.9.1",
     "eslint": ">=8.50.0",
@@ -88,8 +89,8 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^8.0.1",
-    "@stylistic/eslint-plugin-js": "^1.0.0",
-    "eslint": "^8.50.0",
-    "release-it": "^17.0.0"
+    "@stylistic/eslint-plugin-js": "^1.5.3",
+    "eslint": "^8.56.0",
+    "release-it": "^17.0.1"
   }
 }

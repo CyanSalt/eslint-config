@@ -163,7 +163,7 @@ module.exports = {
     // 禁止使用 == 隐式类型转换
     'vue/eqeqeq': config.rules['eqeqeq'],
     // 自动删除函数调用的括号前的空格
-    'vue/func-call-spacing': stylisticJsConfig.rules['@stylistic/js/func-call-spacing'],
+    'vue/func-call-spacing': stylisticJsConfig.rules['@stylistic/js/function-call-spacing'],
     // 自动优化对象字面量冒号的空格使用（冒号前禁止使用空格，冒号后必须使用空格）
     'vue/key-spacing': stylisticJsConfig.rules['@stylistic/js/key-spacing'],
     // 自动在关键字前后添加空格

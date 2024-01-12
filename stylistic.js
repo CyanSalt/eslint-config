@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     '@stylistic/js',
+    '@stylistic/plus',
   ],
   rules: {
     // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
@@ -25,10 +26,10 @@ module.exports = {
     '@stylistic/js/dot-location': ['error', 'property'],
     // 自动为文件末尾保留一行空行
     '@stylistic/js/eol-last': ['warn', 'always'],
-    // 自动删除函数调用的括号前的空格
-    '@stylistic/js/func-call-spacing': 'warn',
     // 自动优化函数调用的参数列表换行（所有元素保持一致）
     '@stylistic/js/function-call-argument-newline': ['warn', 'consistent'],
+    // 自动删除函数调用的括号前的空格
+    '@stylistic/js/function-call-spacing': 'warn',
     // 自动优化函数声明的参数列表换行（所有元素保持一致）
     '@stylistic/js/function-paren-newline': ['warn', 'multiline-arguments'],
     // 自动优化缩进为两个空格

@@ -2,6 +2,7 @@ const jsConfig = require('../stylistic')
 
 module.exports = {
   plugins: [
+    '@stylistic/plus',
     '@stylistic/ts',
   ],
   rules: {
@@ -15,8 +16,8 @@ module.exports = {
     '@stylistic/js/comma-spacing': 'off',
     '@stylistic/ts/comma-spacing': jsConfig.rules['@stylistic/js/comma-spacing'],
     // 自动删除函数调用的括号前的空格
-    '@stylistic/js/func-call-spacing': 'off',
-    '@stylistic/ts/func-call-spacing': jsConfig.rules['@stylistic/js/func-call-spacing'],
+    '@stylistic/js/function-call-spacing': 'off',
+    '@stylistic/ts/function-call-spacing': jsConfig.rules['@stylistic/js/function-call-spacing'],
     // 自动优化缩进为两个空格
     '@stylistic/js/indent': 'off',
     '@stylistic/ts/indent': jsConfig.rules['@stylistic/js/indent'],
@@ -47,5 +48,10 @@ module.exports = {
     // 自动在多元操作符前后添加空格
     '@stylistic/js/space-infix-ops': 'off',
     '@stylistic/ts/space-infix-ops': jsConfig.rules['@stylistic/js/space-infix-ops'],
+
+    // 自动优化类型参数间的空格
+    '@stylistic/plus/type-generic-spacing': 'warn',
+    // 自动优化命名类型元组间的空格
+    '@stylistic/plus/type-named-tuple-spacing': 'warn',
   },
 }

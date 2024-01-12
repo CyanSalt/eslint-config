@@ -12,6 +12,9 @@ export default [
       '@babel': babelPlugin,
     },
     rules: {
+      // 禁止使用未定义的变量
+      'no-undef': 'off',
+      '@babel/no-undef': 'error',
       // 禁止使用某些表达式代替对应语句
       'no-unused-expressions': 'off',
       '@babel/no-unused-expressions': jsConfig[jsConfig.length - 1].rules['no-unused-expressions'],
