@@ -29,7 +29,7 @@ export default defineConfig(options => {
         'no-dupe-keys': 'error',
         'no-func-assign': 'error',
         'no-import-assign': 'error',
-        'no-new-symbol': 'error',
+        'no-new-native-nonconstructor': 'error',
         'no-obj-calls': 'error',
         // TS overload
         // 'no-redeclare': 'error',
@@ -216,8 +216,6 @@ export default defineConfig(options => {
         }],
         // 禁止无效的类型运算
         '@typescript-eslint/no-redundant-type-constituents': 'error',
-        // 禁止将字面量作为异常抛出
-        '@typescript-eslint/no-throw-literal': 'error',
         // 禁止不必要的布尔值比较
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         // 禁止始终为真/假值的判断
@@ -243,6 +241,14 @@ export default defineConfig(options => {
         '@typescript-eslint/prefer-string-starts-ends-with': 'off',
         // 必须为联合类型的 switch 判断指定完整的分支逻辑
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
+
+        /** Extension Rules */
+        // 仅允许抛出 Error 类型错误
+        'no-throw-literal': 'off',
+        '@typescript-eslint/only-throw-error': 'error',
+        // Promise reject 必须使用 Error 实例
+        'prefer-promise-reject-errors': 'off',
+        '@typescript-eslint/prefer-promise-reject-errors': 'error',
       },
     },
   ]

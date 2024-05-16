@@ -31,20 +31,14 @@ export default defineConfig(options => {
         /** Possible Problems */
         // map等数组方法的回调函数必须有返回值
         'array-callback-return': 'error',
-        // 禁止无效的二元操作
-        'no-constant-binary-expression': 'error',
         // 禁止重复的 import
         'no-duplicate-imports': 'error',
-        // 禁止使用 new 构造 Symbol 和 BigInt
-        'no-new-native-nonconstructor': 'error',
         // 禁止变量与自身比较
         'no-self-compare': 'error',
         // 禁止不受循环影响的循环变量
         'no-unmodified-loop-condition': 'error',
         // 禁止循环固定执行单次
         'no-unreachable-loop': 'error',
-        // 禁止定义未使用的私有类成员
-        'no-unused-private-class-members': 'error',
         // [覆盖 recommended] 禁止定义未使用的变量，除了剩余参数和解构
         'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
         // 禁止定义前使用变量（ReferenceError）
@@ -67,8 +61,6 @@ export default defineConfig(options => {
         'no-bitwise': 'error',
         // 禁止使用 arguments.caller 和 arguments.callee（已弃用）
         'no-caller': 'error',
-        // 禁止空的静态块
-        'no-empty-static-block': 'error',
         // 禁止使用 eval（安全性）
         'no-eval': 'error',
         // 禁止扩展原生对象

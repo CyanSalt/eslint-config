@@ -408,12 +408,9 @@ export default defineConfig(options => {
         },
       },
     ]),
+    ...vueScopedCssPlugin.configs['flat/vue2-recommended'],
     {
-      plugins: {
-        'vue-scoped-css': vueScopedCssPlugin,
-      },
       rules: {
-        ...vueScopedCssPlugin.configs.recommended.rules,
         // [覆盖 recommended] 允许使用未出现过的选择器
         'vue-scoped-css/no-unused-selector': 'off',
       },

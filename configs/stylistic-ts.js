@@ -42,6 +42,9 @@ export default defineConfig(options => {
         // 自动为对象字面量、解构和导入的花括号内侧添加空格
         '@stylistic/js/object-curly-spacing': 'off',
         '@stylistic/ts/object-curly-spacing': ['warn', 'always'],
+        // 自动删除不必要的对象字面量键的引号
+        '@stylistic/js/quote-props': 'off',
+        '@stylistic/ts/quote-props': ['warn', 'as-needed'],
         // 自动替换字符串字面量的双引号
         '@stylistic/js/quotes': 'off',
         '@stylistic/ts/quotes': ['warn', 'single', { allowTemplateLiterals: true }],
