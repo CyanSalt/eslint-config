@@ -27,7 +27,7 @@ import semver from 'semver'
  * @typedef {PartialDeep<Options>} UserOptions
  */
 
-async function getTSCompilerOptions() {
+async function loadTSCompilerOptions() {
   try {
     const ts = await importModule('typescript')
     const configPath = ts.findConfigFile(process.cwd(), ts.sys.fileExists, 'tsconfig.json')
@@ -37,6 +37,16 @@ async function getTSCompilerOptions() {
   } catch {
     return undefined
   }
+}
+
+/** @type {Promise<any> | undefined} */
+let loadingTSCompilerOptions
+
+function getTSCompilerOptions() {
+  if (!loadingTSCompilerOptions) {
+    loadingTSCompilerOptions = loadTSCompilerOptions()
+  }
+  return loadingTSCompilerOptions
 }
 
 /**
@@ -112,12 +122,25 @@ export async function resolveVue() {
  * @returns {Promise<Options>}
  */
 export async function resolveOptions(options = {}) {
+  const [
+    typescript,
+    babel,
+    react,
+    vue,
+    jsx,
+  ] = await Promise.all([
+    options.typescript ?? resolveTypescript(),
+    options.babel ?? resolveBabel(),
+    options.react ?? resolveReact(),
+    options.vue ?? resolveVue(),
+    options.jsx ?? resolveJsx(),
+  ])
   return {
-    typescript: options.typescript ?? await resolveTypescript(),
-    babel: options.babel ?? await resolveBabel(),
-    react: options.react ?? resolveReact(),
-    vue: options.vue ?? await resolveVue(),
-    jsx: options.jsx ?? await resolveJsx(),
+    typescript,
+    babel,
+    react,
+    vue,
+    jsx,
     configs: options.configs ?? [],
   }
 }
