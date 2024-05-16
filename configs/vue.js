@@ -119,8 +119,10 @@ export default defineConfig(options => {
       ...(options.jsx ? [
         {
           files: [GLOB_VUE],
-          parserOptions: {
-            project: null,
+          languageOptions: {
+            parserOptions: {
+              project: null,
+            },
           },
         },
       ] : []),
@@ -425,14 +427,16 @@ export default defineConfig(options => {
     ] : []),
     ...(options.vue.macros ? [
       {
-        globals: {
-          $: 'readonly',
-          $$: 'readonly',
-          $ref: 'readonly',
-          $shallowRef: 'readonly',
-          $computed: 'readonly',
-          $customRef: 'readonly',
-          $toRef: 'readonly',
+        languageOptions: {
+          globals: {
+            $: 'readonly',
+            $$: 'readonly',
+            $ref: 'readonly',
+            $shallowRef: 'readonly',
+            $computed: 'readonly',
+            $customRef: 'readonly',
+            $toRef: 'readonly',
+          },
         },
         rules: {
           // [覆盖 essential] 允许 defineProps 解构

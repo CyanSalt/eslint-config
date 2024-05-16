@@ -12,6 +12,12 @@ export default defineConfig(options => {
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
     ),
+    ...overrides(
+      tseslint.config(...tseslint.configs.stylisticTypeChecked),
+      {
+        files: [mixed ? GLOB_TS : GLOB_ALL],
+      },
+    ),
     {
       languageOptions: {
         parserOptions: {
@@ -110,12 +116,6 @@ export default defineConfig(options => {
       },
     },
     ...stylisticTs(),
-    ...overrides(
-      tseslint.config(...tseslint.configs.stylisticTypeChecked),
-      {
-        files: [mixed ? GLOB_TS : GLOB_ALL],
-      },
-    ),
     {
       files: [mixed ? GLOB_TS : GLOB_ALL],
       plugins: {
