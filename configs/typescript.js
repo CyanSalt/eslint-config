@@ -246,9 +246,6 @@ export default defineConfig(options => {
         // 仅允许抛出 Error 类型错误
         'no-throw-literal': 'off',
         '@typescript-eslint/only-throw-error': 'error',
-        // Promise reject 必须使用 Error 实例
-        'prefer-promise-reject-errors': 'off',
-        '@typescript-eslint/prefer-promise-reject-errors': 'error',
       },
     },
   ]
