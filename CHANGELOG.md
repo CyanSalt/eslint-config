@@ -1,5 +1,26 @@
 
 
+## [4.0.0](https://github.com/CyanSalt/eslint-config/compare/v3.28.0...v4.0.0) (2024-05-16)
+
+
+### Features
+
+* add galaxy/vue-ref-style ([ee23640](https://github.com/CyanSalt/eslint-config/commit/ee236407297e6eedeab7022a26e592d6d03b23bb))
+* config for updated plugins ([ca185f8](https://github.com/CyanSalt/eslint-config/commit/ca185f8a7e1c851c67e386dfa3ca355ec88d8287))
+* use flat config ([fb6e932](https://github.com/CyanSalt/eslint-config/commit/fb6e932dfb1f240627e846100b2b325ead8633d8))
+
+
+### Bug Fixes
+
+* disable ts throw rule ([ade8a9d](https://github.com/CyanSalt/eslint-config/commit/ade8a9db993e9164a91e51ebe5d4cdbdc2b590cb))
+* flat config format ([fbaf72d](https://github.com/CyanSalt/eslint-config/commit/fbaf72dfde79bcf95159efbdc91ba6a55beec865))
+* re-enable eslint rules for ts ([7970f59](https://github.com/CyanSalt/eslint-config/commit/7970f59a712ea5d5244021190b8f7fd2bd234575))
+
+
+### Performance Improvements
+
+* async default options ([d99e8ba](https://github.com/CyanSalt/eslint-config/commit/d99e8ba6caefb9bab6f3b07f6173c60f135bd360))
+
 ## [3.28.0](https://github.com/CyanSalt/eslint-config/compare/v3.27.1...v3.28.0) (2024-01-12)
 
 
