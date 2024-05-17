@@ -3,12 +3,9 @@ import { defineConfig } from '../config.js'
 
 export default defineConfig(options => {
   return [
+    galaxyPlugin.configs.recommended,
     {
-      plugins: {
-        galaxy: galaxyPlugin,
-      },
       rules: {
-        ...galaxyPlugin.configs.recommended.rules,
         // 自动移除 .ts 文件的导入后缀
         'galaxy/import-extensions': ['warn', {
           '.cts': 'never',
@@ -37,9 +34,9 @@ export default defineConfig(options => {
       },
     ] : []),
     ...(options.vue ? [
+      galaxyPlugin.configs['recommended-vue'],
       {
         rules: {
-          ...galaxyPlugin.configs['recommended-vue'].rules,
           // 自动调整组件选项内的属性顺序
           'galaxy/conventional-vue-keys-order': ['warn', {
             rules: [
