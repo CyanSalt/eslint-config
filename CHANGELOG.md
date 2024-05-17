@@ -1,5 +1,13 @@
 
 
+## [4.0.1](https://github.com/CyanSalt/eslint-config/compare/v4.0.0...v4.0.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* missing galaxy typescript rules ([d7f59a8](https://github.com/CyanSalt/eslint-config/commit/d7f59a8e4df1d80b353805532409e3e2821ebdfe))
+* update galaxy config ([8d3e596](https://github.com/CyanSalt/eslint-config/commit/8d3e5965b12ea6dbed09ff4cc8eace91a40084e2))
+
 ## [4.0.0](https://github.com/CyanSalt/eslint-config/compare/v3.28.0...v4.0.0) (2024-05-16)
 
 
