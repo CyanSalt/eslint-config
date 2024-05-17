@@ -1,3 +1,13 @@
 import config from './index.js'
 
-export default config()
+export default config({
+  configs: [
+    {
+      rules: {
+        'galaxy/import-extensions': ['warn', {
+          '.js': 'always',
+        }],
+      },
+    },
+  ],
+})
