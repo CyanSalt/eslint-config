@@ -28,6 +28,14 @@ export default defineConfig(options => {
         'galaxy/non-control-statement-curly': 'warn',
       },
     },
+    ...(options.typescript ? [
+      {
+        rules: {
+          // 禁止使用 `as any`
+          'galaxy/no-as-any': 'error',
+        },
+      },
+    ] : []),
     ...(options.vue ? [
       {
         rules: {
@@ -58,6 +66,8 @@ export default defineConfig(options => {
           }],
           // 禁止使用歧义的 props 默认值
           'galaxy/no-ambiguous-vue-default-props': 'error',
+          // 自动合并重复的 store 映射
+          'galaxy/no-duplicate-vue-store-mappings': 'warn',
           // 自动移除模板引号内侧的空格
           'galaxy/vue-attribute-spacing': 'warn',
         },
