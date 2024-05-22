@@ -41,6 +41,7 @@
     "@stylistic/eslint-plugin-js": "^2.1.0",
     "@stylistic/eslint-plugin-plus": "^2.1.0",
     "@stylistic/eslint-plugin-ts": "^2.1.0",
+    "@typescript-eslint/parser": "^7.10.0",
     "eslint-config-flat-gitignore": "^0.1.5",
     "eslint-flat-config-utils": "^0.2.4",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -55,7 +56,8 @@
     "globals": "^15.2.0",
     "local-pkg": "^0.5.0",
     "semver": "^7.6.2",
-    "typescript-eslint": "^7.9.0"
+    "typescript-eslint": "^7.9.0",
+    "vue-eslint-parser": "^9.4.2"
   },
   "peerDependencies": {
     "@babel/core": ">=7.11.0",
