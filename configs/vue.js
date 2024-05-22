@@ -1,3 +1,4 @@
+import { createRequire } from 'node:module'
 import vuePlugin from 'eslint-plugin-vue'
 import vueScopedCssPlugin from 'eslint-plugin-vue-scoped-css'
 import { defineConfig } from '../config.js'
@@ -88,6 +89,7 @@ const orders = {
 
 export default defineConfig(options => {
   if (!options.vue) return []
+  const { resolve } = createRequire(import.meta.url)
   const mixed = options.typescript && options.typescript.mixed || options.jsx
   return [
     ...(options.vue.legacy ? vuePlugin.configs['flat/vue2-essential'] : vuePlugin.configs['flat/essential']),
@@ -104,13 +106,13 @@ export default defineConfig(options => {
         languageOptions: {
           parserOptions: {
             parser: {
-              cts: '@typescript-eslint/parser',
-              mts: '@typescript-eslint/parser',
-              ts: '@typescript-eslint/parser',
-              tsx: '@typescript-eslint/parser',
+              cts: resolve('@typescript-eslint/parser'),
+              mts: resolve('@typescript-eslint/parser'),
+              ts: resolve('@typescript-eslint/parser'),
+              tsx: resolve('@typescript-eslint/parser'),
               ...(options.babel ? {
-                js: '@babel/eslint-parser',
-                jsx: '@babel/eslint-parser',
+                js: resolve('@babel/eslint-parser'),
+                jsx: resolve('@babel/eslint-parser'),
               } : {}),
             },
           },
@@ -131,7 +133,7 @@ export default defineConfig(options => {
         files: [GLOB_VUE],
         languageOptions: {
           parserOptions: {
-            parser: '@typescript-eslint/parser',
+            parser: resolve('@typescript-eslint/parser'),
           },
         },
       },
@@ -140,7 +142,7 @@ export default defineConfig(options => {
         files: [GLOB_VUE],
         languageOptions: {
           parserOptions: {
-            parser: '@babel/eslint-parser',
+            parser: resolve('@babel/eslint-parser'),
           },
         },
       },

@@ -1,8 +1,10 @@
+import { createRequire } from 'node:module'
 import { fixupPluginRules } from '@eslint/compat'
 import importPlugin from 'eslint-plugin-import'
 import { defineConfig } from '../config.js'
 
 export default defineConfig(options => {
+  const { resolve } = createRequire(import.meta.url)
   return [
     {
       plugins: {
@@ -12,7 +14,7 @@ export default defineConfig(options => {
         'import/internal-regex': '^@/',
         'import/resolver': {
           // Must go before any other resolvers for typescript files
-          typescript: {
+          [resolve('eslint-import-resolver-typescript')]: {
             extensions: [
               '.ts',
               '.tsx',
@@ -23,7 +25,7 @@ export default defineConfig(options => {
               '.vue',
             ],
           },
-          alias: {
+          [resolve('eslint-import-resolver-alias')]: {
             map: [
               ['@', './src'],
             ],
@@ -40,8 +42,8 @@ export default defineConfig(options => {
           },
         },
         'import/parsers': {
-          '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx'],
-          'vue-eslint-parser': ['.vue'],
+          [resolve('@typescript-eslint/parser')]: ['.cts', '.mts', '.ts', '.tsx'],
+          [resolve('vue-eslint-parser')]: ['.vue'],
         },
       },
       rules: {
