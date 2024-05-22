@@ -1,5 +1,12 @@
 
 
+## [4.0.4](https://github.com/CyanSalt/eslint-config/compare/v4.0.3...v4.0.4) (2024-05-22)
+
+
+### Bug Fixes
+
+* missing parsers ([be8bd76](https://github.com/CyanSalt/eslint-config/commit/be8bd76dcf90c526daa6de340721600d510386fd))
+
 ## [4.0.3](https://github.com/CyanSalt/eslint-config/compare/v4.0.2...v4.0.3) (2024-05-22)
 
 
