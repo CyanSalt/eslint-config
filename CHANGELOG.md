@@ -1,5 +1,12 @@
 
 
+## [4.0.3](https://github.com/CyanSalt/eslint-config/compare/v4.0.2...v4.0.3) (2024-05-22)
+
+
+### Bug Fixes
+
+* dupe plugin ([2e8c3d5](https://github.com/CyanSalt/eslint-config/commit/2e8c3d587ae845f43c90258af10dd81667ce9582))
+
 ## [4.0.2](https://github.com/CyanSalt/eslint-config/compare/v4.0.1...v4.0.2) (2024-05-22)
 
 
