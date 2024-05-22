@@ -1,4 +1,3 @@
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import tseslint from 'typescript-eslint'
 import { defineConfig, overrides } from '../config.js'
 import { GLOB_ALL, GLOB_TS } from '../globs.js'
@@ -23,9 +22,6 @@ export default defineConfig(options => {
         parserOptions: {
           project: true,
         },
-      },
-      plugins: {
-        '@typescript-eslint': typescriptEslintPlugin,
       },
       rules: {
         'constructor-super': 'error',
@@ -118,9 +114,6 @@ export default defineConfig(options => {
     ...stylisticTs(),
     {
       files: [mixed ? GLOB_TS : GLOB_ALL],
-      plugins: {
-        '@typescript-eslint': typescriptEslintPlugin,
-      },
       rules: {
         // [继承 stylistic-type-checked][覆盖 compatible]
         '@typescript-eslint/consistent-type-assertions': 'error',
