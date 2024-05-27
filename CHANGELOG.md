@@ -1,5 +1,12 @@
 
 
+## [4.0.5](https://github.com/CyanSalt/eslint-config/compare/v4.0.4...v4.0.5) (2024-05-27)
+
+
+### Bug Fixes
+
+* use import-x instead of import ([98d4cea](https://github.com/CyanSalt/eslint-config/commit/98d4cea5be99767c641a4e2e3952b89979400e0b))
+
 ## [4.0.4](https://github.com/CyanSalt/eslint-config/compare/v4.0.3...v4.0.4) (2024-05-22)
 
 
