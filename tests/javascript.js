@@ -1,5 +1,5 @@
 import path from 'node:path'
-// eslint-disable-next-line import/order
+// eslint-disable-next-line import-x/order
 import fs from 'node:fs'
 
 // eslint-disable-next-line no-eval
