@@ -22,7 +22,7 @@ const orders = {
   ],
   // Template Modifiers (changes the way templates are compiled)
   templateModifiers: [
-    ['delimiters', 'comments'],
+    ['compilerOptions', 'delimiters', 'comments'],
   ],
   // Template Dependencies (assets used in the template)
   templateDependencies: [
@@ -53,6 +53,8 @@ const orders = {
     'model',
     ['props', 'propsData'],
     'emits',
+    'slots',
+    'expose',
     // Note:
     // The `setup` option is included in the "Composition" category,
     // but the behavior of the `setup` option requires the definition of "Interface",

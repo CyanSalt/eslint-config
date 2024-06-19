@@ -197,6 +197,8 @@ export default defineConfig(options => {
             format: ['PascalCase'],
           },
         ],
+        // 禁止对数组使用 delete 操作符
+        '@typescript-eslint/no-array-delete': 'error',
         // 禁止隐式的字符串类型转换
         '@typescript-eslint/no-base-to-string': 'error',
         // 禁止使用 void 类型的返回值
@@ -217,6 +219,8 @@ export default defineConfig(options => {
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         // 自动移除多余的类型转换
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+        // 当仅使用数组第一项时，禁止使用 .filter 代替 .find
+        '@typescript-eslint/prefer-find': 'error',
         // 必须使用 includes 而不是 indexOf 判断数组包含元素
         '@typescript-eslint/prefer-includes': 'error',
         // 必须使用空值合并运算符，而不是逻辑判断

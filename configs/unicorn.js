@@ -8,6 +8,8 @@ export default defineConfig(options => {
         unicorn: unicornPlugin,
       },
       rules: {
+        // 禁止将字符串展开至数组
+        'unicorn/consistent-empty-array-spread': 'error',
         // 自动去除空花括号内的空格
         'unicorn/empty-brace-spaces': 'warn',
         // 使用 Error 时必须传递非空的 message
@@ -25,12 +27,16 @@ export default defineConfig(options => {
         }],
         // 使用 eslint-disable 时必须指定需要禁止的规则（如需对某一文件禁用全部规则，可在 ignorePatterns 字段声明）
         'unicorn/no-abusive-eslint-disable': 'error',
+        // 禁止将 await 结果包装为 Promise
+        'unicorn/no-await-in-promise-methods': 'error',
         // 禁止直接使用 document.cookie
         'unicorn/no-document-cookie': 'error',
         // 使用 Array.isArray 而非 instanceof（避免跨窗口时的错误返回）
         'unicorn/no-instanceof-array': 'error',
         // 禁止无效的 removeEventListener
         'unicorn/no-invalid-remove-event-listener': 'error',
+        // 禁止组合单个 Promise
+        'unicorn/no-single-promise-in-promise-methods': 'error',
         // 禁止成员命名为 then 以避免对 await 操作的影响
         'unicorn/no-thenable': 'error',
         // 禁止多个空位的数组解构
