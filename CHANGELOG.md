@@ -1,5 +1,12 @@
 
 
+## [4.1.0](https://github.com/CyanSalt/eslint-config/compare/v4.0.5...v4.1.0) (2024-06-19)
+
+
+### Features
+
+* update config ([d9361bf](https://github.com/CyanSalt/eslint-config/commit/d9361bfe570a373eb16df97ce5c3e667b1293755))
+
 ## [4.0.5](https://github.com/CyanSalt/eslint-config/compare/v4.0.4...v4.0.5) (2024-05-27)
 
 
