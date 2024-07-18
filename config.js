@@ -37,11 +37,12 @@ export function resolveConfigs(options, configs) {
 
 /**
  * @template {FlatConfig | FlatConfig[]} T
- * @param {Partial<FlatConfig>} patch
+ * @param {Partial<FlatConfig>} [patch]
  * @param {T} configs
  * @returns {T}
  */
 export function overrides(configs, patch) {
+  if (!patch) return configs
   return Array.isArray(configs)
     ? configs.map(config => overrides(config, patch))
     : { ...configs, ...patch }

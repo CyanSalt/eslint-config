@@ -19,6 +19,22 @@ import config from '@cyansalt/eslint-config'
 export default config()
 ```
 
+### Customization
+
+```javascript
+// eslint.config.js
+import config from '@cyansalt/eslint-config'
+import { customize } from '@cyansalt/eslint-config/configs/vue.js'
+
+export default config({
+  configs: [
+    ...customize({ vue: { legacy: true } }, {
+      files: ['**/vue2/**.vue'],
+    }),
+  ],
+})
+```
+
 ## Options
 
 ```javascript

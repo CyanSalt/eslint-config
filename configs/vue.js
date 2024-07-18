@@ -1,8 +1,15 @@
 import { createRequire } from 'node:module'
 import vuePlugin from 'eslint-plugin-vue'
 import vueScopedCssPlugin from 'eslint-plugin-vue-scoped-css'
-import { defineConfig } from '../config.js'
+import { defineConfig, overrides } from '../config.js'
 import { GLOB_VUE } from '../globs.js'
+
+/**
+ * @typedef {import('eslint').Linter.FlatConfig} FlatConfig
+ */
+/**
+ * @typedef {import('../options').Options} Options
+ */
 
 const orders = {
   // Side Effects (triggers effects outside the component)
@@ -162,6 +169,46 @@ export default defineConfig(options => {
           disallowVue3BuiltInComponents: true,
         }],
 
+        /** Essential (Vue 2) */
+        // model 选项的属性只能包含 prop 和 event
+        'vue/valid-model-definition': 'error',
+        // 使用 v-bind.sync 必须绑定合法的左值
+        'vue/valid-v-bind-sync': 'error',
+
+        /** Essential (Vue 3) */
+        // 自动将 data 转化为函数格式
+        'vue/no-deprecated-data-object-declaration': 'warn',
+        // 禁止在 HTML 元素上使用 is 属性
+        'vue/no-deprecated-html-element-is': 'error',
+        // 禁止使用 inline-template 属性
+        'vue/no-deprecated-inline-template': 'error',
+        // 禁止在 props 的 default 函数中使用 this
+        'vue/no-deprecated-props-default-this': 'error',
+        // 自动将 scope 转化为 v-slot
+        'vue/no-deprecated-scope-attribute': 'warn',
+        // 自动将 slot 转化为 v-slot
+        'vue/no-deprecated-slot-attribute': 'warn',
+        // 自动将 slot-scope 转化为 v-slot
+        'vue/no-deprecated-slot-scope-attribute': 'warn',
+        // 禁止使用已废弃的 v-is
+        'vue/no-deprecated-v-is': 'error',
+        // 自动将 keyCode 事件修饰符转化为 key
+        'vue/no-deprecated-v-on-number-modifiers': 'warn',
+        // 禁止使用 Vue.config.keyCodes
+        'vue/no-deprecated-vue-config-keycodes': 'error',
+        // [Composition API] 禁止在 setup 的 await 后使用 expose
+        'vue/no-expose-after-await': 'error',
+        // [Composition API] 禁止在 setup 的 await 后使用生命周期钩子
+        'vue/no-lifecycle-after-await': 'error',
+        // [Composition API] 禁止在 setup 的 await 后使用 watch
+        'vue/no-watch-after-await': 'error',
+        // 禁止对静态条件包裹 <transition> 组件
+        'vue/require-toggle-inside-transition': 'error',
+        // 必须使用合法的 v-is
+        'vue/valid-v-is': 'error',
+        // 必须使用合法的 v-memo
+        'vue/valid-v-memo': 'error',
+
         /** Strongly Recommended */
         // 自动将 HTML 中的属性名修改为 kebab-case
         'vue/attribute-hyphenation': 'warn',
@@ -213,6 +260,8 @@ export default defineConfig(options => {
         'vue/no-lone-template': 'error',
         // 禁止为 slots/scopedSlot 传递多个参数
         'vue/no-multiple-slot-args': 'error',
+        // 禁止使用 v-html（使用 v-safe-html 代替）
+        'vue/no-v-html': 'error',
         // 自动优化 Vue 组件内声明的顺序
         'vue/order-in-components': ['warn', {
           order: [
@@ -264,9 +313,10 @@ export default defineConfig(options => {
         'vue/no-template-target-blank': 'error',
         // 禁止在 beforeRouteEnter 中使用 this
         'vue/no-this-in-before-route-enter': 'error',
-        // 禁止未使用的属性，但不检查 props
+        // 未使用的属性必须使用 /** @public */ 标记，但不检查 props
         'vue/no-unused-properties': ['error', {
           groups: ['data', 'computed', 'methods', 'setup'],
+          ignorePublicMembers: true,
         }],
         // 禁止未使用的 ref
         'vue/no-unused-refs': 'error',
@@ -368,67 +418,15 @@ export default defineConfig(options => {
         'vue/match-component-file-name': 'off',
       },
     },
-    ...(options.vue.legacy ? [
-      {
-        rules: {
-          /** Essential for Vue.js 3.x */
-          // 自动将 data 转化为函数格式
-          'vue/no-deprecated-data-object-declaration': 'warn',
-          // 禁止在 HTML 元素上使用 is 属性
-          'vue/no-deprecated-html-element-is': 'error',
-          // 禁止使用 inline-template 属性
-          'vue/no-deprecated-inline-template': 'error',
-          // 禁止在 props 的 default 函数中使用 this
-          'vue/no-deprecated-props-default-this': 'error',
-          // 自动将 scope 转化为 v-slot
-          'vue/no-deprecated-scope-attribute': 'warn',
-          // 自动将 slot 转化为 v-slot
-          'vue/no-deprecated-slot-attribute': 'warn',
-          // 自动将 slot-scope 转化为 v-slot
-          'vue/no-deprecated-slot-scope-attribute': 'warn',
-          // 自动将 keyCode 事件修饰符转化为 key
-          'vue/no-deprecated-v-on-number-modifiers': 'warn',
-          // 禁止使用 Vue.config.keyCodes
-          'vue/no-deprecated-vue-config-keycodes': 'error',
-          // [Composition API] 禁止在 setup 的 await 后使用生命周期钩子
-          'vue/no-lifecycle-after-await': 'error',
-          // [Composition API] 禁止在 setup 的 await 后使用 watch
-          'vue/no-watch-after-await': 'error',
-          // 禁止对静态条件包裹 <transition> 组件
-          'vue/require-toggle-inside-transition': 'error',
-
-          /** Uncategorized */
-          // 未使用的属性必须使用 /** @public */ 标记，但不检查 props
-          'vue/no-unused-properties': ['error', {
-            groups: ['data', 'computed', 'methods', 'setup'],
-            ignorePublicMembers: true,
-          }],
-        },
-      },
-    ] : [
-      {
-        rules: {
-          /** Strongly Recommended */
-          // 必须将事件声明在 emits 属性中
-          'vue/require-explicit-emits': 'error',
-        },
-      },
-    ]),
     ...vueScopedCssPlugin.configs['flat/vue2-recommended'],
     {
       rules: {
+        // [覆盖 recommended] 允许使用非 scoped 和 module 的 style 块
+        'vue-scoped-css/enforce-style-type': 'off',
         // [覆盖 recommended] 允许使用未出现过的选择器
         'vue-scoped-css/no-unused-selector': 'off',
       },
     },
-    ...(options.vue.legacy ? [
-      {
-        rules: {
-          // [覆盖 recommended] 允许使用非 scoped 和 module 的 style 块
-          'vue-scoped-css/enforce-style-type': 'off',
-        },
-      },
-    ] : []),
     ...(options.vue.macros ? [
       {
         languageOptions: {
@@ -448,5 +446,84 @@ export default defineConfig(options => {
         },
       },
     ] : []),
+    ...customize(options),
   ]
 })
+
+/**
+ * @param {Options} options
+ * @param {Partial<FlatConfig>} [patch]
+ */
+export function customize(options, patch) {
+  if (!options.vue) return []
+
+  const ruleGroups = [
+    [options.vue.legacy, {
+      /** Essential */
+      // 禁止在 v-model 添加非内置修饰符
+      'vue/no-custom-modifiers-on-v-model': 'error',
+      // 禁止多个模板根元素
+      'vue/no-multiple-template-root': 'error',
+      // 禁止定义 ref 等保留属性
+      'vue/no-reserved-props': ['error', { vueVersion: 2 }],
+      // 禁止在 <template v-for> 上绑定 key
+      'vue/no-v-for-template-key': 'error',
+      // 禁止向 v-model 传递指令参数
+      'vue/no-v-model-argument': 'error',
+    }],
+    [options.vue.legacy && options.vue.legacy !== 2.7, {
+      // No rules here
+    }],
+    [options.vue.legacy === 2.7, {
+      /** Essential (Vue 3) */
+      // 自动将 @vue/* 的导入替换为 vue
+      'vue/prefer-import-from-vue': 'warn',
+    }],
+    [!options.vue.legacy, {
+      /** Essential */
+      // 自动将 beforeDestroy/destroyed 生命周期替换为 beforeUnmount/unmounted
+      'vue/no-deprecated-destroyed-lifecycle': 'warn',
+      // 禁止使用 $listeners
+      'vue/no-deprecated-dollar-listeners-api': 'error',
+      // 自动将 $scopedSlots 替换为 $slots
+      'vue/no-deprecated-dollar-scopedslots-api': 'warn',
+      // 禁止使用 $on/$once/$off
+      'vue/no-deprecated-events-api': 'error',
+      // 禁止使用过滤器
+      'vue/no-deprecated-filter': 'error',
+      // 禁止使用 <template functional> 属性
+      'vue/no-deprecated-functional-template': 'error',
+      // 必须使用 <router-link> 的插槽而不是 tag 属性
+      'vue/no-deprecated-router-link-tag-prop': 'error',
+      // 禁止使用 .sync 绑定修饰符
+      'vue/no-deprecated-v-bind-sync': 'error',
+      // 禁止使用 .native 事件修饰符
+      'vue/no-deprecated-v-on-native-modifier': 'error',
+      // 禁止定义 ref 等保留属性
+      'vue/no-reserved-props': 'error',
+      // 必须将 key 绑定在 v-for 元素上
+      'vue/no-v-for-template-key-on-child': 'error',
+      // 自动将 @vue/* 的导入替换为 vue
+      'vue/prefer-import-from-vue': 'warn',
+      // 必须将 $slots 作为函数使用
+      'vue/require-slots-as-functions': 'error',
+    }],
+  ]
+
+  const enabledRules = ruleGroups.reduce(
+    (rules, [enabled, current]) => ({ ...rules, ...(enabled ? current : {}) }),
+    {},
+  )
+  const disabledRules = ruleGroups.reduce(
+    (rules, [enabled, current]) => ({ ...rules, ...(enabled ? {} : current) }),
+    {},
+  )
+  return overrides([
+    {
+      rules: {
+        ...Object.fromEntries(Object.keys(disabledRules).map(key => [key, 'off'])),
+        ...enabledRules,
+      },
+    },
+  ], patch)
+}
