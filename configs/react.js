@@ -1,7 +1,4 @@
-import { fixupPluginRules } from '@eslint/compat'
 import reactPlugin from 'eslint-plugin-react'
-import jsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js'
-import recommended from 'eslint-plugin-react/configs/recommended.js'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import { defineConfig, overrides } from '../config.js'
 import { GLOB_X } from '../globs.js'
@@ -10,13 +7,10 @@ export default defineConfig(options => {
   if (!options.react) return []
   return [
     ...overrides([
-      recommended,
-      jsxRuntime,
+      reactPlugin.configs.flat.recommended,
+      reactPlugin.configs.flat['jsx-runtime'],
     ], {
       files: [GLOB_X],
-      plugins: {
-        react: fixupPluginRules(reactPlugin),
-      },
     }),
     {
       files: [GLOB_X],

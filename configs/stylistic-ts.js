@@ -12,6 +12,20 @@ export default defineConfig(options => {
         '@stylistic/plus': stylisticPlusPlugin,
       },
       rules: {
+        // 类型定义必须用逗号分隔
+        '@stylistic/ts/member-delimiter-style': ['error', {
+          multiline: {
+            delimiter: 'comma',
+            requireLast: true,
+          },
+          singleline: {
+            delimiter: 'comma',
+            requireLast: false,
+          },
+        }],
+        // 自动修复类型标注的空格（冒号后空格，箭头前后空格）
+        '@stylistic/ts/type-annotation-spacing': 'warn',
+
         // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
         '@stylistic/js/brace-style': 'off',
         '@stylistic/ts/brace-style': 'warn',
@@ -39,9 +53,15 @@ export default defineConfig(options => {
         // 禁止多余的分号
         '@stylistic/js/no-extra-semi': 'off',
         '@stylistic/ts/no-extra-semi': 'error',
+        // 自动优化对象字面量、解构和导入的花括号换行（前括号和后括号保持一致）
+        '@stylistic/js/object-curly-newline': 'off',
+        '@stylistic/ts/object-curly-newline': ['warn', { consistent: true }],
         // 自动为对象字面量、解构和导入的花括号内侧添加空格
         '@stylistic/js/object-curly-spacing': 'off',
         '@stylistic/ts/object-curly-spacing': ['warn', 'always'],
+        // 自动优化对象属性换行（全部一行或全部换行）
+        '@stylistic/js/object-property-newline': 'off',
+        '@stylistic/ts/object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
         // 自动删除不必要的对象字面量键的引号
         '@stylistic/js/quote-props': 'off',
         '@stylistic/ts/quote-props': ['warn', 'as-needed'],

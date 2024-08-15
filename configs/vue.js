@@ -253,8 +253,9 @@ export default defineConfig(options => {
         // 自动优化 HTML 属性的顺序
         'vue/attributes-order': 'warn',
         // 自动优化单文件组件的标签顺序
-        'vue/component-tags-order': ['warn', {
-          order: [['script[setup]', 'template'], 'script', 'style:not([scoped])', 'style[scoped]'],
+        'vue/component-tags-order': 'off',
+        'vue/block-order': ['warn', {
+          order: ['script[setup]', 'script[setup] ~ script', 'template', 'script', 'style:not([scoped])', 'style[scoped]'],
         }],
         // 禁止无意义的 template 元素
         'vue/no-lone-template': 'error',

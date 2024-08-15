@@ -42,37 +42,28 @@ export default defineConfig(options => {
         'no-unreachable': 'error',
         'no-unsafe-negation': 'error',
 
-        // [覆盖 recommended] 允许使用空对象/函数类型
-        '@typescript-eslint/ban-types': 'off',
         // [覆盖 stylistic][需要 @typescript-eslint/parser]
         '@typescript-eslint/consistent-type-assertions': 'off',
         // 自动省略 public 成员修饰符
         '@typescript-eslint/explicit-member-accessibility': ['warn', {
           accessibility: 'no-public',
         }],
-        // 类型定义必须用逗号分隔
-        '@typescript-eslint/member-delimiter-style': ['error', {
-          multiline: {
-            delimiter: 'comma',
-            requireLast: true,
-          },
-          singleline: {
-            delimiter: 'comma',
-            requireLast: false,
-          },
-        }],
         // [覆盖 stylistic] 允许使用空函数
         '@typescript-eslint/no-empty-function': 'off',
+        // [覆盖 recommended] 允许使用空对象类型
+        '@typescript-eslint/no-empty-object-type': ['error', { allowObjectTypes: 'always' }],
         // [覆盖 recommended] 允许使用 any 类型
         '@typescript-eslint/no-explicit-any': 'off',
         // 禁止在非空断言后使用空值合并运算符
         '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+        // [覆盖 recommended] 允许 require 引入
+        '@typescript-eslint/no-require-imports': 'off',
         // [覆盖 recommended] 允许 this 别名
         '@typescript-eslint/no-this-alias': 'off',
+        // [覆盖 recommended] 允许使用 Function 类型（用于类型约束）
+        '@typescript-eslint/no-unsafe-function-type': 'off',
         // 自动去除多余的空 export
         '@typescript-eslint/no-useless-empty-export': 'warn',
-        // [覆盖 recommended] 允许 require 引入
-        '@typescript-eslint/no-var-requires': 'off',
         // 禁止使用构造函数参数属性
         '@typescript-eslint/parameter-properties': 'error',
         // 使用 enum 必须指定初始值
@@ -81,8 +72,6 @@ export default defineConfig(options => {
         '@typescript-eslint/prefer-for-of': 'off',
         // [覆盖 stylistic] 允许使用接口形式的函数类型
         '@typescript-eslint/prefer-function-type': 'off',
-        // 自动修复类型标注的空格（冒号后空格，箭头前后空格）
-        '@typescript-eslint/type-annotation-spacing': 'warn',
 
         /** Extension Rules */
         // 默认参数必须放在最后
@@ -219,10 +208,6 @@ export default defineConfig(options => {
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         // 自动移除多余的类型转换
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
-        // 当仅使用数组第一项时，禁止使用 .filter 代替 .find
-        '@typescript-eslint/prefer-find': 'error',
-        // 必须使用 includes 而不是 indexOf 判断数组包含元素
-        '@typescript-eslint/prefer-includes': 'error',
         // 必须使用空值合并运算符，而不是逻辑判断
         '@typescript-eslint/prefer-nullish-coalescing': ['error', {
           ignoreConditionalTests: true,
@@ -232,6 +217,8 @@ export default defineConfig(options => {
         '@typescript-eslint/prefer-optional-chain': 'error',
         // 必须使用类型参数指定 Array#reduce 的类型，而不是对第二个参数强制类型声明
         '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+        // [覆盖 stylistic-type-checked] 允许使用 String#match 而非 RegExp#exec
+        '@typescript-eslint/prefer-regexp-exec': 'off',
         // 自动使用 this 类型替换写死的实例类型
         '@typescript-eslint/prefer-return-this-type': 'warn',
         // [覆盖 stylistic-type-checked] 允许使用正则等方式匹配字符串开头和结尾
