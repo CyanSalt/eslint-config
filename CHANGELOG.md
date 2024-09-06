@@ -1,5 +1,13 @@
 
 
+## [4.2.1](https://github.com/CyanSalt/eslint-config/compare/v4.2.0...v4.2.1) (2024-09-06)
+
+
+### Bug Fixes
+
+* react hooks rules ([3f04dec](https://github.com/CyanSalt/eslint-config/commit/3f04deca9c08a99edf3d555132d3c81622b99f86))
+* unexpected v-html rule ([a6ad2f5](https://github.com/CyanSalt/eslint-config/commit/a6ad2f5fd34166ae6c12f280ddaaa3394a189e8e))
+
 ## [4.2.0](https://github.com/CyanSalt/eslint-config/compare/v4.1.0...v4.2.0) (2024-08-15)
 
 
