@@ -261,8 +261,6 @@ export default defineConfig(options => {
         'vue/no-lone-template': 'error',
         // 禁止为 slots/scopedSlot 传递多个参数
         'vue/no-multiple-slot-args': 'error',
-        // 禁止使用 v-html（使用 v-safe-html 代替）
-        'vue/no-v-html': 'error',
         // 自动优化 Vue 组件内声明的顺序
         'vue/order-in-components': ['warn', {
           order: [
