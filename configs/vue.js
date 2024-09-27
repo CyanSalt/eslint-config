@@ -102,13 +102,6 @@ export default defineConfig(options => {
   const mixed = options.typescript && options.typescript.mixed || options.jsx
   return [
     ...(options.vue.legacy ? vuePlugin.configs['flat/vue2-essential'] : vuePlugin.configs['flat/essential']),
-    {
-      languageOptions: {
-        parserOptions: {
-          extraFileExtensions: ['.vue'],
-        },
-      },
-    },
     ...(options.typescript ? (mixed ? [
       {
         files: [GLOB_VUE],
@@ -138,6 +131,13 @@ export default defineConfig(options => {
         },
       ] : []),
     ] : [
+      {
+        languageOptions: {
+          parserOptions: {
+            extraFileExtensions: ['.vue'],
+          },
+        },
+      },
       {
         files: [GLOB_VUE],
         languageOptions: {
