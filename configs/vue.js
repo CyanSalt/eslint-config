@@ -5,7 +5,7 @@ import { defineConfig, overrides } from '../config.js'
 import { GLOB_VUE } from '../globs.js'
 
 /**
- * @typedef {import('eslint').Linter.FlatConfig} FlatConfig
+ * @typedef {import('eslint').Linter.Config} ESLintConfig
  */
 /**
  * @typedef {import('../options').Options} Options
@@ -451,7 +451,7 @@ export default defineConfig(options => {
 
 /**
  * @param {Options} options
- * @param {Partial<FlatConfig>} [patch]
+ * @param {Partial<ESLintConfig>} [patch]
  */
 export function customize(options, patch) {
   if (!options.vue) return []

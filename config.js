@@ -1,7 +1,7 @@
 import { concat } from 'eslint-flat-config-utils'
 
 /**
- * @typedef {import('eslint').Linter.FlatConfig} FlatConfig
+ * @typedef {import('eslint').Linter.Config} ESLintConfig
  */
 /**
  * @template T
@@ -12,11 +12,11 @@ import { concat } from 'eslint-flat-config-utils'
  */
 
 /**
- * @typedef {(options: Options) => Promisable<FlatConfig | FlatConfig[]>} Config
+ * @typedef {(options: Options) => Promisable<ESLintConfig | ESLintConfig[]>} Config
  */
 
 /**
- * @template {(options: Options) => Promisable<FlatConfig | FlatConfig[]>} T
+ * @template {(options: Options) => Promisable<ESLintConfig | ESLintConfig[]>} T
  * @param {T} factory
  * @returns {T}
  */
@@ -26,7 +26,7 @@ export function defineConfig(factory) {
 
 /**
  * @param {Options} options
- * @param {(Config | FlatConfig)[]} configs
+ * @param {(Config | ESLintConfig)[]} configs
  * @returns
  */
 export function resolveConfigs(options, configs) {
@@ -36,8 +36,8 @@ export function resolveConfigs(options, configs) {
 }
 
 /**
- * @template {FlatConfig | FlatConfig[]} T
- * @param {Partial<FlatConfig>} [patch]
+ * @template {ESLintConfig | ESLintConfig[]} T
+ * @param {Partial<ESLintConfig>} [patch]
  * @param {T} configs
  * @returns {T}
  */

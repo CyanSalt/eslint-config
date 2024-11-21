@@ -3,7 +3,7 @@ import { getPackageInfo, importModule, isPackageExists } from 'local-pkg'
 import semver from 'semver'
 
 /**
- * @typedef {import('eslint').Linter.FlatConfig} FlatConfig
+ * @typedef {import('eslint').Linter.Config} ESLintConfig
  */
 /**
  * @template T
@@ -20,7 +20,7 @@ import semver from 'semver'
  * @property {boolean} react
  * @property {boolean | { legacy: boolean | 2.7, macros: boolean }} vue
  * @property {boolean} jsx
- * @property {(Config | FlatConfig)[]} configs
+ * @property {(Config | ESLintConfig)[]} configs
  */
 
 /**

@@ -224,7 +224,9 @@ export default defineConfig(options => {
         // [覆盖 stylistic-type-checked] 允许使用正则等方式匹配字符串开头和结尾
         '@typescript-eslint/prefer-string-starts-ends-with': 'off',
         // 必须为联合类型的 switch 判断指定完整的分支逻辑
-        '@typescript-eslint/switch-exhaustiveness-check': 'error',
+        '@typescript-eslint/switch-exhaustiveness-check': ['error', {
+          considerDefaultExhaustiveForUnions: true,
+        }],
 
         /** Extension Rules */
         // 仅允许抛出 Error 类型错误
