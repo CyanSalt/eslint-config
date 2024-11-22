@@ -20,8 +20,16 @@ export default defineConfig(options => {
         '@stylistic/js/arrow-spacing': 'warn',
         // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
         '@stylistic/js/brace-style': 'warn',
-        // 自动添加尾随逗号
-        '@stylistic/js/comma-dangle': ['warn', 'always-multiline'],
+        // 自动添加尾随逗号，除了动态导入（兼容性）
+        '@stylistic/js/comma-dangle': ['warn', {
+          arrays: 'always-multiline',
+          objects: 'always-multiline',
+          imports: 'always-multiline',
+          exports: 'always-multiline',
+          functions: 'always-multiline',
+          importAttributes: 'always-multiline',
+          dynamicImports: 'never',
+        }],
         // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）
         '@stylistic/js/comma-spacing': 'warn',
         // 自动移动行首的逗号至行尾
