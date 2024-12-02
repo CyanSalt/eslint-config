@@ -212,6 +212,7 @@ export default defineConfig(options => {
         '@typescript-eslint/prefer-nullish-coalescing': ['error', {
           ignoreConditionalTests: true,
           ignorePrimitives: true,
+          ignoreBooleanCoercion: true,
         }],
         // 必须使用可选链运算符，而不是逻辑判断
         '@typescript-eslint/prefer-optional-chain': 'error',
@@ -223,6 +224,8 @@ export default defineConfig(options => {
         '@typescript-eslint/prefer-return-this-type': 'warn',
         // [覆盖 stylistic-type-checked] 允许使用正则等方式匹配字符串开头和结尾
         '@typescript-eslint/prefer-string-starts-ends-with': 'off',
+        // getter 和 setter 必须关联相同的类型
+        '@typescript-eslint/related-getter-setter-pairs': 'error',
         // 必须为联合类型的 switch 判断指定完整的分支逻辑
         '@typescript-eslint/switch-exhaustiveness-check': ['error', {
           considerDefaultExhaustiveForUnions: true,

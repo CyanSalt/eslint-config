@@ -167,6 +167,7 @@ export default defineConfig(options => {
         'vue/no-reserved-component-names': ['error', {
           disallowVueBuiltInComponents: true,
           disallowVue3BuiltInComponents: true,
+          htmlElementCaseSensitive: true,
         }],
 
         /** Essential (Vue 2) */
@@ -488,6 +489,8 @@ export function customize(options, patch) {
     }],
     [!options.vue.legacy, {
       /** Essential */
+      // 禁止使用 $delete/$set/Vue.delete/Vue.set
+      'vue/no-deprecated-delete-set': 'error',
       // 自动将 beforeDestroy/destroyed 生命周期替换为 beforeUnmount/unmounted
       'vue/no-deprecated-destroyed-lifecycle': 'warn',
       // 禁止使用 $listeners
