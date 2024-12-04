@@ -1,5 +1,17 @@
 
 
+## [4.3.0](https://github.com/CyanSalt/eslint-config/compare/v4.2.1...v4.3.0) (2024-12-04)
+
+### Features
+
+* update config ([e7b8c6d](https://github.com/CyanSalt/eslint-config/commit/e7b8c6d052d8b192c5437a8335a31e2e01ea3a83))
+* update plugins ([b75c97d](https://github.com/CyanSalt/eslint-config/commit/b75c97d01ca4f0539e67588a6cdfbc60af646ae1))
+
+### Bug Fixes
+
+* mixed vue types ([7f1ae74](https://github.com/CyanSalt/eslint-config/commit/7f1ae74df2354fe8b1c651e1e2a6bbf6f033d602))
+* remove trailing comma in dynamic import ([e664e0a](https://github.com/CyanSalt/eslint-config/commit/e664e0a7cce54230f1fe22b7ff670be26f4fd6f4))
+
 ## [4.2.1](https://github.com/CyanSalt/eslint-config/compare/v4.2.0...v4.2.1) (2024-09-06)
 
 
