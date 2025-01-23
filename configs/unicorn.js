@@ -4,6 +4,7 @@ import { defineConfig } from '../config.js'
 export default defineConfig(options => {
   return [
     {
+      name: '@cyansalt/unicorn/setup',
       plugins: {
         unicorn: unicornPlugin,
       },

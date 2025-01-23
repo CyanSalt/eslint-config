@@ -6,6 +6,7 @@ import { defineConfig } from '../config.js'
 export default defineConfig(options => {
   return [
     {
+      name: '@cyansalt/stylistic/typescript',
       plugins: {
         '@stylistic/js': stylisticJsPlugin,
         '@stylistic/ts': stylisticTsPlugin,

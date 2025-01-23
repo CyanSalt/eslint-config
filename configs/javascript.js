@@ -5,9 +5,13 @@ import stylisticJs from './stylistic-js.js'
 
 export default defineConfig(options => {
   return [
-    jsConfig.configs.recommended,
+    {
+      name: '@cyansalt/javascript/eslint-recommended',
+      rules: jsConfig.configs.recommended.rules,
+    },
     ...stylisticJs(options),
     {
+      name: '@cyansalt/javascript/setup',
       languageOptions: {
         ecmaVersion: 'latest',
         globals: {

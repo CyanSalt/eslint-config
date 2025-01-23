@@ -6,6 +6,7 @@ export default defineConfig(options => {
   const { resolve } = createRequire(import.meta.url)
   return [
     {
+      name: '@cyansalt/import-x/setup',
       plugins: {
         'import-x': importX,
       },

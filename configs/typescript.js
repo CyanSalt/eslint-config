@@ -18,6 +18,7 @@ export default defineConfig(options => {
       },
     ),
     {
+      name: '@cyansalt/typescript/setup',
       languageOptions: {
         parserOptions: {
           project: true,
@@ -102,6 +103,7 @@ export default defineConfig(options => {
     },
     ...stylisticTs(),
     {
+      name: '@cyansalt/typescript/type-checked',
       files: [mixed ? GLOB_TS : GLOB_ALL],
       rules: {
         // [继承 stylistic-type-checked][覆盖 compatible]

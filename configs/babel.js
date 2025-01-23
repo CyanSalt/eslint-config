@@ -6,6 +6,7 @@ export default defineConfig(options => {
   if (!options.babel || options.typescript && !options.typescript.mixed) return []
   return [
     {
+      name: '@cyansalt/babel/setup',
       languageOptions: {
         parser: babelParser,
       },
@@ -20,6 +21,7 @@ export default defineConfig(options => {
     },
     ...(options.typescript ? [] : [
       {
+        name: '@cyansalt/babel/esnext',
         rules: {
           // 禁止使用未定义的变量
           'no-undef': 'off',

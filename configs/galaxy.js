@@ -5,6 +5,7 @@ export default defineConfig(options => {
   return [
     galaxyPlugin.configs.recommended,
     {
+      name: '@cyansalt/galaxy/setup',
       rules: {
         // 自动移除 .ts 文件的导入后缀
         'galaxy/import-extensions': ['warn', {
@@ -27,6 +28,7 @@ export default defineConfig(options => {
     },
     ...(options.typescript ? [
       {
+        name: '@cyansalt/galaxy/typescript',
         rules: {
           // 禁止使用 `as any`
           'galaxy/no-as-any': 'error',
@@ -36,6 +38,7 @@ export default defineConfig(options => {
     ...(options.vue ? [
       galaxyPlugin.configs['recommended-vue'],
       {
+        name: '@cyansalt/galaxy/vue',
         rules: {
           // 自动调整组件选项内的属性顺序
           'galaxy/conventional-vue-keys-order': ['warn', {
@@ -71,6 +74,7 @@ export default defineConfig(options => {
       },
       ...(!options.vue.legacy || options.vue.legacy === 2.7 ? [
         {
+          name: '@cyansalt/galaxy/vue-next',
           rules: {
             // 自动替换已废弃的 ::v-deep 操作符
             'galaxy/no-deprecated-vue-deep-combinator': 'warn',
@@ -79,6 +83,7 @@ export default defineConfig(options => {
       ] : []),
       ...(options.vue.macros ? [
         {
+          name: '@cyansalt/galaxy/vue-macros',
           rules: {
             // 自动修复错误的 props 定义
             'galaxy/valid-vue-reactivity-transform-props': 'warn',

@@ -13,6 +13,7 @@ export default defineConfig(options => {
       files: [GLOB_X],
     }),
     {
+      name: '@cyansalt/react/setup',
       files: [GLOB_X],
       settings: {
         react: {
@@ -89,6 +90,7 @@ export default defineConfig(options => {
       },
     },
     {
+      name: '@cyansalt/react/hooks',
       files: [GLOB_X],
       plugins: {
         'react-hooks': reactHooksPlugin,

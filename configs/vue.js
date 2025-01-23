@@ -104,6 +104,7 @@ export default defineConfig(options => {
     ...(options.vue.legacy ? vuePlugin.configs['flat/vue2-essential'] : vuePlugin.configs['flat/essential']),
     ...(options.typescript ? (mixed ? [
       {
+        name: '@cyansalt/vue/sfc-parser',
         files: [GLOB_VUE],
         languageOptions: {
           parserOptions: {
@@ -122,6 +123,7 @@ export default defineConfig(options => {
       },
       ...(options.jsx ? [
         {
+          name: '@cyansalt/vue/sfc-jsx',
           files: [GLOB_VUE],
           languageOptions: {
             parserOptions: {
@@ -132,6 +134,7 @@ export default defineConfig(options => {
       ] : []),
     ] : [
       {
+        name: '@cyansalt/vue/sfc-typings',
         languageOptions: {
           parserOptions: {
             extraFileExtensions: ['.vue'],
@@ -139,6 +142,7 @@ export default defineConfig(options => {
         },
       },
       {
+        name: '@cyansalt/vue/sfc-parser',
         files: [GLOB_VUE],
         languageOptions: {
           parserOptions: {
@@ -148,6 +152,7 @@ export default defineConfig(options => {
       },
     ]) : (options.babel ? [
       {
+        name: '@cyansalt/vue/sfc-parser',
         files: [GLOB_VUE],
         languageOptions: {
           parserOptions: {
@@ -157,6 +162,7 @@ export default defineConfig(options => {
       },
     ] : [])),
     {
+      name: '@cyansalt/vue/setup',
       rules: {
         /** Essential */
         // 允许单个单词的组件名
@@ -403,6 +409,7 @@ export default defineConfig(options => {
       },
     },
     {
+      name: '@cyansalt/vue/sfc',
       files: [GLOB_VUE],
       rules: {
         // 禁止单行超过 120 个字符，但忽略样式块以及元素的 text content
@@ -420,6 +427,7 @@ export default defineConfig(options => {
       },
     },
     {
+      name: '@cyansalt/vue/sfc-entry',
       files: ['**/index.vue'],
       rules: {
         // 当使用 index.vue 命名文件时，不检查组件的 name
@@ -428,6 +436,7 @@ export default defineConfig(options => {
     },
     ...vueScopedCssPlugin.configs['flat/vue2-recommended'],
     {
+      name: '@cyansalt/vue/scoped-css',
       rules: {
         // [覆盖 recommended] 允许使用非 scoped 和 module 的 style 块
         'vue-scoped-css/enforce-style-type': 'off',
@@ -437,6 +446,7 @@ export default defineConfig(options => {
     },
     ...(options.vue.macros ? [
       {
+        name: '@cyansalt/vue/macros',
         languageOptions: {
           globals: {
             $: 'readonly',
@@ -454,7 +464,9 @@ export default defineConfig(options => {
         },
       },
     ] : []),
-    ...customize(options),
+    ...customize(options, {
+      name: '@cyansalt/vue/rules',
+    }),
   ]
 })
 
