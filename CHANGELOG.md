@@ -1,5 +1,12 @@
 
 
+## [4.3.1](https://github.com/CyanSalt/eslint-config/compare/v4.3.0...v4.3.1) (2025-04-10)
+
+### Bug Fixes
+
+* add rule names ([2cda46a](https://github.com/CyanSalt/eslint-config/commit/2cda46a9c68e990743eb42f4fb2f5895f1c79633))
+* lock import-x ([8f5d48e](https://github.com/CyanSalt/eslint-config/commit/8f5d48e7c704bebbab11d678c96c8f01173784e3))
+
 ## [4.3.0](https://github.com/CyanSalt/eslint-config/compare/v4.2.1...v4.3.0) (2024-12-04)
 
 ### Features
