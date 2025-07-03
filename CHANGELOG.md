@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.4.1](https://github.com/CyanSalt/eslint-config/compare/v4.4.0...v4.4.1) (2025-07-03)
+
+### Bug Fixes
+
+* vue compat ([9cb5b04](https://github.com/CyanSalt/eslint-config/commit/9cb5b048394c6e0383f22bb0bb6b13c71c409a0a))
+
 ## [4.4.0](https://github.com/CyanSalt/eslint-config/compare/v4.3.1...v4.4.0) (2025-07-03)
 
 ### Features
