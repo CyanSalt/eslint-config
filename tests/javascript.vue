@@ -7,3 +7,10 @@ const value = eval('1 + 1')
   <!-- eslint-disable-next-line vue/this-in-template -->
   <p>{{ this.value }}{{ value }}</p>
 </template>
+
+<style scoped>
+.foo,
+.bar {
+  color: red;
+}
+</style>

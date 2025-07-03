@@ -33,7 +33,7 @@ export default defineConfig(options => {
         // 禁止直接使用 document.cookie
         'unicorn/no-document-cookie': 'error',
         // 使用 Array.isArray 而非 instanceof（避免跨窗口时的错误返回）
-        'unicorn/no-instanceof-array': 'error',
+        'unicorn/no-instanceof-builtins': 'error',
         // 禁止无效的 removeEventListener
         'unicorn/no-invalid-remove-event-listener': 'error',
         // 禁止组合单个 Promise

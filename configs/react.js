@@ -1,5 +1,5 @@
 import reactPlugin from 'eslint-plugin-react'
-import reactHooksPlugin from 'eslint-plugin-react-hooks'
+import * as reactHooksPlugin from 'eslint-plugin-react-hooks'
 import { defineConfig, overrides } from '../config.js'
 import { GLOB_X } from '../globs.js'
 
@@ -89,15 +89,10 @@ export default defineConfig(options => {
         }],
       },
     },
-    {
-      name: '@cyansalt/react/hooks',
+    ...overrides([
+      reactHooksPlugin.configs['recommended-latest'],
+    ], {
       files: [GLOB_X],
-      plugins: {
-        'react-hooks': reactHooksPlugin,
-      },
-      rules: {
-        ...reactHooksPlugin.configs.recommended.rules,
-      },
-    },
+    }),
   ]
 })

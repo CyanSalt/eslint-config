@@ -5,6 +5,7 @@ import galaxy from './configs/galaxy.js'
 import importConfig from './configs/import.js'
 import javascript from './configs/javascript.js'
 import react from './configs/react.js'
+import stylistic from './configs/stylistic.js'
 import typescript from './configs/typescript.js'
 import unicorn from './configs/unicorn.js'
 import vue from './configs/vue.js'
@@ -25,6 +26,7 @@ async function config(userOptions = {}) {
   return resolveConfigs(options, [
     gitignore(),
     javascript,
+    stylistic,
     importConfig,
     unicorn,
     typescript,

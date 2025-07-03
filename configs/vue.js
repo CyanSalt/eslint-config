@@ -165,6 +165,10 @@ export default defineConfig(options => {
       name: '@cyansalt/vue/setup',
       rules: {
         /** Essential */
+        // 自动优化单文件组件的标签顺序
+        'vue/block-order': ['warn', {
+          order: ['script[setup]', 'script[setup] ~ script', 'template', 'script', 'style:not([scoped])', 'style[scoped]'],
+        }],
         // 允许单个单词的组件名
         'vue/multi-word-component-names': 'off',
         // 禁止为将被替换内容的元素指定内容
@@ -175,12 +179,6 @@ export default defineConfig(options => {
           disallowVue3BuiltInComponents: true,
           htmlElementCaseSensitive: true,
         }],
-
-        /** Essential (Vue 2) */
-        // model 选项的属性只能包含 prop 和 event
-        'vue/valid-model-definition': 'error',
-        // 使用 v-bind.sync 必须绑定合法的左值
-        'vue/valid-v-bind-sync': 'error',
 
         /** Essential (Vue 3) */
         // 自动将 data 转化为函数格式
@@ -259,11 +257,6 @@ export default defineConfig(options => {
         /** Recommended */
         // 自动优化 HTML 属性的顺序
         'vue/attributes-order': 'warn',
-        // 自动优化单文件组件的标签顺序
-        'vue/component-tags-order': 'off',
-        'vue/block-order': ['warn', {
-          order: ['script[setup]', 'script[setup] ~ script', 'template', 'script', 'style:not([scoped])', 'style[scoped]'],
-        }],
         // 禁止无意义的 template 元素
         'vue/no-lone-template': 'error',
         // 禁止为 slots/scopedSlot 传递多个参数
@@ -336,10 +329,10 @@ export default defineConfig(options => {
         'vue/prefer-prop-type-boolean-first': 'warn',
         // 必须为 emits 声明校验函数
         'vue/require-emit-validator': 'error',
+        // 插槽名称必须使用 kebab-case
+        'vue/slot-name-casing': 'error',
         // 自动将 v-for 中的 of 替换为 in 以保持一致
         'vue/v-for-delimiter-style': 'warn',
-        // 必须使用合法的 defineOptions
-        'vue/valid-define-options': 'error',
 
         /** Extension Rules */
         // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
@@ -380,6 +373,8 @@ export default defineConfig(options => {
         'vue/no-constant-condition': 'error',
         // [扩展 recommended] 禁止使用空的解构
         'vue/no-empty-pattern': 'error',
+        // 禁止使用隐式的类型转换（!!、~等）
+        'vue/no-implicit-coercion': 'error',
         // [扩展 recommended] 禁止使用非标准空白符
         'vue/no-irregular-whitespace': 'error',
         // [扩展 recommended] 禁止使用 JS 不支持的数字精度
@@ -413,7 +408,7 @@ export default defineConfig(options => {
       files: [GLOB_VUE],
       rules: {
         // 禁止单行超过 120 个字符，但忽略样式块以及元素的 text content
-        '@stylistic/js/max-len': 'off',
+        '@stylistic/max-len': 'off',
         'vue/max-len': ['error', {
           code: 120,
           ignorePattern: '\\sd="[^"]+"',
@@ -490,6 +485,10 @@ export function customize(options, patch) {
       'vue/no-v-for-template-key': 'error',
       // 禁止向 v-model 传递指令参数
       'vue/no-v-model-argument': 'error',
+      // model 选项的属性只能包含 prop 和 event
+      'vue/valid-model-definition': 'error',
+      // 使用 v-bind.sync 必须绑定合法的左值
+      'vue/valid-v-bind-sync': 'error',
     }],
     [options.vue.legacy && options.vue.legacy !== 2.7, {
       // No rules here
@@ -501,8 +500,6 @@ export function customize(options, patch) {
     }],
     [!options.vue.legacy, {
       /** Essential */
-      // 禁止使用 $delete/$set/Vue.delete/Vue.set
-      'vue/no-deprecated-delete-set': 'error',
       // 自动将 beforeDestroy/destroyed 生命周期替换为 beforeUnmount/unmounted
       'vue/no-deprecated-destroyed-lifecycle': 'warn',
       // 禁止使用 $listeners
@@ -515,6 +512,8 @@ export function customize(options, patch) {
       'vue/no-deprecated-filter': 'error',
       // 禁止使用 <template functional> 属性
       'vue/no-deprecated-functional-template': 'error',
+      // 允许出于兼容性保留 model 选项
+      'vue/no-deprecated-model-definition': 'off',
       // 必须使用 <router-link> 的插槽而不是 tag 属性
       'vue/no-deprecated-router-link-tag-prop': 'error',
       // 禁止使用 .sync 绑定修饰符

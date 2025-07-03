@@ -12,3 +12,10 @@ enum Foo {
   <!-- eslint-disable-next-line vue/this-in-template -->
   <p>{{ this.value }}{{ value }}{{ Foo.bar }}</p>
 </template>
+
+<style scoped>
+.foo,
+.bar {
+  color: red;
+}
+</style>

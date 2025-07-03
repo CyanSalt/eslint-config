@@ -1,7 +1,6 @@
 import jsConfig from '@eslint/js'
 import globals from 'globals'
 import { defineConfig } from '../config.js'
-import stylisticJs from './stylistic-js.js'
 
 export default defineConfig(options => {
   return [
@@ -9,7 +8,6 @@ export default defineConfig(options => {
       name: '@cyansalt/javascript/eslint-recommended',
       rules: jsConfig.configs.recommended.rules,
     },
-    ...stylisticJs(options),
     {
       name: '@cyansalt/javascript/setup',
       languageOptions: {
@@ -29,7 +27,8 @@ export default defineConfig(options => {
         },
       },
       linterOptions: {
-        reportUnusedDisableDirectives: true,
+        reportUnusedDisableDirectives: 'warn',
+        reportUnusedInlineConfigs: 'warn',
       },
       rules: {
         /** Possible Problems */

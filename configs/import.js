@@ -1,6 +1,18 @@
 import { createRequire } from 'node:module'
+import { resolve as resolveAlias } from 'eslint-import-resolver-alias'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import importX from 'eslint-plugin-import-x'
 import { defineConfig } from '../config.js'
+
+function createResolverNext(name, resolve, options) {
+  return {
+    interfaceVersion: 3,
+    name,
+    resolve(source, file) {
+      return resolve(source, file, options)
+    },
+  }
+}
 
 export default defineConfig(options => {
   const { resolve } = createRequire(import.meta.url)
@@ -12,9 +24,9 @@ export default defineConfig(options => {
       },
       settings: {
         'import-x/internal-regex': '^@/',
-        'import-x/resolver': {
+        'import-x/resolver-next': [
           // Must go before any other resolvers for typescript files
-          [resolve('eslint-import-resolver-typescript')]: {
+          createTypeScriptImportResolver({
             extensions: [
               '.ts',
               '.tsx',
@@ -24,8 +36,8 @@ export default defineConfig(options => {
               '.json',
               '.vue',
             ],
-          },
-          [resolve('eslint-import-resolver-alias')]: {
+          }),
+          createResolverNext('eslint-import-resolver-alias', resolveAlias, {
             map: [
               ['@', './src'],
             ],
@@ -39,8 +51,8 @@ export default defineConfig(options => {
               '.d.ts',
               '.vue',
             ],
-          },
-        },
+          }),
+        ],
         'import-x/parsers': {
           [resolve('@typescript-eslint/parser')]: ['.cts', '.mts', '.ts', '.tsx'],
           [resolve('vue-eslint-parser')]: ['.vue'],
