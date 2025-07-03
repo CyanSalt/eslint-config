@@ -1,4 +1,10 @@
+# Changelog
 
+## [4.4.0](https://github.com/CyanSalt/eslint-config/compare/v4.3.1...v4.4.0) (2025-07-03)
+
+### Features
+
+* update rules ([6a0a2b4](https://github.com/CyanSalt/eslint-config/commit/6a0a2b4c8eb16e48cdd2b48a1d63caddc2edbffe))
 
 ## [4.3.1](https://github.com/CyanSalt/eslint-config/compare/v4.3.0...v4.3.1) (2025-04-10)
 
