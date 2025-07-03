@@ -169,7 +169,7 @@ export default defineConfig(options => {
         'vue/block-order': ['warn', {
           order: ['script[setup]', 'script[setup] ~ script', 'template', 'script', 'style:not([scoped])', 'style[scoped]'],
         }],
-        // 允许单个单词的组件名
+        // [覆盖 essential] 允许单个单词的组件名
         'vue/multi-word-component-names': 'off',
         // 禁止为将被替换内容的元素指定内容
         'vue/no-child-content': ['error', { additionalDirectives: ['t', 'safe-html'] }],
@@ -187,6 +187,8 @@ export default defineConfig(options => {
         'vue/no-deprecated-html-element-is': 'error',
         // 禁止使用 inline-template 属性
         'vue/no-deprecated-inline-template': 'error',
+        // [覆盖 essential] 允许出于兼容性保留 model 选项
+        'vue/no-deprecated-model-definition': 'off',
         // 禁止在 props 的 default 函数中使用 this
         'vue/no-deprecated-props-default-this': 'error',
         // 自动将 scope 转化为 v-slot
@@ -333,6 +335,8 @@ export default defineConfig(options => {
         'vue/slot-name-casing': 'error',
         // 自动将 v-for 中的 of 替换为 in 以保持一致
         'vue/v-for-delimiter-style': 'warn',
+        // 必须使用合法的 defineOptions
+        'vue/valid-define-options': 'error',
 
         /** Extension Rules */
         // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
@@ -500,6 +504,8 @@ export function customize(options, patch) {
     }],
     [!options.vue.legacy, {
       /** Essential */
+      // 禁止使用 $delete/$set/Vue.delete/Vue.set
+      'vue/no-deprecated-delete-set': 'error',
       // 自动将 beforeDestroy/destroyed 生命周期替换为 beforeUnmount/unmounted
       'vue/no-deprecated-destroyed-lifecycle': 'warn',
       // 禁止使用 $listeners
@@ -512,8 +518,6 @@ export function customize(options, patch) {
       'vue/no-deprecated-filter': 'error',
       // 禁止使用 <template functional> 属性
       'vue/no-deprecated-functional-template': 'error',
-      // 允许出于兼容性保留 model 选项
-      'vue/no-deprecated-model-definition': 'off',
       // 必须使用 <router-link> 的插槽而不是 tag 属性
       'vue/no-deprecated-router-link-tag-prop': 'error',
       // 禁止使用 .sync 绑定修饰符
