@@ -198,8 +198,6 @@ export default defineConfig(options => {
         '@typescript-eslint/no-misused-promises': ['error', {
           checksVoidReturn: false,
         }],
-        // 禁止对非数组和对象使用展开运算符
-        '@typescript-eslint/no-misused-spread': 'error',
         // 禁止无效的类型运算
         '@typescript-eslint/no-redundant-type-constituents': 'error',
         // 禁止不必要的布尔值比较
