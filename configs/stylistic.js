@@ -4,7 +4,7 @@ import { defineConfig } from '../config.js'
 export default defineConfig(options => {
   return [
     {
-      name: '@cyansalt/stylistic/javascript',
+      name: '@cyansalt/stylistic/setup',
       plugins: {
         '@stylistic': stylisticPlugin,
       },
