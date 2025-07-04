@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.4.2](https://github.com/CyanSalt/eslint-config/compare/v4.4.1...v4.4.2) (2025-07-04)
+
+### Bug Fixes
+
+* disable no-misused-spread for classes ([21c5b09](https://github.com/CyanSalt/eslint-config/commit/21c5b096b39d7a182e8ccf792cc7e934492ce78e))
+* stylistic in vue ([6659795](https://github.com/CyanSalt/eslint-config/commit/6659795316b9d088086e18ea13b9fa1cf0c50447))
+* update vue-scoped-css ([ec3e7fa](https://github.com/CyanSalt/eslint-config/commit/ec3e7fa5f2570fbe45e7ee848d5e55bfabd7b02a))
+
 ## [4.4.1](https://github.com/CyanSalt/eslint-config/compare/v4.4.0...v4.4.1) (2025-07-03)
 
 ### Bug Fixes
