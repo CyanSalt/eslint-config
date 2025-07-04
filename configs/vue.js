@@ -358,6 +358,10 @@ export default defineConfig(options => {
           functions: 'always-multiline',
           importAttributes: 'always-multiline',
           dynamicImports: 'never',
+          // for TypeScript
+          enums: 'always-multiline',
+          generics: 'always-multiline',
+          tuples: 'always-multiline',
         }],
         // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）
         'vue/comma-spacing': 'warn',

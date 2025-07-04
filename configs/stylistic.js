@@ -28,7 +28,7 @@ export default defineConfig(options => {
           functions: 'always-multiline',
           importAttributes: 'always-multiline',
           dynamicImports: 'never',
-          // TypeScript only
+          // for TypeScript
           enums: 'always-multiline',
           generics: 'always-multiline',
           tuples: 'always-multiline',
