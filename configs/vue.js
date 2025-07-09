@@ -331,8 +331,6 @@ export default defineConfig(options => {
         'vue/prefer-prop-type-boolean-first': 'warn',
         // 必须为 emits 声明校验函数
         'vue/require-emit-validator': 'error',
-        // 插槽名称必须使用 kebab-case
-        'vue/slot-name-casing': 'error',
         // 自动将 v-for 中的 of 替换为 in 以保持一致
         'vue/v-for-delimiter-style': 'warn',
         // 必须使用合法的 defineOptions
@@ -356,12 +354,13 @@ export default defineConfig(options => {
           imports: 'always-multiline',
           exports: 'always-multiline',
           functions: 'always-multiline',
-          importAttributes: 'always-multiline',
-          dynamicImports: 'never',
-          // for TypeScript
-          enums: 'always-multiline',
-          generics: 'always-multiline',
-          tuples: 'always-multiline',
+          // FIXME: compatible with `false` as `process.features.require_module`
+          // importAttributes: 'always-multiline',
+          // dynamicImports: 'never',
+          // TypeScript only
+          // enums: 'always-multiline',
+          // generics: 'always-multiline',
+          // tuples: 'always-multiline',
         }],
         // 自动优化逗号的空格使用（逗号前禁止使用空格，逗号后必须使用空格）
         'vue/comma-spacing': 'warn',
@@ -382,7 +381,8 @@ export default defineConfig(options => {
         // [扩展 recommended] 禁止使用空的解构
         'vue/no-empty-pattern': 'error',
         // 禁止使用隐式的类型转换（!!、~等）
-        'vue/no-implicit-coercion': 'error',
+        // TODO: false positives
+        // 'vue/no-implicit-coercion': 'error',
         // [扩展 recommended] 禁止使用非标准空白符
         'vue/no-irregular-whitespace': 'error',
         // [扩展 recommended] 禁止使用 JS 不支持的数字精度
