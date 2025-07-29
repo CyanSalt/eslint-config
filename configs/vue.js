@@ -302,6 +302,8 @@ export default defineConfig(options => {
         'vue/no-duplicate-attr-inheritance': 'error',
         // 禁止单文件组件内的空标签
         'vue/no-empty-component-block': 'error',
+        // 自动去除对编译器宏的导入
+        'vue/no-import-compiler-macros': 'warn',
         // 禁止无标记的 ref 副作用
         'vue/no-ref-object-reactivity-loss': 'error',
         // 自动去除具有默认值的 props 的 required 标识
