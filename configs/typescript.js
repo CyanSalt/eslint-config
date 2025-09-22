@@ -21,6 +21,9 @@ export default defineConfig(options => {
       languageOptions: {
         parserOptions: {
           project: true,
+          ...(options.react ? {
+            jsxPragma: 'React',
+          } : undefined),
         },
       },
       rules: {
