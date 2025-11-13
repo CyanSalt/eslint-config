@@ -115,7 +115,7 @@ export default defineConfig(options => {
         // 自动删除不必要的对象字面量键的引号
         '@stylistic/quote-props': ['warn', 'as-needed'],
         // 自动替换字符串字面量的双引号
-        '@stylistic/quotes': ['warn', 'single', { allowTemplateLiterals: true }],
+        '@stylistic/quotes': ['warn', 'single', { allowTemplateLiterals: 'always' }],
         // 自动删除剩余和扩展运算符后的空格
         '@stylistic/rest-spread-spacing': 'warn',
         // 自动移除语句结尾的分号

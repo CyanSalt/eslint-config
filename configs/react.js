@@ -1,5 +1,5 @@
 import reactPlugin from 'eslint-plugin-react'
-import * as reactHooksPlugin from 'eslint-plugin-react-hooks'
+import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import { defineConfig, overrides } from '../config.js'
 import { GLOB_X } from '../globs.js'
 
@@ -90,7 +90,7 @@ export default defineConfig(options => {
       },
     },
     ...overrides([
-      reactHooksPlugin.configs['recommended-latest'],
+      reactHooksPlugin.configs.flat['recommended-latest'],
     ], {
       files: [GLOB_X],
     }),

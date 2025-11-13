@@ -60,6 +60,8 @@ export default defineConfig(options => {
         'unicorn/prefer-array-flat-map': 'error',
         // 当只需要判断返回值存在时，使用 some 代替 find
         'unicorn/prefer-array-some': 'error',
+        // 使用 BigInt 字面量而不是构造函数
+        'unicorn/prefer-bigint-literals': 'error',
         // 使用 Date.now() 代替 getTime() 和隐式类型转换
         'unicorn/prefer-date-now': 'warn',
         // 自动替换 .innerText 为 .textContent（标准和兼容性）

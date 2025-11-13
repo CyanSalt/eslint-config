@@ -132,6 +132,8 @@ export default defineConfig(options => {
         'prefer-rest-params': 'error',
         // 禁止无意义的 apply，而是使用扩展运算符代替
         'prefer-spread': 'error',
+        // 在 catch 中重新抛出 Error 时必须传递 cause
+        'preserve-caught-error': 'error',
         // 使用 parseInt 时必须传递进制参数
         radix: 'error',
         // [覆盖 recommended] 允许生成器函数不使用 yield 关键字

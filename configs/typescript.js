@@ -6,12 +6,10 @@ export default defineConfig(options => {
   if (!options.typescript) return []
   const mixed = options.typescript.mixed || options.vue && options.jsx
   return [
-    ...tseslint.config(
-      ...tseslint.configs.recommended,
-      ...tseslint.configs.stylistic,
-    ),
+    ...tseslint.configs.recommended,
+    ...tseslint.configs.stylistic,
     ...overrides(
-      tseslint.config(...tseslint.configs.stylisticTypeChecked),
+      tseslint.configs.stylisticTypeChecked,
       {
         files: [mixed ? GLOB_TS : GLOB_ALL],
       },
