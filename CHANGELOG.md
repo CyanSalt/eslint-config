@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.5.0](https://github.com/CyanSalt/eslint-config/compare/v4.4.2...v4.5.0) (2025-11-13)
+
+### Features
+
+* update plugins ([ee9391e](https://github.com/CyanSalt/eslint-config/commit/ee9391e0039a4d5695d1bd9a7268350246f04a56))
+
+### Bug Fixes
+
+* compat for old node versions ([e7c67a9](https://github.com/CyanSalt/eslint-config/commit/e7c67a996048676c82b6bc532784af7780442b5e))
+* disallow macro imports ([0ee855f](https://github.com/CyanSalt/eslint-config/commit/0ee855fd2bf25bfd9fc3cf47ede526b4746f6055))
+* react support ([898c6be](https://github.com/CyanSalt/eslint-config/commit/898c6be07836a95f3e429ee2bcbbde97c19b43f4))
+
 ## [4.4.2](https://github.com/CyanSalt/eslint-config/compare/v4.4.1...v4.4.2) (2025-07-04)
 
 ### Bug Fixes
