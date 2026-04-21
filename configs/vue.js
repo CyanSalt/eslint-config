@@ -300,6 +300,8 @@ export default defineConfig(options => {
         'vue/match-component-file-name': ['error', { extensions: ['vue'], shouldMatchCase: true }],
         // 使用 v-bind="$attrs" 时必须指定 inheritAttrs: false
         'vue/no-duplicate-attr-inheritance': 'error',
+        // 自动移除重复的 class
+        'vue/no-duplicate-class-names': 'warn',
         // 禁止单文件组件内的空标签
         'vue/no-empty-component-block': 'error',
         // 自动去除对编译器宏的导入
@@ -439,7 +441,7 @@ export default defineConfig(options => {
         'vue/match-component-file-name': 'off',
       },
     },
-    ...vueScopedCssPlugin.configs['flat/vue2-recommended'],
+    ...vueScopedCssPlugin.configs['vue2-recommended'],
     {
       name: '@cyansalt/vue/scoped-css',
       rules: {

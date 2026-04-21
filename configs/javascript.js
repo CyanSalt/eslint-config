@@ -38,6 +38,8 @@ export default defineConfig(options => {
         'no-duplicate-imports': 'error',
         // 禁止变量与自身比较
         'no-self-compare': 'error',
+        // [覆盖 recommended] 允许使用未赋值的变量
+        'no-unassigned-vars': 'off',
         // 禁止不受循环影响的循环变量
         'no-unmodified-loop-condition': 'error',
         // 禁止循环固定执行单次
@@ -46,6 +48,8 @@ export default defineConfig(options => {
         'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
         // 禁止定义前使用变量（ReferenceError）
         'no-use-before-define': ['error', { functions: false }],
+        // [覆盖 recommended] 允许以默认赋值的方式初始化变量
+        'no-useless-assignment': 'off',
 
         /** Suggestions */
         // default case 必须放在最后
@@ -132,8 +136,6 @@ export default defineConfig(options => {
         'prefer-rest-params': 'error',
         // 禁止无意义的 apply，而是使用扩展运算符代替
         'prefer-spread': 'error',
-        // 在 catch 中重新抛出 Error 时必须传递 cause
-        'preserve-caught-error': 'error',
         // 使用 parseInt 时必须传递进制参数
         radix: 'error',
         // [覆盖 recommended] 允许生成器函数不使用 yield 关键字

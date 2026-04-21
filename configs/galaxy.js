@@ -72,15 +72,6 @@ export default defineConfig(options => {
           'galaxy/vue-attribute-spacing': 'warn',
         },
       },
-      ...(!options.vue.legacy || options.vue.legacy === 2.7 ? [
-        {
-          name: '@cyansalt/galaxy/vue-next',
-          rules: {
-            // 自动替换已废弃的 ::v-deep 操作符
-            'galaxy/no-deprecated-vue-deep-combinator': 'warn',
-          },
-        },
-      ] : []),
       ...(options.vue.macros ? [
         {
           name: '@cyansalt/galaxy/vue-macros',
