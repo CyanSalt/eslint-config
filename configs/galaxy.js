@@ -32,6 +32,8 @@ export default defineConfig(options => {
         rules: {
           // 禁止使用 `as any`
           'galaxy/no-as-any': 'error',
+          // 禁止对单个标识符使用 `import =` 语句
+          'galaxy/no-import-equals-aliases': 'error',
         },
       },
     ] : []),

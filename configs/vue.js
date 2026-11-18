@@ -113,10 +113,6 @@ export default defineConfig(options => {
               mts: resolve('@typescript-eslint/parser'),
               ts: resolve('@typescript-eslint/parser'),
               tsx: resolve('@typescript-eslint/parser'),
-              ...(options.babel ? {
-                js: resolve('@babel/eslint-parser'),
-                jsx: resolve('@babel/eslint-parser'),
-              } : {}),
             },
           },
         },
@@ -150,17 +146,7 @@ export default defineConfig(options => {
           },
         },
       },
-    ]) : (options.babel ? [
-      {
-        name: '@cyansalt/vue/sfc-parser',
-        files: [GLOB_VUE],
-        languageOptions: {
-          parserOptions: {
-            parser: resolve('@babel/eslint-parser'),
-          },
-        },
-      },
-    ] : [])),
+    ]) : []),
     {
       name: '@cyansalt/vue/setup',
       rules: {
@@ -320,7 +306,7 @@ export default defineConfig(options => {
         'vue/no-this-in-before-route-enter': 'error',
         // 未使用的属性必须使用 /** @public */ 标记，但不检查 props
         'vue/no-unused-properties': ['error', {
-          groups: ['data', 'computed', 'methods', 'setup'],
+          groups: ['inject', 'data', 'computed', 'methods', 'setup'],
           ignorePublicMembers: true,
         }],
         // 禁止未使用的 ref

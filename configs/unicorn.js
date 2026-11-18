@@ -66,6 +66,8 @@ export default defineConfig(options => {
         'unicorn/prefer-date-now': 'warn',
         // 自动替换 .innerText 为 .textContent（标准和兼容性）
         'unicorn/prefer-dom-node-text-content': 'warn',
+        // 自动移除导入标识符中不必要的引号
+        'unicorn/prefer-identifier-import-export-specifiers': 'warn',
         // 必须使用键盘事件的 key 属性而不是 keyCode（已废弃）
         'unicorn/prefer-keyboard-event-key': 'error',
         // 使用 .includes 而非 .indexOf 判断数组/字符串的包含

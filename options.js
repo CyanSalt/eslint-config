@@ -16,7 +16,6 @@ import semver from 'semver'
 /**
  * @typedef Options
  * @property {boolean | { mixed: boolean }} typescript
- * @property {boolean} babel
  * @property {boolean} react
  * @property {boolean | { legacy: boolean | 2.7, macros: boolean }} vue
  * @property {boolean} jsx
@@ -76,23 +75,6 @@ export async function resolveJsx() {
   return false
 }
 
-async function hasBabelConfigFile() {
-  try {
-    const babel = await importModule('@babel/core')
-    const config = babel.loadPartialConfig()
-    return config.hasFilesystemConfig()
-  } catch {
-    return false
-  }
-}
-
-/**
- * @returns {Promise<Options['babel']>}
- */
-export async function resolveBabel() {
-  return await hasBabelConfigFile()
-}
-
 /**
  * @returns {Options['react']}
  */
@@ -124,20 +106,17 @@ export async function resolveVue() {
 export async function resolveOptions(options = {}) {
   const [
     typescript,
-    babel,
     react,
     vue,
     jsx,
   ] = await Promise.all([
     options.typescript ?? resolveTypescript(),
-    options.babel ?? resolveBabel(),
     options.react ?? resolveReact(),
     options.vue ?? resolveVue(),
     options.jsx ?? resolveJsx(),
   ])
   return {
     typescript,
-    babel,
     react,
     vue,
     jsx,

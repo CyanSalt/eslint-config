@@ -50,11 +50,6 @@ export default config({
   // which defaults to the value of `compilerOptions.checkJs` in tsconfig.
   typescript: true,
 
-  // Whether to enable Babel rules.
-  // It will be enabled when the project includes `babel.config.js` by default.
-  // This option will have no effect when non-mixed typescript is enabled.
-  babel: true,
-
   // Whether to enable React rules.
   // It will be enabled when `react` is installed in the project by default.
   react: true,
