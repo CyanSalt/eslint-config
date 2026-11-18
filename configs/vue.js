@@ -327,12 +327,6 @@ export default defineConfig(options => {
         'vue/valid-define-options': 'error',
 
         /** Extension Rules */
-        // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
-        'vue/array-bracket-newline': ['warn', 'consistent'],
-        // 自动删除数组的括号内侧的空格
-        'vue/array-bracket-spacing': 'warn',
-        // 自动优化数组的元素换行（所有元素保持一致）
-        'vue/array-element-newline': ['warn', 'consistent'],
         // 自动在箭头函数的箭头前后添加空格
         'vue/arrow-spacing': 'warn',
         // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
@@ -366,6 +360,29 @@ export default defineConfig(options => {
         'vue/key-spacing': ['warn', { beforeColon: false, afterColon: true, mode: 'strict' }],
         // 自动在关键字前后添加空格
         'vue/keyword-spacing': ['warn', { before: true, after: true }],
+        // 自动统一列表括号内的空格和换行风格
+        // 'vue/list-style': ['warn', {
+        //   singleLine: {
+        //     spacing: 'never',
+        //   },
+        //   overrides: {
+        //     '{}': {
+        //       singleLine: {
+        //         spacing: 'always',
+        //       },
+        //     },
+        //   },
+        // }],
+        // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
+        'vue/array-bracket-newline': ['warn', 'consistent'],
+        // 自动删除数组的括号内侧的空格
+        'vue/array-bracket-spacing': 'warn',
+        // 自动优化数组的元素换行（所有元素保持一致）
+        'vue/array-element-newline': ['warn', 'consistent'],
+        // 自动优化对象字面量、解构和导入的花括号换行（前括号和后括号保持一致）
+        'vue/object-curly-newline': ['warn', { consistent: true }],
+        // 自动为对象字面量、解构和导入的花括号内侧添加空格
+        'vue/object-curly-spacing': ['warn', 'always'],
         // [扩展 recommended] 禁止使用不可变的 if 条件
         'vue/no-constant-condition': 'error',
         // [扩展 recommended] 禁止使用空的解构
@@ -381,10 +398,6 @@ export default defineConfig(options => {
         'vue/no-sparse-arrays': 'error',
         // 禁止单行内的字符串字面量拼接
         'vue/no-useless-concat': 'error',
-        // 自动优化对象字面量、解构和导入的花括号换行（前括号和后括号保持一致）
-        'vue/object-curly-newline': ['warn', { consistent: true }],
-        // 自动为对象字面量、解构和导入的花括号内侧添加空格
-        'vue/object-curly-spacing': ['warn', 'always'],
         // 自动优化对象字面量的值为简写
         'vue/object-shorthand': ['warn', 'always'],
         // 自动优化行尾操作符至下一行行首

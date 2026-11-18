@@ -9,12 +9,6 @@ export default defineConfig(options => {
         '@stylistic': stylisticPlugin,
       },
       rules: {
-        // 自动优化数组的两侧括号换行（前括号和后括号保持一致）
-        '@stylistic/array-bracket-newline': ['warn', 'consistent'],
-        // 自动删除数组的括号内侧的空格
-        '@stylistic/array-bracket-spacing': 'warn',
-        // 自动优化数组的元素换行（所有元素保持一致）
-        '@stylistic/array-element-newline': ['warn', 'consistent'],
         // 自动在箭头函数的箭头前后添加空格
         '@stylistic/arrow-spacing': 'warn',
         // 自动优化花括号为 one true 风格（左侧花括号前不换行，else 前也不换行）
@@ -43,12 +37,8 @@ export default defineConfig(options => {
         '@stylistic/dot-location': ['error', 'property'],
         // 自动为文件末尾保留一行空行
         '@stylistic/eol-last': ['warn', 'always'],
-        // 自动优化函数调用的参数列表换行（所有元素保持一致）
-        '@stylistic/function-call-argument-newline': ['warn', 'consistent'],
         // 自动删除函数调用的括号前的空格
         '@stylistic/function-call-spacing': 'warn',
-        // 自动优化函数声明的参数列表换行（所有元素保持一致）
-        '@stylistic/function-paren-newline': ['warn', 'multiline-arguments'],
         // 自动优化缩进为两个空格
         '@stylistic/indent': ['warn', 2, {
           SwitchCase: 1,
@@ -62,6 +52,19 @@ export default defineConfig(options => {
         '@stylistic/keyword-spacing': ['warn', { before: true, after: true }],
         // 自动将 CRLF 换行符替换为 LF
         '@stylistic/linebreak-style': 'warn',
+        // 自动统一列表括号内的空格和换行风格
+        '@stylistic/list-style': ['warn', {
+          singleLine: {
+            spacing: 'never',
+          },
+          overrides: {
+            '{}': {
+              singleLine: {
+                spacing: 'always',
+              },
+            },
+          },
+        }],
         // 禁止单行超过 120 个字符
         '@stylistic/max-len': ['error', {
           code: 120,
@@ -104,12 +107,6 @@ export default defineConfig(options => {
         '@stylistic/no-whitespace-before-property': 'warn',
         // 自动在if等结构换行时添加花括号
         '@stylistic/nonblock-statement-body-position': ['warn', 'beside'],
-        // 自动优化对象字面量、解构和导入的花括号换行（前括号和后括号保持一致）
-        '@stylistic/object-curly-newline': ['warn', { consistent: true }],
-        // 自动为对象字面量、解构和导入的花括号内侧添加空格
-        '@stylistic/object-curly-spacing': ['warn', 'always'],
-        // 自动优化对象属性换行（全部一行或全部换行）
-        '@stylistic/object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
         // 自动优化行尾操作符至下一行行首
         '@stylistic/operator-linebreak': ['warn', 'before'],
         // 自动删除不必要的对象字面量键的引号
