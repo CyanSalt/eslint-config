@@ -72,8 +72,6 @@ export default defineConfig(options => {
         'unicorn/prefer-keyboard-event-key': 'error',
         // 使用 .includes 而非 .indexOf 判断数组/字符串的包含
         'unicorn/prefer-includes': 'error',
-        // 如果可能，使用逻辑操作符代替三元操作符
-        'unicorn/prefer-logical-operator-over-ternary': 'error',
         // 自动将两个表达式的大小判断替换为 Math.min/.max
         'unicorn/prefer-math-min-max': 'warn',
         // 自动替换 .slice/.splice 方法中的 .length - index 参数为负数

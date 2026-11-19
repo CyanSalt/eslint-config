@@ -208,7 +208,8 @@ export default defineConfig(options => {
         // 禁止无用的命名空间调用
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         // 自动移除多余的类型转换
-        '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+        // Disabled since https://github.com/typescript-eslint/typescript-eslint/issues/12376
+        // '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
         // 自动去除无意义的默认值
         '@typescript-eslint/no-useless-default-assignment': 'warn',
         // 必须使用空值合并运算符，而不是逻辑判断
