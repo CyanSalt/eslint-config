@@ -21,6 +21,7 @@ export default defineConfig(options => {
             kebabCase: true,
             pascalCase: true,
           },
+          checkDirectories: false, // to avoid something like `my_node_modules/`
           ignore: [
             // unicorn 检测的 PascalCase 不包含连续的大写字母，这里将条件放宽
             /^[A-Z][A-Za-z0-9]*\./,

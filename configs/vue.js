@@ -274,8 +274,8 @@ export default defineConfig(options => {
         'vue/block-tag-newline': 'warn',
         // 自动修改组件内注册的组件名称为 PascalCase
         'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: true }],
-        // 事件名必须使用 kebab-case，但允许以 : 分隔
-        'vue/custom-event-name-casing': ['error', 'kebab-case', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
+        // 事件名必须使用 kebab-case，但允许任意以 update: 开头的事件
+        'vue/custom-event-name-casing': ['error', 'kebab-case', { ignores: ['/^update:/'] }],
         // 在 <script lang="ts" setup> 下必须使用类型声明 defineEmits
         'vue/define-emits-declaration': 'error',
         // 在 <script lang="ts" setup> 下必须使用类型声明 defineProps
