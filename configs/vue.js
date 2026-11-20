@@ -464,10 +464,6 @@ export default defineConfig(options => {
             $toRef: 'readonly',
           },
         },
-        rules: {
-          // [覆盖 essential] 允许 defineProps 解构
-          'vue/no-setup-props-reactivity-loss': 'off',
-        },
       },
     ] : []),
     ...customize(options, {
